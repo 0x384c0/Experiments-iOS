@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomSectionView" customModule="IOSExperiments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="571" height="53"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdb-RM-8EO">
+                    <rect key="frame" x="0.0" y="0.0" width="571" height="53"/>
+                    <color key="backgroundColor" red="0.12156862745098039" green="0.039215686274509803" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="250" constant="12" id="00O-P9-6Bl"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="LABEL" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYx-Sk-CiK">
+                    <rect key="frame" x="16" y="18" width="545" height="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                    <color key="textColor" red="0.66274509800000003" green="0.63921568630000003" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="highlightedColor" red="0.1215686275" green="0.039215686270000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yYx-Sk-CiK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="EwZ-s9-QVo"/>
+                <constraint firstAttribute="bottom" secondItem="tdb-RM-8EO" secondAttribute="bottom" id="Fdh-VP-iE0"/>
+                <constraint firstAttribute="trailing" secondItem="yYx-Sk-CiK" secondAttribute="trailing" constant="10" id="Wrg-VO-dz5"/>
+                <constraint firstItem="tdb-RM-8EO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jMZ-m2-46g"/>
+                <constraint firstItem="tdb-RM-8EO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pM2-tQ-I93"/>
+                <constraint firstAttribute="bottom" secondItem="yYx-Sk-CiK" secondAttribute="bottom" priority="999" constant="8" id="qTL-jr-86q"/>
+                <constraint firstAttribute="trailing" secondItem="tdb-RM-8EO" secondAttribute="trailing" id="rcm-Vm-feK"/>
+                <constraint firstItem="yYx-Sk-CiK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="sMZ-lj-Cok"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="customBackgroundView" destination="tdb-RM-8EO" id="Ux9-h3-QOX"/>
+                <outlet property="textBottomConstraint" destination="qTL-jr-86q" id="exX-su-mYk"/>
+                <outlet property="titleLabelText" destination="yYx-Sk-CiK" id="bYD-3y-Ucd"/>
+            </connections>
+            <point key="canvasLocation" x="445.5" y="-243.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fL1-Qt-zLI" customClass="CustomInfoWindow" customModule="TengriWalletDev" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYq-y3-rEX">
+                    <rect key="frame" x="0.0" y="0.0" width="354" height="154"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Адрес" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fE-A5-Q6Y">
+                            <rect key="frame" x="16" y="12" width="37" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                            <color key="textColor" red="0.54117647059999996" green="0.53725490200000003" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Title" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="Uny-ld-Fsz">
+                            <rect key="frame" x="16" y="31.5" width="330" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <color key="textColor" red="0.32156862745098036" green="0.31764705882352939" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Телефон" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgc-C8-A5M">
+                            <rect key="frame" x="16" y="68.5" width="51" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                            <color key="textColor" red="0.54117647059999996" green="0.53725490200000003" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="750" verticalCompressionResistancePriority="1000" scrollEnabled="NO" editable="NO" text="phone" translatesAutoresizingMaskIntoConstraints="NO" id="Ew5-wF-tT1">
+                            <rect key="frame" x="11" y="78" width="294" height="33"/>
+                            <color key="textColor" red="0.32156862745098036" green="0.31764705882352939" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                        </textView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="link" translatesAutoresizingMaskIntoConstraints="NO" id="plv-9S-Duz">
+                            <rect key="frame" x="321" y="123.5" width="18" height="18"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQt-oa-C9E">
+                            <rect key="frame" x="16" y="117" width="338" height="30"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <state key="normal" title="Больше информации на сайте">
+                                <color key="titleColor" red="0.32156862749999998" green="0.31764705879999999" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="urlTap:" destination="fL1-Qt-zLI" eventType="touchUpInside" id="RM6-Ke-nL3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58s-l1-a4r">
+                            <rect key="frame" x="305" y="68.5" width="49" height="42.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="49" id="aQc-6Z-BD0"/>
+                            </constraints>
+                            <state key="normal" image="icon_callll"/>
+                            <connections>
+                                <action selector="phoneTap:" destination="fL1-Qt-zLI" eventType="touchUpInside" id="SqL-FI-BxJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="tintColor" red="0.32156862745098036" green="0.31764705882352939" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="eQt-oa-C9E" secondAttribute="trailing" id="5q9-Bq-RvH"/>
+                        <constraint firstItem="zgc-C8-A5M" firstAttribute="leading" secondItem="Uny-ld-Fsz" secondAttribute="leading" id="Fox-WQ-GwW"/>
+                        <constraint firstItem="Uny-ld-Fsz" firstAttribute="top" secondItem="7fE-A5-Q6Y" secondAttribute="bottom" constant="5" id="Iad-tI-HpA"/>
+                        <constraint firstItem="7fE-A5-Q6Y" firstAttribute="top" secondItem="xYq-y3-rEX" secondAttribute="top" constant="12" id="IhM-QW-KAn"/>
+                        <constraint firstItem="58s-l1-a4r" firstAttribute="leading" secondItem="Ew5-wF-tT1" secondAttribute="trailing" id="Mti-H9-D3h"/>
+                        <constraint firstItem="7fE-A5-Q6Y" firstAttribute="leading" secondItem="xYq-y3-rEX" secondAttribute="leading" constant="16" id="Mu9-ir-1mH"/>
+                        <constraint firstItem="zgc-C8-A5M" firstAttribute="top" secondItem="Uny-ld-Fsz" secondAttribute="bottom" constant="20" id="Pp4-RF-cBx"/>
+                        <constraint firstItem="eQt-oa-C9E" firstAttribute="leading" secondItem="7fE-A5-Q6Y" secondAttribute="leading" id="ReD-W1-kuQ"/>
+                        <constraint firstAttribute="trailing" secondItem="Uny-ld-Fsz" secondAttribute="trailing" constant="8" id="TcD-aJ-f4g"/>
+                        <constraint firstAttribute="trailing" secondItem="plv-9S-Duz" secondAttribute="trailing" constant="15" id="Vpn-kV-nkO"/>
+                        <constraint firstItem="58s-l1-a4r" firstAttribute="bottom" secondItem="Ew5-wF-tT1" secondAttribute="bottom" id="XXY-vJ-Sjw"/>
+                        <constraint firstAttribute="trailing" secondItem="58s-l1-a4r" secondAttribute="trailing" id="XiM-Rl-0Wf"/>
+                        <constraint firstItem="Ew5-wF-tT1" firstAttribute="top" secondItem="zgc-C8-A5M" secondAttribute="bottom" constant="-5" id="aSZ-qh-Lj2"/>
+                        <constraint firstItem="58s-l1-a4r" firstAttribute="top" secondItem="zgc-C8-A5M" secondAttribute="top" id="bko-1w-Nrf"/>
+                        <constraint firstItem="Ew5-wF-tT1" firstAttribute="leading" secondItem="zgc-C8-A5M" secondAttribute="leading" constant="-5" id="c2n-kF-38S"/>
+                        <constraint firstItem="Uny-ld-Fsz" firstAttribute="leading" secondItem="7fE-A5-Q6Y" secondAttribute="leading" id="n9z-Ix-fjW"/>
+                        <constraint firstAttribute="bottom" secondItem="eQt-oa-C9E" secondAttribute="bottom" constant="7" id="r6O-uj-4MO"/>
+                        <constraint firstItem="eQt-oa-C9E" firstAttribute="top" secondItem="Ew5-wF-tT1" secondAttribute="bottom" constant="6" id="s7L-RU-vdy"/>
+                        <constraint firstItem="plv-9S-Duz" firstAttribute="centerY" secondItem="eQt-oa-C9E" secondAttribute="centerY" id="z8s-Fn-2cU"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="QKb-mU-fd9" appends="YES" id="Inp-vU-buR"/>
+                    </connections>
+                </view>
+            </subviews>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="xYq-y3-rEX" firstAttribute="top" secondItem="fL1-Qt-zLI" secondAttribute="top" id="TvZ-7i-nVz"/>
+                <constraint firstAttribute="trailing" secondItem="xYq-y3-rEX" secondAttribute="trailing" id="Vb3-m1-Y8j"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xYq-y3-rEX" secondAttribute="bottom" id="lXE-Gw-Jh7"/>
+                <constraint firstItem="xYq-y3-rEX" firstAttribute="leading" secondItem="fL1-Qt-zLI" secondAttribute="leading" id="xCV-5B-Hgd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="phoneTextView" destination="Ew5-wF-tT1" id="6yR-hN-b1J"/>
+                <outlet property="titleLabel" destination="Uny-ld-Fsz" id="HsK-EN-Pn1"/>
+            </connections>
+            <point key="canvasLocation" x="243" y="214"/>
+        </view>
+        <tapGestureRecognizer id="QKb-mU-fd9"/>
+    </objects>
+    <resources>
+        <image name="icon_callll" width="18" height="18"/>
+        <image name="link" width="18" height="18"/>
+    </resources>
+</document>

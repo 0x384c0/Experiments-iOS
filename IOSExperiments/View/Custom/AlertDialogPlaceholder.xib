@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertDialogPlaceholder" customModule="IOSExperiments" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="m8d-zd-STi" id="H7C-uK-Yps"/>
+                <outlet property="cancelButton" destination="F5j-bd-LHg" id="INz-fK-j3C"/>
+                <outlet property="subTitleLabel" destination="CdF-Xf-PTl" id="3oW-qE-G09"/>
+                <outlet property="titleLabel" destination="ld7-hi-sb6" id="yPN-LT-JiK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ld7-hi-sb6">
+                    <rect key="frame" x="20" y="91" width="335" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.95294117649999999" green="0.94117647059999998" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdF-Xf-PTl">
+                    <rect key="frame" x="20" y="122" width="335" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.66274509800000003" green="0.63921568630000003" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8d-zd-STi">
+                    <rect key="frame" x="164.5" y="163" width="46" height="30"/>
+                    <color key="tintColor" red="0.20000000000000001" green="0.82745098039999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="onClick:" destination="-1" eventType="touchUpInside" id="LVC-c2-boU"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5j-bd-LHg">
+                    <rect key="frame" x="163.5" y="201" width="48" height="30"/>
+                    <color key="tintColor" red="0.20000000000000001" green="0.82745098039999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="onCancelClick:" destination="-1" eventType="touchUpInside" id="hNl-Pd-Ehw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.19215686274509802" green="0.054901960784313725" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ld7-hi-sb6" secondAttribute="trailing" constant="20" id="18M-IZ-CCg"/>
+                <constraint firstItem="F5j-bd-LHg" firstAttribute="top" secondItem="m8d-zd-STi" secondAttribute="bottom" constant="8" symbolic="YES" id="B8M-De-Dne"/>
+                <constraint firstItem="F5j-bd-LHg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HAi-gy-ceX"/>
+                <constraint firstItem="m8d-zd-STi" firstAttribute="centerX" secondItem="CdF-Xf-PTl" secondAttribute="centerX" id="LPs-W6-Te9"/>
+                <constraint firstItem="ld7-hi-sb6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Yb3-At-QNp"/>
+                <constraint firstItem="m8d-zd-STi" firstAttribute="top" secondItem="CdF-Xf-PTl" secondAttribute="bottom" constant="20" id="e4O-1Y-r3h"/>
+                <constraint firstItem="ld7-hi-sb6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rM3-dK-FIY"/>
+                <constraint firstItem="CdF-Xf-PTl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="uRi-gt-21x"/>
+                <constraint firstItem="ld7-hi-sb6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="91" id="uou-pH-96t"/>
+                <constraint firstItem="CdF-Xf-PTl" firstAttribute="top" secondItem="ld7-hi-sb6" secondAttribute="bottom" constant="10" id="v4N-lW-y2s"/>
+                <constraint firstAttribute="trailing" secondItem="CdF-Xf-PTl" secondAttribute="trailing" constant="20" id="z8s-oc-Tu7"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

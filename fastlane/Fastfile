@@ -1,0 +1,86 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/docs
+# All available actions: https://github.com/fastlane/fastlane/blob/master/docs/Actions.md
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# By default, fastlane will send which actions are used
+# No personal data is shared, more information on https://github.com/fastlane/enhancer
+# Uncomment the following line to opt out
+# opt_out_usage
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+#fastlane_version "1.36.2"
+default_platform :ios
+
+schemeProd = "IOSExperiments"
+schemeDev  = "IOSExperimentsDev"
+
+platform :ios do
+  
+  #public
+  desc "Submit a #{schemeProd} Build to Apple TestFlight"
+  lane :test_flight_prod do
+    build_application(scheme:schemeProd)
+    upload_build
+  end
+
+  desc "Submit a #{schemeDev} Build to Apple TestFlight"
+  lane :test_flight_dev do
+    build_application(scheme:schemeDev)
+    upload_build
+  end
+
+  
+  
+  #private
+  private_lane :build_application do |options|
+    sh "cd ..; make clean"
+    clear_derived_data
+    gym(
+      scheme: options[:scheme],
+      export_method: "app-store",
+      export_options: {
+        provisioningProfiles: {
+          "com.0x384c0.IOSExperiments"       => "Prod Profile for CI",
+          "com.0x384c0.IOSExperiments.dev"   => "Dev Profile for CI"
+        }
+      }
+      )
+  end
+
+  private_lane :upload_build do
+    changeLog = `git log $(git describe --tags --abbrev=0 $(git rev-list --tags --skip=1  --max-count=1))..HEAD --pretty=format:"%s"`
+    changeLog = changeLog.gsub!(/[^0-9A-Za-z\n ]/, '')
+    version = `git describe --tags --abbrev=0`
+
+    testflight(
+      changelog:"IOS App Changelog:\n#{changeLog}",
+      beta_app_description: "IOS App Version: #{version}",
+      beta_app_feedback_email: "example@gmail.com",
+
+      wait_for_uploaded_build:true,
+      skip_waiting_for_build_processing: false,
+      skip_submission: false,
+      distribute_external: true,
+      groups: [
+        "gr1",
+        "gr2",
+        "gr3"
+      ]
+    )
+  end
+
+
+  #others
+  before_all do
+    cocoapods
+  end
+
+end

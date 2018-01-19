@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="5LO-dL-R2S" customClass="CalendarCell">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vok-jb-fIj">
+                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.45016961350000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vok-jb-fIj" firstAttribute="centerY" secondItem="5LO-dL-R2S" secondAttribute="centerY" id="0gi-UZ-YrF"/>
+                <constraint firstAttribute="bottom" secondItem="Vok-jb-fIj" secondAttribute="bottom" constant="5" id="5Dp-Mz-MuG"/>
+                <constraint firstItem="Vok-jb-fIj" firstAttribute="leading" secondItem="5LO-dL-R2S" secondAttribute="leading" constant="5" id="7lv-t7-mCZ"/>
+                <constraint firstItem="Vok-jb-fIj" firstAttribute="centerX" secondItem="5LO-dL-R2S" secondAttribute="centerX" id="BWG-dl-e3L"/>
+                <constraint firstAttribute="trailing" secondItem="Vok-jb-fIj" secondAttribute="trailing" constant="5" id="Oc8-oV-QMW"/>
+                <constraint firstItem="Vok-jb-fIj" firstAttribute="top" secondItem="5LO-dL-R2S" secondAttribute="top" constant="5" id="UtV-0d-VDd"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0gi-UZ-YrF"/>
+                    <exclude reference="BWG-dl-e3L"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="lblDay" destination="Vok-jb-fIj" id="T5e-Dc-Cl7"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
