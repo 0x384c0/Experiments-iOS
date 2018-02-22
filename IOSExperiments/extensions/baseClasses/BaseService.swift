@@ -36,6 +36,16 @@ class BaseService {
         fail,
         none
     }
+    
+    fileprivate var cachePolicy:URLRequest.CachePolicy {
+        return isNetworkReachable ?
+            .reloadIgnoringCacheData:
+            .returnCacheDataElseLoad
+        
+    }
+    private var isNetworkReachable:Bool{
+        return NetworkReachabilityManager()?.isReachable ?? false
+    }
 }
 
 extension Alamofire.SessionManager{
@@ -55,6 +65,29 @@ extension Alamofire.SessionManager{
             return request(encodedURLRequest)
         } catch {
             print(error)
+            return request(URLRequest(url: URL(string: "http://example.com/wrong_request")!))
+        }
+    }
+}
+
+extension Alamofire.SessionManager{
+    @discardableResult
+    open func requestWithCachePolicy(
+        _ url: URLConvertible,
+        method: HTTPMethod = .get,
+        parameters: Parameters? = nil,
+        encoding: ParameterEncoding = URLEncoding.default,
+        headers: HTTPHeaders? = nil,
+        cachePolicy: URLRequest.CachePolicy)
+        -> DataRequest
+    {
+        do {
+            var urlRequest = try URLRequest(url: url, method: method, headers: headers)
+            urlRequest.cachePolicy = cachePolicy
+            let encodedURLRequest = try encoding.encode(urlRequest, with: parameters)
+            return request(encodedURLRequest)
+        } catch {
+            Logger.log(error)
             return request(URLRequest(url: URL(string: "http://example.com/wrong_request")!))
         }
     }
