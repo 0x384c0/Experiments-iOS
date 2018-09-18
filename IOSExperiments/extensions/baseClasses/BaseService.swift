@@ -87,7 +87,6 @@ extension Alamofire.SessionManager{
             let encodedURLRequest = try encoding.encode(urlRequest, with: parameters)
             return request(encodedURLRequest)
         } catch {
-            Logger.log(error)
             return request(URLRequest(url: URL(string: "http://example.com/wrong_request")!))
         }
     }

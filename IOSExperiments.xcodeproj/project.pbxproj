@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490088E82150EB110019DE80 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490088E72150EB110019DE80 /* UIImage.swift */; };
+		490088EA2150EB510019DE80 /* MKPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490088E92150EB510019DE80 /* MKPointAnnotation.swift */; };
+		490088EC2150EBA20019DE80 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490088EB2150EBA20019DE80 /* TriangleView.swift */; };
 		49114FB71D8BB71F00ABA6A5 /* Transition2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49114FB61D8BB71F00ABA6A5 /* Transition2VC.swift */; };
 		49114FB91D8BBC2600ABA6A5 /* BezierCurve1.svg in Resources */ = {isa = PBXBuildFile; fileRef = 49114FB81D8BBC2600ABA6A5 /* BezierCurve1.svg */; };
 		493C1A841F0363ED00CE6214 /* CustomInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F1AD1EFA7F7C00E17F17 /* CustomInfoWindow.swift */; };
@@ -151,6 +154,19 @@
 /* Begin PBXFileReference section */
 		0569DBB7D488C8196D60ECE7 /* Pods-IOSExperimentsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSExperimentsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSExperimentsUITests/Pods-IOSExperimentsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		33D7F5309DF27CD35935B22D /* Pods-IOSExperimentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSExperimentsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IOSExperimentsTests/Pods-IOSExperimentsTests.release.xcconfig"; sourceTree = "<group>"; };
+		490088DC2150E9E60019DE80 /* MediaHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaHelper.m; sourceTree = "<group>"; };
+		490088DD2150E9E60019DE80 /* MediaHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaHelper.h; sourceTree = "<group>"; };
+		490088DF2150EA060019DE80 /* MyLocationButtonHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLocationButtonHelper.m; sourceTree = "<group>"; };
+		490088E02150EA070019DE80 /* MyLocationButtonHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLocationButtonHelper.h; sourceTree = "<group>"; };
+		490088E12150EA1E0019DE80 /* LocationHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationHelper.m; sourceTree = "<group>"; };
+		490088E22150EA1E0019DE80 /* LocationHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationHelper.h; sourceTree = "<group>"; };
+		490088E32150EA690019DE80 /* MapsHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapsHelper.m; sourceTree = "<group>"; };
+		490088E42150EA690019DE80 /* MapsHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapsHelper.h; sourceTree = "<group>"; };
+		490088E72150EB110019DE80 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		490088E92150EB510019DE80 /* MKPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPointAnnotation.swift; sourceTree = "<group>"; };
+		490088EB2150EBA20019DE80 /* TriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		490088EE2150EBDF0019DE80 /* CustomSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSearchController.h; sourceTree = "<group>"; };
+		490088EF2150EBE00019DE80 /* CustomSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSearchController.m; sourceTree = "<group>"; };
 		49114FB61D8BB71F00ABA6A5 /* Transition2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transition2VC.swift; path = View/Screens/UI/Animations/Transition2VC.swift; sourceTree = "<group>"; };
 		49114FB81D8BBC2600ABA6A5 /* BezierCurve1.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BezierCurve1.svg; sourceTree = "<group>"; };
 		4923BCD21D51E55A00552FE1 /* ParallaxBlur.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParallaxBlur.framework; path = "../../../../Library/Developer/Xcode/DerivedData/IOSExperiments-cyextwkquydqvcdlszzmlnqswuer/Build/Products/Debug-iphonesimulator/ParallaxBlur/ParallaxBlur.framework"; sourceTree = "<group>"; };
@@ -331,6 +347,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		490088DB2150E9CC0019DE80 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				490088E42150EA690019DE80 /* MapsHelper.h */,
+				490088E32150EA690019DE80 /* MapsHelper.m */,
+				490088DD2150E9E60019DE80 /* MediaHelper.h */,
+				490088DC2150E9E60019DE80 /* MediaHelper.m */,
+				490088E02150EA070019DE80 /* MyLocationButtonHelper.h */,
+				490088DF2150EA060019DE80 /* MyLocationButtonHelper.m */,
+				490088E22150EA1E0019DE80 /* LocationHelper.h */,
+				490088E12150EA1E0019DE80 /* LocationHelper.m */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		490088ED2150EBD40019DE80 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				490088EE2150EBDF0019DE80 /* CustomSearchController.h */,
+				490088EF2150EBE00019DE80 /* CustomSearchController.m */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
 		495855791DDC660A002CDA91 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,8 +419,10 @@
 				49A7CE7B1E94B14000BFFF90 /* UINavigationController.swift */,
 				49A7CE7C1E94B14000BFFF90 /* UISearchBar.swift */,
 				49A7CE7D1E94B14000BFFF90 /* UITextFieldDelegates.swift */,
+				490088E72150EB110019DE80 /* UIImage.swift */,
 				49A7CE7E1E94B14000BFFF90 /* View.swift */,
 				49A7CE7F1E94B14000BFFF90 /* YMKMapView.swift */,
+				490088E92150EB510019DE80 /* MKPointAnnotation.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -434,6 +476,7 @@
 		49A7CE9E1E94B2B500BFFF90 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				490088DB2150E9CC0019DE80 /* objc */,
 				4961F38B1EA778D300991A65 /* UIAlertControllerWithTextField.swift */,
 				49A7CE9F1E94B2B500BFFF90 /* AbstractFactoryExperiment.swift */,
 				49A7CEA01E94B2B500BFFF90 /* AppInfo.swift */,
@@ -568,11 +611,13 @@
 		A63E4A0A1C16C632000E7A8E /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				490088ED2150EBD40019DE80 /* objc */,
 				49A9F1AC1EFA7F7C00E17F17 /* mapView */,
 				49A7CEC91E94B65A00BFFF90 /* AlertDialogPlaceholder.swift */,
 				49A7CECA1E94B65A00BFFF90 /* AlertDialogPlaceholder.xib */,
 				49A7CECB1E94B65A00BFFF90 /* CardView.swift */,
 				49A7CECC1E94B65A00BFFF90 /* CircleImageView.swift */,
+				490088EB2150EBA20019DE80 /* TriangleView.swift */,
 				49A7CECD1E94B65A00BFFF90 /* CircleView.swift */,
 				49A7CECE1E94B65A00BFFF90 /* ColorPickerView.swift */,
 				49A7CECF1E94B65A00BFFF90 /* CustomAlertController.swift */,
@@ -825,8 +870,6 @@
 				A6C63F1E1BF597E30037CF9A /* Sources */,
 				A6C63F1F1BF597E30037CF9A /* Frameworks */,
 				A6C63F201BF597E30037CF9A /* Resources */,
-				530BE35BD0B95F2E021BE895 /* [CP] Embed Pods Frameworks */,
-				006CC12B2736AEEA623AE827 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -846,8 +889,6 @@
 				A6C63F291BF597E30037CF9A /* Sources */,
 				A6C63F2A1BF597E30037CF9A /* Frameworks */,
 				A6C63F2B1BF597E30037CF9A /* Resources */,
-				33A1F88C28C76EA44DD1DF96 /* [CP] Copy Pods Resources */,
-				EFD27E1A8438CF4DA3BAE828 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -953,36 +994,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		006CC12B2736AEEA623AE827 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperimentsTests/Pods-IOSExperimentsTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		33A1F88C28C76EA44DD1DF96 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperimentsUITests/Pods-IOSExperimentsUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		48BBF248389E2E227D70D3A6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -999,21 +1010,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		530BE35BD0B95F2E021BE895 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperimentsTests/Pods-IOSExperimentsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		56675543A1567BABFC6B7958 /* [CP] Embed Pods Frameworks */ = {
@@ -1129,26 +1125,11 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperiments/Pods-IOSExperiments-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EFD27E1A8438CF4DA3BAE828 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperimentsUITests/Pods-IOSExperimentsUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1171,6 +1152,7 @@
 				49A7CEC31E94B2B500BFFF90 /* RxSwiftUtils.swift in Sources */,
 				49A7CE931E94B14000BFFF90 /* VCWithRefreshControl.swift in Sources */,
 				49A7CEEB1E94B65A00BFFF90 /* RotatingImageView.swift in Sources */,
+				490088E82150EB110019DE80 /* UIImage.swift in Sources */,
 				49A7CEE21E94B65A00BFFF90 /* CircleView.swift in Sources */,
 				A6B9B6091C325257001DDE60 /* VisulalEffectsController.swift in Sources */,
 				49A7CEE01E94B65A00BFFF90 /* CardView.swift in Sources */,
@@ -1188,6 +1170,7 @@
 				49A7CE821E94B14000BFFF90 /* BaseService.swift in Sources */,
 				49A7CEC51E94B2B500BFFF90 /* StringUtils.swift in Sources */,
 				A64108311C313047003D0AE7 /* MainPageViewDataSource.swift in Sources */,
+				490088EA2150EB510019DE80 /* MKPointAnnotation.swift in Sources */,
 				49A7CE831E94B14000BFFF90 /* BaseTableViewController.swift in Sources */,
 				A6C6BB751C44AE8300A70069 /* MainTableCell.swift in Sources */,
 				A64108211C312619003D0AE7 /* MainTableController.swift in Sources */,
@@ -1210,6 +1193,7 @@
 				4958558E1DDC667C002CDA91 /* NSDate+Extensions.m in Sources */,
 				49A7CEB71E94B2B500BFFF90 /* ArrayVCPresenter.swift in Sources */,
 				49A7CEEA1E94B65A00BFFF90 /* RatingControl.swift in Sources */,
+				490088EC2150EBA20019DE80 /* TriangleView.swift in Sources */,
 				49114FB71D8BB71F00ABA6A5 /* Transition2VC.swift in Sources */,
 				49A7CEB61E94B2B500BFFF90 /* AppInfo.swift in Sources */,
 				496421C91EFA547E0036FADD /* LocationUpdatesVC.swift in Sources */,

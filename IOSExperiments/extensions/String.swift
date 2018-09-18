@@ -98,3 +98,40 @@ extension String {
     }
 }
 
+import MapKit
+
+fileprivate func matches(for regex: String, in text: String) -> [String] {
+    do {
+        let regex = try NSRegularExpression(pattern: regex)
+        let results = regex.matches(in: text,
+                                    range: NSRange(text.startIndex..., in: text))
+        return results.map {
+            String(text[Range($0.range, in: text)!])
+        }
+    } catch let error {
+        print("invalid regex: \(error.localizedDescription)")
+        return []
+    }
+}
+extension String{
+    
+    var getLocation:CLLocation?{
+        let
+        float = "\\-?\\d+\\.\\d+",
+        spaces = "\\s*",
+        comma = ",?",
+        regex = "^\(spaces)\(float)\(spaces)\(comma)\(spaces)\(float)\(spaces)$"
+        if self.range(of: regex, options: .regularExpression) != nil{
+            var arrayStringFloats = matches(for: float, in: self)
+            if  arrayStringFloats.count >= 2,
+                let latitude = Float(arrayStringFloats[0]),
+                let longitude = Float(arrayStringFloats[1]),
+                abs(latitude) <= 90,
+                abs(longitude) <= 180 {
+                return CLLocation(latitude: CLLocationDegrees(latitude),
+                                  longitude: CLLocationDegrees(longitude))
+            }
+        }
+        return nil
+    }
+}

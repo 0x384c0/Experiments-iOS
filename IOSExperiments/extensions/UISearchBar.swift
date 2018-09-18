@@ -87,3 +87,46 @@ extension UISearchBar{
         searchBarActivityIndicator.startAnimating()
     }
 }
+
+
+
+extension UISearchBar{
+    
+    func setCancelImage(){
+        setCancelImage(imageName: "ic_close_search",clearButtonMode: .never)
+    }
+    func setCancelImage(clearButtonMode: UITextFieldViewMode){
+        setCancelImage(imageName: "ic_close_search",clearButtonMode: clearButtonMode)
+    }
+    
+    func setCancelImage(imageName:String,clearButtonMode: UITextFieldViewMode){
+        if
+            let cancelButton = self.value(forKey: "cancelButton") as? UIButton,
+            let textField = self.value(forKey: "_searchField") as? UITextField,
+            let titleForNormal = cancelButton.title(for: .normal){
+            
+            if (!titleForNormal.elementsEqual("")) {
+                cancelButton.setTitle(nil, for: .normal)
+                if cancelButton.image(for: .normal) == nil{
+                    cancelButton.setImage(UIImage(named:imageName), for: .normal)
+                }
+                cancelButton.setNeedsLayout()
+                cancelButton.layoutIfNeeded()
+            }
+            textField.clearButtonMode = clearButtonMode;
+            
+            let BUTTON_WIDTH:CGFloat = 24;
+            if (cancelButton.frame.size.width != BUTTON_WIDTH){
+                let widthDIff = cancelButton.frame.size.width - BUTTON_WIDTH;
+                cancelButton.frame = CGRect(x:cancelButton.frame.origin.x + widthDIff,
+                                            y:cancelButton.frame.origin.y,
+                                            width:BUTTON_WIDTH,
+                                            height:cancelButton.frame.size.height);
+                textField.frame = CGRect(x:textField.frame.origin.x,
+                                         y:textField.frame.origin.y,
+                                         width:textField.frame.size.width + widthDIff,
+                                         height:textField.frame.size.height);
+            }
+        }
+    }
+}

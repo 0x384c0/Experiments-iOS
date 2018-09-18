@@ -11,7 +11,7 @@ class Constants{
     static let
     USE_STUB_API                    = true,
     GOOGLE_API_CX                   = "GOOGLE_API_CX",
-    GOOGLE_API_KEY                  = "GOOGLE_API_CX",
+    GOOGLE_API_KEY                  = "GOOGLE_API_KEY",
     GOOGLE_API_IMAGES_URL           = "https://www.googleapis.com/customsearch/v1",
     SEARCH_DEFAULT                  = "Google",
     ECONOMY_GOOGLE_API              = false,
