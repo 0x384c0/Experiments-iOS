@@ -12,6 +12,9 @@
 		490088EC2150EBA20019DE80 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490088EB2150EBA20019DE80 /* TriangleView.swift */; };
 		49114FB71D8BB71F00ABA6A5 /* Transition2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49114FB61D8BB71F00ABA6A5 /* Transition2VC.swift */; };
 		49114FB91D8BBC2600ABA6A5 /* BezierCurve1.svg in Resources */ = {isa = PBXBuildFile; fileRef = 49114FB81D8BBC2600ABA6A5 /* BezierCurve1.svg */; };
+		492558F2215C905F00D59C91 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492558F1215C905F00D59C91 /* GameViewController.swift */; };
+		492558F4215C906F00D59C91 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 492558F3215C906F00D59C91 /* art.scnassets */; };
+		492558F8215C911700D59C91 /* Games.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492558F6215C911700D59C91 /* Games.storyboard */; };
 		493C1A841F0363ED00CE6214 /* CustomInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A9F1AD1EFA7F7C00E17F17 /* CustomInfoWindow.swift */; };
 		493C1A851F0363ED00CE6214 /* CustomInfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A9F1AE1EFA7F7C00E17F17 /* CustomInfoWindow.xib */; };
 		495855891DDC667C002CDA91 /* CalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4958557C1DDC667C002CDA91 /* CalendarCell.m */; };
@@ -170,6 +173,9 @@
 		49114FB61D8BB71F00ABA6A5 /* Transition2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transition2VC.swift; path = View/Screens/UI/Animations/Transition2VC.swift; sourceTree = "<group>"; };
 		49114FB81D8BBC2600ABA6A5 /* BezierCurve1.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BezierCurve1.svg; sourceTree = "<group>"; };
 		4923BCD21D51E55A00552FE1 /* ParallaxBlur.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParallaxBlur.framework; path = "../../../../Library/Developer/Xcode/DerivedData/IOSExperiments-cyextwkquydqvcdlszzmlnqswuer/Build/Products/Debug-iphonesimulator/ParallaxBlur/ParallaxBlur.framework"; sourceTree = "<group>"; };
+		492558F1215C905F00D59C91 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		492558F3215C906F00D59C91 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		492558F7215C911700D59C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Games.storyboard; sourceTree = "<group>"; };
 		4952DB8E1E977BBF00924C12 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
 		4952DB8F1E977BC700924C12 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = SOURCE_ROOT; };
 		4952DB901E977BE800924C12 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = SOURCE_ROOT; };
@@ -371,6 +377,23 @@
 			path = objc;
 			sourceTree = "<group>";
 		};
+		492558F0215C904200D59C91 /* SceneKit */ = {
+			isa = PBXGroup;
+			children = (
+				492558F1215C905F00D59C91 /* GameViewController.swift */,
+				492558F3215C906F00D59C91 /* art.scnassets */,
+			);
+			name = SceneKit;
+			sourceTree = "<group>";
+		};
+		492558F5215C907A00D59C91 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				492558F0215C904200D59C91 /* SceneKit */,
+			);
+			name = Games;
+			sourceTree = "<group>";
+		};
 		495855791DDC660A002CDA91 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -566,15 +589,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A611A7101C30F35200E46FD9 /* Screens */ = {
+		A611A7101C30F35200E46FD9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A65CD11A1C3D14F900DB25C7 /* Others */,
 				A64108321C314E76003D0AE7 /* UI */,
-				A64108141C311717003D0AE7 /* RX */,
+				492558F5215C907A00D59C91 /* Games */,
 				49F6DAE51EF92F1400B9FC37 /* BackgroundExecution */,
+				A64108141C311717003D0AE7 /* RX */,
+				A65CD11A1C3D14F900DB25C7 /* Others */,
 			);
-			name = Screens;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		A6382E0E1C06E4D800F0F568 /* cells */ = {
@@ -773,6 +797,7 @@
 				49A7CEFC1E94EAC300BFFF90 /* Animations.storyboard */,
 				A6C63F1A1BF597E30037CF9A /* LaunchScreen.storyboard */,
 				49F6DAE21EF92DAC00B9FC37 /* BackgroundExecution.storyboard */,
+				492558F6215C911700D59C91 /* Games.storyboard */,
 				A60F27601C3BD041003919A8 /* Supporting Files */,
 			);
 			path = IOSExperiments;
@@ -799,7 +824,7 @@
 		A6C66F0D1C1AE97B002CCCCA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A611A7101C30F35200E46FD9 /* Screens */,
+				A611A7101C30F35200E46FD9 /* ViewControllers */,
 				A65CD11B1C3D165300DB25C7 /* Drawers */,
 				A641082F1C312FCA003D0AE7 /* PageViews */,
 				A69E7C0C1C2D513900603D00 /* PageViewItems */,
@@ -969,6 +994,8 @@
 				49F6DAE41EF92DAC00B9FC37 /* BackgroundExecution.storyboard in Resources */,
 				49A263071DAE290B00070A20 /* .gitignore in Resources */,
 				49114FB91D8BBC2600ABA6A5 /* BezierCurve1.svg in Resources */,
+				492558F4215C906F00D59C91 /* art.scnassets in Resources */,
+				492558F8215C911700D59C91 /* Games.storyboard in Resources */,
 				49A7CEDF1E94B65A00BFFF90 /* AlertDialogPlaceholder.xib in Resources */,
 				493C1A851F0363ED00CE6214 /* CustomInfoWindow.xib in Resources */,
 				A6C63F171BF597E30037CF9A /* Main.storyboard in Resources */,
@@ -1209,6 +1236,7 @@
 				49A7CEC11E94B2B500BFFF90 /* Notifications.swift in Sources */,
 				49A7CE941E94B14000BFFF90 /* RxAlamofireExtentions.swift in Sources */,
 				A61561D61C3A7CBA00A89D27 /* StaticTableViewController.swift in Sources */,
+				492558F2215C905F00D59C91 /* GameViewController.swift in Sources */,
 				A6C6BB7B1C4526C700A70069 /* FactoryViewController.swift in Sources */,
 				49A7CEE41E94B65A00BFFF90 /* CustomAlertController.swift in Sources */,
 				A641082E1C312883003D0AE7 /* MainViewModel.swift in Sources */,
@@ -1278,6 +1306,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		492558F6215C911700D59C91 /* Games.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				492558F7215C911700D59C91 /* Base */,
+			);
+			name = Games.storyboard;
+			sourceTree = "<group>";
+		};
 		49A7CEF91E94EA9C00BFFF90 /* GoogleImages.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

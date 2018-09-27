@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wDf-uV-Ej9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="oP8-4Q-jeC">
+            <objects>
+                <viewController id="wDf-uV-Ej9" customClass="GameViewController" customModule="Experiments_iOS_SceneKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Jf-jD-sNQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FEU-X3-hhT">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="ship.scn" translatesAutoresizingMaskIntoConstraints="NO" id="6Lp-Ex-2Ny">
+                                <rect key="frame" x="20" y="40" width="335" height="607"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </sceneKitView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8ps-h3-j5M" firstAttribute="trailing" secondItem="FEU-X3-hhT" secondAttribute="trailing" id="2rS-5n-Z7p"/>
+                            <constraint firstItem="FEU-X3-hhT" firstAttribute="leading" secondItem="8ps-h3-j5M" secondAttribute="leading" id="4at-I1-FD1"/>
+                            <constraint firstItem="8ps-h3-j5M" firstAttribute="trailing" secondItem="6Lp-Ex-2Ny" secondAttribute="trailing" constant="20" id="7wi-fY-caR"/>
+                            <constraint firstItem="6Lp-Ex-2Ny" firstAttribute="leading" secondItem="8ps-h3-j5M" secondAttribute="leading" constant="20" id="CMA-ER-Mp1"/>
+                            <constraint firstItem="6Lp-Ex-2Ny" firstAttribute="top" secondItem="8ps-h3-j5M" secondAttribute="top" constant="20" id="XaB-fs-4MU"/>
+                            <constraint firstItem="FEU-X3-hhT" firstAttribute="top" secondItem="8ps-h3-j5M" secondAttribute="top" id="cMm-dr-Z9N"/>
+                            <constraint firstItem="8ps-h3-j5M" firstAttribute="bottom" secondItem="FEU-X3-hhT" secondAttribute="bottom" id="iKl-X6-79r"/>
+                            <constraint firstItem="8ps-h3-j5M" firstAttribute="bottom" secondItem="6Lp-Ex-2Ny" secondAttribute="bottom" constant="20" id="ly6-c8-NnC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8ps-h3-j5M"/>
+                    </view>
+                    <connections>
+                        <outlet property="scnView" destination="6Lp-Ex-2Ny" id="goV-0P-kl2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Acc-zg-ewN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039" y="-3"/>
+        </scene>
+    </scenes>
+</document>
