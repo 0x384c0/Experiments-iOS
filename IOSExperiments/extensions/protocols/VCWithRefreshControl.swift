@@ -8,7 +8,7 @@
 
 protocol VCWithRefreshControlInTable:class {
     //MARK: UI
-    weak var tableView: UITableView!{get set}
+    var tableView: UITableView!{get set}
     var refreshControl:UIRefreshControl?{get set}
     //MARK: UI Actions
     func refreshControlDidSwipe()
@@ -83,7 +83,7 @@ class RefreshControlWithHandler:UIRefreshControl{
 
 protocol VCWithRefreshControlInScrollView:class {//TODO: find way to get rid of duplicated code
     //MARK: UI
-    weak var scrollView: UIScrollView!{get set}
+    var scrollView: UIScrollView!{get set}
     var refreshControl:UIRefreshControl?{get set}
     //MARK: UI Actions
     func refreshControlDidSwipe()

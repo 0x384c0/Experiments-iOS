@@ -11,7 +11,7 @@
 
 protocol ExplabdableTableDelegate:class{
     var explandedIndexPath:IndexPath?  {get set}
-    weak var tableView:UITableView? {get set}
+    var tableView:UITableView? {get set}
 }
 extension ExplabdableTableDelegate{
     func resetExpanding(){
@@ -54,7 +54,7 @@ extension ExplabdableTableDelegate{
     }
 }
 protocol ExplandableCell:class {
-    weak var delegate:ExplabdableTableDelegate? {get set}
+    var delegate:ExplabdableTableDelegate? {get set}
     var indexPath: IndexPath? {get set}
     func setupExpanding(delegate:ExplabdableTableDelegate,indexPath: IndexPath)
     func expland()

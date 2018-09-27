@@ -51,8 +51,8 @@ class AVPlayerController: UIViewController {
             ScreenStreamer.shared.STREAM = sender.text!
         }
         print(#function)
-        print(sender.text)
-        print(sender.placeholder)
+        print(sender.text ?? "nil")
+        print(sender.placeholder ?? "nil")
         print(ScreenStreamer.shared.STREAM)
     }
     

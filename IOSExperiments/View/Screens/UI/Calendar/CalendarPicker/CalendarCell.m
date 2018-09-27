@@ -8,7 +8,7 @@
 
 #import "CalendarCell.h"
 
-#define DELAY 0.5
+#define ANIM_DELAY 0.5
 
 @implementation CalendarCell
 
@@ -31,7 +31,7 @@
 
 - (void)selectDayWithColor:(UIColor *)color {
 
-    [UIView animateWithDuration:DELAY animations:^{
+    [UIView animateWithDuration:ANIM_DELAY animations:^{
         self.lblDay.layer.cornerRadius = self.lblDay.frame.size.width / 2;
         self.lblDay.layer.backgroundColor = color.CGColor;
         self.lblDay.textColor = [UIColor whiteColor];
@@ -40,7 +40,7 @@
 
 - (void)deselectDayWithColor:(UIColor *)color {
 
-    [UIView animateWithDuration:DELAY animations:^{
+    [UIView animateWithDuration:ANIM_DELAY animations:^{
         self.lblDay.layer.backgroundColor = [UIColor clearColor].CGColor;
         self.lblDay.textColor = color;
     } completion:nil];
@@ -49,7 +49,7 @@
 
 - (void)selectAsTodayWithColor:(UIColor *)color {
 
-    [UIView animateWithDuration:DELAY animations:^{
+    [UIView animateWithDuration:ANIM_DELAY animations:^{
         self.lblDay.layer.cornerRadius = self.lblDay.frame.size.width / 2;
         self.lblDay.layer.backgroundColor = color.CGColor;
         self.lblDay.textColor  = [UIColor whiteColor];

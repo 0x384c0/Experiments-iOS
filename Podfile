@@ -21,7 +21,6 @@ def shared_pods
     #UI
     pod 'iOSSharedViewTransition'
     pod 'UIScrollView-InfiniteScroll'
-    pod 'ParallaxBlur'
     pod 'IQKeyboardManagerSwift'
     pod 'MMDrawerController'
     pod 'UIColor_Hex_Swift'

@@ -89,7 +89,7 @@ extension BaseWebViewController : UIWebViewDelegate {
         return getViewModel().shouldStartLoadWithRequest(url: url)
     }
     func webViewDidStartLoad(_ webView: UIWebView) {
-        print("webViewDidStartLoad  \(webView.request?.url)")
+        print("webViewDidStartLoad  \(String(describing: webView.request?.url))")
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         refreshControl.beginRefreshingProgrammatically()
     }

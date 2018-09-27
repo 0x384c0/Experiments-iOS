@@ -22,7 +22,7 @@ class RotatingImageView: UIImageView {
             let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation")
             
             rotationAnimation.fromValue = 0.0
-            rotationAnimation.toValue = Float(M_PI * 2.0)
+            rotationAnimation.toValue = Float.pi * 2
             rotationAnimation.duration = 2
             rotationAnimation.repeatCount = Float.infinity
             

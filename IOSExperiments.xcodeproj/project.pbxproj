@@ -132,7 +132,6 @@
 		A6C6BB741C44AE8300A70069 /* ImageTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6BB711C44AE8300A70069 /* ImageTableCell.swift */; };
 		A6C6BB751C44AE8300A70069 /* MainTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6BB721C44AE8300A70069 /* MainTableCell.swift */; };
 		A6C6BB7B1C4526C700A70069 /* FactoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6BB7A1C4526C700A70069 /* FactoryViewController.swift */; };
-		A6DA89EC1C3FD17D00AD3CCD /* ParallaxBlurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DA89EB1C3FD17D00AD3CCD /* ParallaxBlurViewController.swift */; };
 		A6E6BD741C0DB12C00D35D1E /* ImagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E6BD731C0DB12C00D35D1E /* ImagesResponse.swift */; };
 		BCAB447CED40484847920F8F /* Pods_IOSExperimentsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F1F1AA8596DD0A7D17914C /* Pods_IOSExperimentsUITests.framework */; };
 /* End PBXBuildFile section */
@@ -172,7 +171,6 @@
 		490088EF2150EBE00019DE80 /* CustomSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSearchController.m; sourceTree = "<group>"; };
 		49114FB61D8BB71F00ABA6A5 /* Transition2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transition2VC.swift; path = View/Screens/UI/Animations/Transition2VC.swift; sourceTree = "<group>"; };
 		49114FB81D8BBC2600ABA6A5 /* BezierCurve1.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BezierCurve1.svg; sourceTree = "<group>"; };
-		4923BCD21D51E55A00552FE1 /* ParallaxBlur.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParallaxBlur.framework; path = "../../../../Library/Developer/Xcode/DerivedData/IOSExperiments-cyextwkquydqvcdlszzmlnqswuer/Build/Products/Debug-iphonesimulator/ParallaxBlur/ParallaxBlur.framework"; sourceTree = "<group>"; };
 		492558F1215C905F00D59C91 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		492558F3215C906F00D59C91 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		492558F7215C911700D59C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Games.storyboard; sourceTree = "<group>"; };
@@ -315,7 +313,6 @@
 		A6C6BB711C44AE8300A70069 /* ImageTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageTableCell.swift; path = View/TableViewCells/ImageTableCell.swift; sourceTree = "<group>"; };
 		A6C6BB721C44AE8300A70069 /* MainTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTableCell.swift; path = View/TableViewCells/MainTableCell.swift; sourceTree = "<group>"; };
 		A6C6BB7A1C4526C700A70069 /* FactoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FactoryViewController.swift; path = View/Screens/Others/FactoryViewController.swift; sourceTree = "<group>"; };
-		A6DA89EB1C3FD17D00AD3CCD /* ParallaxBlurViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParallaxBlurViewController.swift; path = View/Screens/UI/ParallaxBlurViewController.swift; sourceTree = "<group>"; };
 		A6E6BD731C0DB12C00D35D1E /* ImagesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImagesResponse.swift; path = Models/GoogleApi/ImagesResponse.swift; sourceTree = "<group>"; };
 		AB7251706C27BD4F7B4F478D /* Pods-IOSExperimentsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSExperimentsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSExperimentsUITests/Pods-IOSExperimentsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D6DF1DAE14C5FF6E30E7178A /* Pods-IOSExperiments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSExperiments.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IOSExperiments/Pods-IOSExperiments.debug.xcconfig"; sourceTree = "<group>"; };
@@ -564,7 +561,6 @@
 		859C0E8D6989F6F4394182C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4923BCD21D51E55A00552FE1 /* ParallaxBlur.framework */,
 				D8FF071D23FC3DF222EE632C /* Pods_IOSExperiments.framework */,
 				834766312D64798B71A1A002 /* Pods_IOSExperimentsTests.framework */,
 				F9F1F1AA8596DD0A7D17914C /* Pods_IOSExperimentsUITests.framework */,
@@ -589,16 +585,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A611A7101C30F35200E46FD9 /* ViewControllers */ = {
+		A611A7101C30F35200E46FD9 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				A64108321C314E76003D0AE7 /* UI */,
 				492558F5215C907A00D59C91 /* Games */,
-				49F6DAE51EF92F1400B9FC37 /* BackgroundExecution */,
-				A64108141C311717003D0AE7 /* RX */,
 				A65CD11A1C3D14F900DB25C7 /* Others */,
 			);
-			name = ViewControllers;
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		A6382E0E1C06E4D800F0F568 /* cells */ = {
@@ -622,14 +616,14 @@
 			name = tableDelegates;
 			sourceTree = "<group>";
 		};
-		A6382E161C06ECF400F0F568 /* Models */ = {
+		A6382E161C06ECF400F0F568 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				A69E7C151C2D590700603D00 /* AppModel */,
 				A6E6BD721C0DB0E700D35D1E /* GoogleApi */,
 				49A7CEF11E94B82E00BFFF90 /* BaseResponse.swift */,
 			);
-			name = Models;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		A63E4A0A1C16C632000E7A8E /* Custom */ = {
@@ -675,15 +669,6 @@
 			name = GoogleImages;
 			sourceTree = "<group>";
 		};
-		A64108241C312717003D0AE7 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				A64108251C312721003D0AE7 /* RX */,
-				A641082D1C312883003D0AE7 /* MainViewModel.swift */,
-			);
-			name = Screens;
-			sourceTree = "<group>";
-		};
 		A64108251C312721003D0AE7 /* RX */ = {
 			isa = PBXGroup;
 			children = (
@@ -718,7 +703,6 @@
 				A6B9B6081C325257001DDE60 /* VisulalEffectsController.swift */,
 				A61561D51C3A7CBA00A89D27 /* StaticTableViewController.swift */,
 				A6C6BB6C1C44AE3400A70069 /* MainViewController.swift */,
-				A6DA89EB1C3FD17D00AD3CCD /* ParallaxBlurViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -726,6 +710,8 @@
 		A65CD11A1C3D14F900DB25C7 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				49F6DAE51EF92F1400B9FC37 /* BackgroundExecution */,
+				A64108141C311717003D0AE7 /* RX */,
 				A6C6BB6A1C44AE0600A70069 /* AVPlayerController.swift */,
 				A6C6BB7A1C4526C700A70069 /* FactoryViewController.swift */,
 			);
@@ -783,8 +769,9 @@
 			isa = PBXGroup;
 			children = (
 				A6C66F0D1C1AE97B002CCCCA /* View */,
+				A611A7101C30F35200E46FD9 /* ViewController */,
 				A6C66F101C1AE9FB002CCCCA /* ViewModel */,
-				A6382E161C06ECF400F0F568 /* Models */,
+				A6382E161C06ECF400F0F568 /* Model */,
 				49B870751D51A17F0077F51F /* service */,
 				49A7CE9E1E94B2B500BFFF90 /* utils */,
 				49A7CE5B1E94B14000BFFF90 /* extensions */,
@@ -824,7 +811,6 @@
 		A6C66F0D1C1AE97B002CCCCA /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A611A7101C30F35200E46FD9 /* ViewControllers */,
 				A65CD11B1C3D165300DB25C7 /* Drawers */,
 				A641082F1C312FCA003D0AE7 /* PageViews */,
 				A69E7C0C1C2D513900603D00 /* PageViewItems */,
@@ -838,7 +824,8 @@
 		A6C66F101C1AE9FB002CCCCA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A64108241C312717003D0AE7 /* Screens */,
+				A64108251C312721003D0AE7 /* RX */,
+				A641082D1C312883003D0AE7 /* MainViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -895,6 +882,8 @@
 				A6C63F1E1BF597E30037CF9A /* Sources */,
 				A6C63F1F1BF597E30037CF9A /* Frameworks */,
 				A6C63F201BF597E30037CF9A /* Resources */,
+				98350E7804263AD7441A373E /* [CP] Embed Pods Frameworks */,
+				ABE7D00F29AB607BDBE7E8B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -914,6 +903,8 @@
 				A6C63F291BF597E30037CF9A /* Sources */,
 				A6C63F2A1BF597E30037CF9A /* Frameworks */,
 				A6C63F2B1BF597E30037CF9A /* Resources */,
+				5B03F51DC5422DD8C24E3847 /* [CP] Embed Pods Frameworks */,
+				AA576A2FAFC02B1070E70E60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -932,7 +923,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = 0x384c0;
 				TargetAttributes = {
 					A6C63F0D1BF597E30037CF9A = {
@@ -1052,12 +1043,10 @@
 				"${BUILT_PRODUCTS_DIR}/BABFrameObservingInputAccessoryView/BABFrameObservingInputAccessoryView.framework",
 				"${BUILT_PRODUCTS_DIR}/EZSwiftExtensions/EZSwiftExtensions.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
-				"${BUILT_PRODUCTS_DIR}/FXBlurView/FXBlurView.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/MMDrawerController/MMDrawerController.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/ParallaxBlur/ParallaxBlur.framework",
 				"${BUILT_PRODUCTS_DIR}/PocketSVG/PocketSVG.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
@@ -1080,12 +1069,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BABFrameObservingInputAccessoryView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZSwiftExtensions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FXBlurView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDrawerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParallaxBlur.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PocketSVG.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
@@ -1105,6 +1092,25 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperiments/Pods-IOSExperiments-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5B03F51DC5422DD8C24E3847 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperimentsUITests/Pods-IOSExperimentsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		95E53CF4A5F15FED8D4147D5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1121,6 +1127,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98350E7804263AD7441A373E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperimentsTests/Pods-IOSExperimentsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA576A2FAFC02B1070E70E60 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperimentsUITests/Pods-IOSExperimentsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABE7D00F29AB607BDBE7E8B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperimentsTests/Pods-IOSExperimentsTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BC67D2F5A2552C2A9985B849 /* [CP] Check Pods Manifest.lock */ = {
@@ -1213,7 +1276,6 @@
 				A6C6BB741C44AE8300A70069 /* ImageTableCell.swift in Sources */,
 				49A7CEE81E94B65A00BFFF90 /* FABButton.swift in Sources */,
 				4958558F1DDC667C002CDA91 /* UICollectionView+Extensions.m in Sources */,
-				A6DA89EC1C3FD17D00AD3CCD /* ParallaxBlurViewController.swift in Sources */,
 				496421CB1EFA54B00036FADD /* LocationUpdatesLogsVC.swift in Sources */,
 				49A7CEB91E94B2B500BFFF90 /* Delegates.swift in Sources */,
 				A641082C1C3127A8003D0AE7 /* GoogleImagesViewModel.swift in Sources */,
@@ -1383,14 +1445,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1430,14 +1500,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1478,19 +1556,11 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/GoogleMaps\"",
-					"$(PROJECT_DIR)/ffmpeg/include",
-					"$(PROJECT_DIR)/SDL-iOS/include",
-					"$(PROJECT_DIR)/fftw3/ios-library",
 				);
 				INFOPLIST_FILE = IOSExperiments/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ffmpeg/lib",
-					"$(PROJECT_DIR)/SDL-iOS/lib",
-					"$(PROJECT_DIR)/fftw3/ios-library",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",
@@ -1512,8 +1582,6 @@
 					"-framework",
 					"\"CoreText\"",
 					"-framework",
-					"\"FXBlurView\"",
-					"-framework",
 					"\"GLKit\"",
 					"-framework",
 					"\"GoogleMaps\"",
@@ -1531,8 +1599,6 @@
 					"\"ObjectMapper\"",
 					"-framework",
 					"\"OpenGLES\"",
-					"-framework",
-					"\"ParallaxBlur\"",
 					"-framework",
 					"\"QuartzCore\"",
 					"-framework",
@@ -1583,19 +1649,11 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/GoogleMaps\"",
-					"$(PROJECT_DIR)/ffmpeg/include",
-					"$(PROJECT_DIR)/SDL-iOS/include",
-					"$(PROJECT_DIR)/fftw3/ios-library",
 				);
 				INFOPLIST_FILE = IOSExperiments/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ffmpeg/lib",
-					"$(PROJECT_DIR)/SDL-iOS/lib",
-					"$(PROJECT_DIR)/fftw3/ios-library",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-l\"c++\"",
@@ -1617,8 +1675,6 @@
 					"-framework",
 					"\"CoreText\"",
 					"-framework",
-					"\"FXBlurView\"",
-					"-framework",
 					"\"GLKit\"",
 					"-framework",
 					"\"GoogleMaps\"",
@@ -1636,8 +1692,6 @@
 					"\"ObjectMapper\"",
 					"-framework",
 					"\"OpenGLES\"",
-					"-framework",
-					"\"ParallaxBlur\"",
 					"-framework",
 					"\"QuartzCore\"",
 					"-framework",

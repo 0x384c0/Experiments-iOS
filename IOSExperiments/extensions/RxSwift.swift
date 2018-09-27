@@ -11,8 +11,7 @@ import RxSwift
 extension PublishSubject {
     public var value: Element {
         get {
-            //dont use get
-            return self.value
+            preconditionFailure("dont use get")
         }
         set {
             self.on(.next(newValue))

@@ -9,7 +9,7 @@
 import BABFrameObservingInputAccessoryView
 
 protocol VCWithKeyboardProtocol: class {
-    weak var bottomConstraint: NSLayoutConstraint! {get set}
+    var bottomConstraint: NSLayoutConstraint! {get set}
     func keyboardWillShow(_ heigh:CGFloat)
     func keyboardWillHide()
     func getTextFileds() -> [UITextField]?

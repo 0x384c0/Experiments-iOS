@@ -24,8 +24,8 @@ class Logger{
     static func logRequest(url:String,parameters: [String: Any]?, headers: HTTPHeaders?, method: HTTPMethod = .get){
         var logText =   "\n➡️➡️➡️➡️➡️➡️ REQUEST ➡️➡️➡️➡️➡️➡️➡️"
         logText +=      "\n" + "URL          - %@ "
-        logText +=      "\n" + "parameters   - \(parameters) "
-        logText +=      "\n" + "headers      - \(headers) "
+        logText +=      "\n" + "parameters   - \(String(describing: parameters)) "
+        logText +=      "\n" + "headers      - \(String(describing: headers)) "
         logText +=      "\n" + "method       - \(method) "
         logText +=      "\n➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️➡️"
         logUrl(logText,url:url)

@@ -25,7 +25,7 @@ class ToudchIdHelper{
                         handler(.success)
                         return
                     } else if
-                        let codeRaw = (error as? NSError)?.code,
+                        let codeRaw = (error as NSError?)?.code,
                         let errorCode = LAError.Code(rawValue:codeRaw){
                         switch errorCode {
                         case .authenticationFailed,

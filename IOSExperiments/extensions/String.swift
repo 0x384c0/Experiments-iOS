@@ -42,7 +42,7 @@ extension String {
     
     
     func replaceWithRegExp(find:String,replace:String) -> String{
-        let range = NSMakeRange(0, characters.count)
+        let range = NSMakeRange(0, self.count)
         if let regex = try? NSRegularExpression(pattern: find, options: .caseInsensitive) {
             let modString = regex.stringByReplacingMatches(
                 in: self,

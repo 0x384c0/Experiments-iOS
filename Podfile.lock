@@ -7,7 +7,6 @@ PODS:
   - BABFrameObservingInputAccessoryView (0.2.4)
   - EZSwiftExtensions (1.9)
   - FSCalendar (2.7.8)
-  - FXBlurView (1.6.4)
   - GoogleMaps (2.3.1):
     - GoogleMaps/Maps (= 2.3.1)
   - GoogleMaps/Base (2.3.1)
@@ -33,8 +32,6 @@ PODS:
     - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
   - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
   - ObjectMapper (3.3.0)
-  - ParallaxBlur (0.1.4):
-    - FXBlurView (~> 1.6.2)
   - PocketSVG (2.2.1)
   - RxAlamofire (3.0.2):
     - RxAlamofire/Core (= 3.0.2)
@@ -69,7 +66,6 @@ DEPENDENCIES:
   - lf
   - MMDrawerController
   - ObjectMapper
-  - ParallaxBlur
   - PocketSVG
   - RxAlamofire
   - RxBlocking
@@ -81,35 +77,6 @@ DEPENDENCIES:
   - UIScrollView-InfiniteScroll
   - Validator
 
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - Alamofire
-    - AlamofireImage
-    - AlamofireNetworkActivityIndicator
-    - BABFrameObservingInputAccessoryView
-    - EZSwiftExtensions
-    - FSCalendar
-    - FXBlurView
-    - GoogleMaps
-    - iOSSharedViewTransition
-    - IQKeyboardManagerSwift
-    - lf
-    - MMDrawerController
-    - ObjcExceptionBridging
-    - ObjectMapper
-    - ParallaxBlur
-    - PocketSVG
-    - RxAlamofire
-    - RxBlocking
-    - RxCocoa
-    - RxSwift
-    - SimplifiedNotificationCenter
-    - SMCalloutView
-    - UIColor_Hex_Swift
-    - UIScrollView-InfiniteScroll
-    - Validator
-    - XCGLogger
-
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
@@ -117,7 +84,6 @@ SPEC CHECKSUMS:
   BABFrameObservingInputAccessoryView: 0f5fa4d3bcd5dd7110c5e2c182b8b678c847cae6
   EZSwiftExtensions: ce22bf6fc5c6e7c883fec413300b006e123735d0
   FSCalendar: 09369a2bf554ba71cd8e8cfb627e2df22a2c2af4
-  FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
   GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
   iOSSharedViewTransition: d4bdb3662b51d780b7a0646da8ff2158dbb2e43c
   IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
@@ -125,7 +91,6 @@ SPEC CHECKSUMS:
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
-  ParallaxBlur: 352a49c2319b41f3b334456815089afb1220b799
   PocketSVG: 51c4d5cb9ae7623d4494f439f69747394bad5d67
   RxAlamofire: bc53604b29fd2d220cfaa490c736cc4500819f34
   RxBlocking: 471315e18b87c5ed4b9d0c69a57dfdbca5c01af1
@@ -138,6 +103,6 @@ SPEC CHECKSUMS:
   Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
   XCGLogger: 0b43697155d41e4a1b15fc776f319c2141646b09
 
-PODFILE CHECKSUM: c365b5c7ab51aa71fe675714b17b7b05c13fa515
+PODFILE CHECKSUM: 1fe505a0176abc5b5c00773087a78c8fab319233
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.4.0

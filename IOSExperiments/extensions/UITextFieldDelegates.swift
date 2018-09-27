@@ -22,7 +22,7 @@ class UITextFieldDelegateLimitedLength : UITextFieldDelegateHidingKeyboard{
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if let text = textField.text {
             let newStr = (text as NSString).replacingCharacters(in: range, with: string)
-            let length = newStr.characters.count
+            let length = newStr.count
             if length > LENGTH {
                 return false
             }

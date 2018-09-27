@@ -40,8 +40,6 @@ class MainPagerItem: UIViewController {
                 print(screenId)
                 if let screenController = self.storyboard?.instantiateViewController(withIdentifier: screenId){
                     self.navigationController?.pushViewController(screenController, animated: true)
-                    print(self.navigationController)
-                    print(screenController)
                 }
             }
         })

@@ -8,7 +8,7 @@
 import RxSwift
 
 protocol VCWithInfinityScroll:class {
-    weak var tableView: UITableView!{get set}
+    var tableView: UITableView!{get set}
     func getViewModel() -> VMWithInfinityScroll
 }
 extension VCWithInfinityScroll where Self:BaseViewController{

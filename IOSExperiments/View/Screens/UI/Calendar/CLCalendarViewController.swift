@@ -17,7 +17,9 @@ class CLCalendarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         calendarView.scrollDirection = .vertical
-        calendarView.scopeGesture.isEnabled = true
+        
+//        calendarView.handleScopeGesture(<#T##sender: UIPanGestureRecognizer##UIPanGestureRecognizer#>)
+//        calendarView.scopeGesture.isEnabled = true
         calendarView.delegate = self
         calendarView.dataSource = self
         calendarView.placeholderType = .none
@@ -29,7 +31,7 @@ class CLCalendarViewController: UIViewController {
         )
         
         
-        print(calendarView.dataSource?.minimumDate)
+        print(calendarView.dataSource?.minimumDate ?? "nil")
     }
 }
 

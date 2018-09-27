@@ -4,7 +4,6 @@ source "https://rubygems.org"
 # make
 gem 'cocoapods'
 gem 'fastlane'
-gem 'xcodeproj'
 
 group :test do
 	gem "calabash-cucumber", ">= 0.16", "< 2.0"
