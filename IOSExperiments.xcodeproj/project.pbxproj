@@ -273,6 +273,7 @@
 		49A9F1AE1EFA7F7C00E17F17 /* CustomInfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomInfoWindow.xib; sourceTree = "<group>"; };
 		49A9F1AF1EFA7F7C00E17F17 /* YandexMapViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YandexMapViewDelegate.swift; sourceTree = "<group>"; };
 		49B864521D8BB32B00AFE3F9 /* Transition1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Transition1VC.swift; path = View/Screens/UI/Animations/Transition1VC.swift; sourceTree = "<group>"; };
+		49D37E782165D44500195F08 /* SocialSignInVCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSignInVCProtocol.swift; sourceTree = "<group>"; };
 		49F6DAE31EF92DAC00B9FC37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BackgroundExecution.storyboard; sourceTree = "<group>"; };
 		49F6DAE61EF92F5B00B9FC37 /* RemoteFetchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RemoteFetchVC.swift; path = View/Screens/BackgroundExecution/RemoteFetchVC.swift; sourceTree = "<group>"; };
 		49FC83CD1EF9319000BE8181 /* AppUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUserDefaults.swift; sourceTree = "<group>"; };
@@ -498,6 +499,7 @@
 			children = (
 				490088DB2150E9CC0019DE80 /* objc */,
 				4961F38B1EA778D300991A65 /* UIAlertControllerWithTextField.swift */,
+				49D37E782165D44500195F08 /* SocialSignInVCProtocol.swift */,
 				49A7CE9F1E94B2B500BFFF90 /* AbstractFactoryExperiment.swift */,
 				49A7CEA01E94B2B500BFFF90 /* AppInfo.swift */,
 				49A7CEA11E94B2B500BFFF90 /* ArrayVCPresenter.swift */,
