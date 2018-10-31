@@ -195,6 +195,7 @@
 		4961F38B1EA778D300991A65 /* UIAlertControllerWithTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerWithTextField.swift; sourceTree = "<group>"; };
 		496421C81EFA547E0036FADD /* LocationUpdatesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationUpdatesVC.swift; path = View/Screens/BackgroundExecution/LocationUpdatesVC.swift; sourceTree = "<group>"; };
 		496421CA1EFA54B00036FADD /* LocationUpdatesLogsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationUpdatesLogsVC.swift; path = View/Screens/BackgroundExecution/LocationUpdatesLogsVC.swift; sourceTree = "<group>"; };
+		497EEB412189C95700C03479 /* SocialSignInVCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SocialSignInVCProtocol.swift; path = ../../../GoogleFacebookSignIn/GoogleFacebookSignIn/SocialSignInVCProtocol.swift; sourceTree = "<group>"; };
 		499F2FDB1D9D055700123FF1 /* GoogleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleService.swift; path = service/GoogleService.swift; sourceTree = "<group>"; };
 		49A263061DAE290B00070A20 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
 		49A7CE511E94ADC600BFFF90 /* AnimationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimationsViewController.swift; path = View/Screens/UI/Animations/AnimationsViewController.swift; sourceTree = "<group>"; };
@@ -514,6 +515,7 @@
 				49A7CEB31E94B2B500BFFF90 /* TextMessagesManager.swift */,
 				49A7CEB41E94B2B500BFFF90 /* TouchIdHelper.swift */,
 				49FC83CF1EF9331A00BE8181 /* RemoteFetchWrapper.swift */,
+				497EEB412189C95700C03479 /* SocialSignInVCProtocol.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
