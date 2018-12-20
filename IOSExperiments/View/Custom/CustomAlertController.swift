@@ -22,16 +22,16 @@ class CustomAlertController : UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     
     //MARK: UI Actions
-    func buttonTap(_ sender: UIButton?) {
+    @objc func buttonTap(_ sender: UIButton?) {
         for action in actions{
             if action.title == sender?.titleLabel?.text{
-                dismiss(animated: false, completion: {_ in action.handler?(action) })
+                dismiss(animated: false, completion: {action.handler?(action) })
                 return
             }
         }
     }
     @IBAction func cancelTap(_ sender: Any?) {
-        dismiss(animated: false, completion: {[weak self] _ in self?.cancelHandler?()})
+        dismiss(animated: false, completion: {[weak self] in self?.cancelHandler?()})
     }
     
     //MARK: LifeCycle
@@ -85,7 +85,7 @@ class CustomAlertController : UIViewController {
         modalTransitionStyle = .crossDissolve
     }
     deinit {
-        Logger.logDeInit(self)
+        Logger.logDeinit(self)
     }
 }
 

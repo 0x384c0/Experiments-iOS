@@ -65,7 +65,7 @@ extension String {
         memcpy(buf, cs, length)
         buf[length] = 0 // zero terminate
         let s = String(cString: buf)
-        buf.deallocate(capacity: buflen)
+        buf.deallocate()
         return s
     }
 }

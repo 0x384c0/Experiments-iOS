@@ -15,7 +15,7 @@ class Logger{
         let name = String(describing: type(of: object))
         logUrl("vc load   :\(name)")
     }
-    static func logDeInit(_ object:Any){
+    static func logDeinit(_ object:Any){
         let name = String(describing: type(of: object))
         logUrl("deinit    :\(name)")
     }

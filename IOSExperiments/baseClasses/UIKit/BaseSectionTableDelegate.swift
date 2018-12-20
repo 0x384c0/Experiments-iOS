@@ -1,5 +1,5 @@
 //
-//  BaseSectioningTableDelegate.swift
+//  BaseSectionTableDelegate.swift
 //  iosExperiments
 //
 //  Created by 0x384c0 on 1/23/16.
@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class BaseSectioningTableDelegate<T>: NSObject, UITableViewDataSource, UITableViewDelegate  {
+class BaseSectionTableDelegate<T>: NSObject, UITableViewDataSource, UITableViewDelegate  {
     
     var
     sections:[Section<T>]?

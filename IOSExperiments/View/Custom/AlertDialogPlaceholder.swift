@@ -68,7 +68,7 @@ class AlertDialogPlaceholder: UIView {
     }
     
     
-    var style:UIScrollViewIndicatorStyle{
+    var style:UIScrollView.IndicatorStyle{
         set{
             switch newValue {
             case .default, .black:

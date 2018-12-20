@@ -42,7 +42,7 @@ class ArrayVCPresenter{
             let presenter = presenter,
             presenter.presentedViewController == nil {
             presenterVCIndex += 1
-            presenter.present(presented, animated: animated){[weak self]_ in self?.presentArrayRecursively()}
+            presenter.present(presented, animated: animated){[weak self] in self?.presentArrayRecursively()}
         } else {
             completion?()
             presenterVCIndex = -1
@@ -71,7 +71,7 @@ class ArrayVCPresenter{
         print(viewcontrollers)
         if let topVc = viewcontrollers.first{
             viewcontrollers.removeFirst()
-            topVc.dismiss(animated: animated){[weak self]_ in self?.dismissArrayRecursively()}
+            topVc.dismiss(animated: animated){[weak self] in self?.dismissArrayRecursively()}
         } else {
             completion?()
             viewcontrollers = []

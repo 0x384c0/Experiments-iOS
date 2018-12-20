@@ -6,10 +6,9 @@
 //  Copyright © 2016 0x384c0. All rights reserved.
 //
 
-import lf
+import HaishinKit
 import VideoToolbox
 import AVFoundation
-import XCGLogger
 
 class ScreenStreamer {
     

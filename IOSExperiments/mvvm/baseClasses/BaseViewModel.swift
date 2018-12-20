@@ -11,7 +11,7 @@ import RxSwift
 class BaseViewModel: NSObject, BaseViewModelProtocol{
     
     deinit {
-        Logger.logDeInit(self)
+        Logger.logDeinit(self)
     }
     
     //MARK: RX
@@ -97,6 +97,6 @@ extension BaseViewModelProtocol {
 //                },
 //                onError: getOnErrorObserver()
 //            )
-//            .addDisposableTo(disposeBag)
+//            .disposed(by: disposeBag)
 //    }
 //}

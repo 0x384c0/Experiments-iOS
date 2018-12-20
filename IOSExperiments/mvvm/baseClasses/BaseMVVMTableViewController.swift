@@ -1,5 +1,5 @@
 //
-//  BaseTableViewController.swift
+//  BaseMVVMTableViewController.swift
 //  iosExperiments
 //
 //  Created by 0x384c0 on 3/2/16.
@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class BaseTableViewController: UITableViewController, BaseViewControllerProtocol {
+class BaseMVVMTableViewController: UITableViewController, BaseMVVMViewControllerProtocol {
     var tabBarSettings:TabBarSettings{return TabBarSettings(barStyle: .black, tintColor: Constants.COLOR_PRIMARY, barTintColor: Constants.COLOR_TINT, isTransparent: false)}
     var loadingOverlaySettings:LoadingOverlaySettings{return LoadingOverlaySettings(color:Constants.COLOR_PRIMARY,style:.gray)}
     //MARK: lifecycle
@@ -21,13 +21,13 @@ class BaseTableViewController: UITableViewController, BaseViewControllerProtocol
         return .lightContent
     }
     
-    func SetupViewController(){
+    func setupViewController(){
     }
-    func BindData(){
+    func bindData(){
     }
-    func BindDataVersion() {
+    func bindDataVersion() {
     }
-    func RefreshViewController(){
+    func refreshViewController(){
     }
     func loadDataVersion(){
     }
@@ -45,7 +45,7 @@ class BaseTableViewController: UITableViewController, BaseViewControllerProtocol
     viewForTextAlert: UIView?,
     errorAlertReplyAction: (() -> Void)?
     deinit {
-        Logger.logDeInit(self)
+        Logger.logDeinit(self)
     }
     
     //MARK: TableViewRootViewControllerDelegate

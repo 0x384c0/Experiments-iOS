@@ -11,7 +11,6 @@
 
 #import <UIScrollView_InfiniteScroll/UIScrollView+InfiniteScroll.h>
 #import "SMCalloutView/SMCalloutView.h"
-#import "SWRevealViewController.h"
 #import "iOSSharedViewTransition/ASFSharedViewTransition.h"
 #import "PocketSVG/PocketSVG.h"
 #import "IOSExperiments/ViewController/UI/Calendar/CalendarPicker/CalendarPickerCVC.h"

@@ -39,7 +39,7 @@ extension UIView {
         
         isHidden = true
     }
-    func getConstrant(_ attribute:NSLayoutAttribute) -> NSLayoutConstraint{
+    func getConstrant(_ attribute:NSLayoutConstraint.Attribute) -> NSLayoutConstraint{
         for constraint in constraints {
             if (constraint.firstAttribute == attribute) {
                 return constraint
@@ -62,7 +62,7 @@ extension UIView {
     
     func shake4Times() {
         let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
         animation.duration = 0.6
         animation.values = [-20.0, 20.0, -15.0, 15.0, -10.0, 10.0, -5.0, 5.0, 0.0 ]
         layer.add(animation, forKey: "shake")
@@ -218,12 +218,12 @@ extension UITableView {
                 ,
                 numberOfRows > 0 {
                 let indexPath = IndexPath(row: numberOfRows-1, section: (numberOfSections-1))
-                self?.scrollToRow(at: indexPath, at: UITableViewScrollPosition.bottom, animated: animated)
+                self?.scrollToRow(at: indexPath, at: UITableView.ScrollPosition.bottom, animated: animated)
             }
             
         })
     }
-    func scrolToSelectedCell(atScrollPosition scrollPosition: UITableViewScrollPosition = .middle){
+    func scrolToSelectedCell(atScrollPosition scrollPosition: UITableView.ScrollPosition = .middle){
         if let indexPathForSelectedRow = indexPathForSelectedRow {
             scrollToRow(at: indexPathForSelectedRow, at: scrollPosition, animated: true)
         }

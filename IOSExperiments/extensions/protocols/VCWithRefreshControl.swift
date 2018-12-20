@@ -38,10 +38,10 @@ extension VCWithRefreshControlInTable where Self: UIViewController{
                 }
                 refreshControl.beginRefreshing()
                 
-                DispatchQueue.mainAfterMilisec(50){[weak refreshControl]_ in
-                    for view in refreshControl?.subviews.first?.subviews ?? []{
+                DispatchQueue.mainAfterMilisec(50){
+                    for view in refreshControl.subviews.first?.subviews ?? []{
                         if let label = view as? UILabel,
-                            refreshControl?.isRefreshing ?? false,
+                            refreshControl.isRefreshing ,
                             label.alpha < 0.3{
                             label.alpha = 1
                         }
@@ -63,9 +63,9 @@ class RefreshControlWithHandler:UIRefreshControl{
     var handler:((UIRefreshControl) -> Swift.Void)?
     func addRefreshObserver(handler: @escaping ((UIRefreshControl) -> Swift.Void)){
         self.handler = handler
-        addTarget(self, action: #selector(RefreshControlWithHandler.handleRefresh(_:)), for: UIControlEvents.valueChanged)
+        addTarget(self, action: #selector(RefreshControlWithHandler.handleRefresh(_:)), for: UIControl.Event.valueChanged)
     }
-    func handleRefresh(_ refreshControl: UIRefreshControl){
+    @objc func handleRefresh(_ refreshControl: UIRefreshControl){
         handler?(refreshControl)
     }
     var textLabel:UILabel?{
@@ -110,10 +110,10 @@ extension VCWithRefreshControlInScrollView where Self: UIViewController{
                 scrollView.setContentOffset(CGPoint(x: 0, y: scrollView.contentOffset.y - refreshControl.frame.size.height), animated: true)
                 refreshControl.beginRefreshing()
                 
-                DispatchQueue.mainAfterMilisec(50){[weak refreshControl]_ in
-                    for view in refreshControl?.subviews.first?.subviews ?? []{
+                DispatchQueue.mainAfterMilisec(50){
+                    for view in refreshControl.subviews.first?.subviews ?? []{
                         if let label = view as? UILabel,
-                            refreshControl?.isRefreshing ?? false,
+                            refreshControl.isRefreshing ,
                             label.alpha < 0.3{
                             label.alpha = 1
                         }

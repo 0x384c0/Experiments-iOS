@@ -1,21 +1,22 @@
 PODS:
-  - Alamofire (4.5.0)
-  - AlamofireImage (3.2.0):
-    - Alamofire (~> 4.1)
-  - AlamofireNetworkActivityIndicator (2.2.0):
-    - Alamofire (~> 4.5)
+  - Alamofire (4.8.0)
+  - AlamofireImage (3.5.0):
+    - Alamofire (~> 4.8)
+  - AlamofireNetworkActivityIndicator (2.3.0):
+    - Alamofire (~> 4.7)
   - BABFrameObservingInputAccessoryView (0.2.4)
-  - EZSwiftExtensions (1.9)
-  - FSCalendar (2.7.8)
-  - GoogleMaps (2.3.1):
-    - GoogleMaps/Maps (= 2.3.1)
-  - GoogleMaps/Base (2.3.1)
-  - GoogleMaps/Maps (2.3.1):
+  - EZSwiftExtensions (2.0)
+  - FSCalendar (2.8.0)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
     - GoogleMaps/Base
+  - HaishinKit (0.10.4):
+    - Logboard (~> 2.0.0)
   - iOSSharedViewTransition (1.0.2)
-  - IQKeyboardManagerSwift (4.0.10)
-  - lf (0.7.0):
-    - XCGLogger (~> 5.0.0)
+  - IQKeyboardManagerSwift (6.2.0)
+  - Logboard (2.0.0)
   - MMDrawerController (0.6.0):
     - MMDrawerController/Core (= 0.6.0)
     - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
@@ -28,42 +29,39 @@ PODS:
     - MMDrawerController/Core
   - MMDrawerController/Subclass (0.6.0):
     - MMDrawerController/Core
-  - ObjcExceptionBridging (1.0.1):
-    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
-  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
-  - ObjectMapper (3.3.0)
-  - PocketSVG (2.2.1)
-  - RxAlamofire (3.0.2):
-    - RxAlamofire/Core (= 3.0.2)
-  - RxAlamofire/Core (3.0.2):
-    - Alamofire (~> 4.0)
-    - RxSwift (~> 3.0)
-  - RxBlocking (3.5.0):
-    - RxSwift (~> 3.4)
-  - RxCocoa (3.5.0):
-    - RxSwift (~> 3.4)
-  - RxSwift (3.5.0)
-  - SimplifiedNotificationCenter (1.1.4)
+  - ObjectMapper (3.4.2)
+  - PocketSVG (2.4.2)
+  - RxAlamofire (4.3.0):
+    - RxAlamofire/Core (= 4.3.0)
+  - RxAlamofire/Core (4.3.0):
+    - Alamofire (~> 4.5)
+    - RxSwift (~> 4)
+  - RxAtomic (4.4.0)
+  - RxBlocking (4.4.0):
+    - RxAtomic (~> 4.4)
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
+  - SimplifiedNotificationCenter (1.1.5)
   - SMCalloutView (2.1.5)
-  - UIColor_Hex_Swift (3.0.2)
-  - UIScrollView-InfiniteScroll (1.0.1)
-  - Validator (2.1.1)
-  - XCGLogger (5.0.1):
-    - XCGLogger/Core (= 5.0.1)
-  - XCGLogger/Core (5.0.1):
-    - ObjcExceptionBridging
+  - SVProgressHUD (2.2.5)
+  - SWRevealViewController (2.3.0)
+  - UIColor_Hex_Swift (4.2.0)
+  - UIScrollView-InfiniteScroll (1.1.0)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
   - AlamofireNetworkActivityIndicator
   - BABFrameObservingInputAccessoryView
-  - EZSwiftExtensions
+  - EZSwiftExtensions (from `https:///github.com/goktugyil/EZSwiftExtensions.git`, branch `swift4.2official`)
   - FSCalendar
   - GoogleMaps
+  - HaishinKit
   - iOSSharedViewTransition
   - IQKeyboardManagerSwift
-  - lf
   - MMDrawerController
   - ObjectMapper
   - PocketSVG
@@ -73,36 +71,75 @@ DEPENDENCIES:
   - RxSwift
   - SimplifiedNotificationCenter
   - SMCalloutView
+  - SVProgressHUD
+  - SWRevealViewController
   - UIColor_Hex_Swift
   - UIScrollView-InfiniteScroll
-  - Validator
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - AlamofireNetworkActivityIndicator
+    - BABFrameObservingInputAccessoryView
+    - FSCalendar
+    - GoogleMaps
+    - HaishinKit
+    - iOSSharedViewTransition
+    - IQKeyboardManagerSwift
+    - Logboard
+    - MMDrawerController
+    - ObjectMapper
+    - PocketSVG
+    - RxAlamofire
+    - RxAtomic
+    - RxBlocking
+    - RxCocoa
+    - RxSwift
+    - SimplifiedNotificationCenter
+    - SMCalloutView
+    - SVProgressHUD
+    - SWRevealViewController
+    - UIColor_Hex_Swift
+    - UIScrollView-InfiniteScroll
+
+EXTERNAL SOURCES:
+  EZSwiftExtensions:
+    :branch: swift4.2official
+    :git: https:///github.com/goktugyil/EZSwiftExtensions.git
+
+CHECKOUT OPTIONS:
+  EZSwiftExtensions:
+    :commit: 3de0922f37cb7697d8d6312b272a67e18e4d5fb0
+    :git: https:///github.com/goktugyil/EZSwiftExtensions.git
 
 SPEC CHECKSUMS:
-  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
-  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
-  AlamofireNetworkActivityIndicator: 81e1630e7cfed22a4e4e82a174c59e651dc4f8ca
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  AlamofireNetworkActivityIndicator: 18346ff6d770d9513d0ac6f2d99706f40f93dbaa
   BABFrameObservingInputAccessoryView: 0f5fa4d3bcd5dd7110c5e2c182b8b678c847cae6
-  EZSwiftExtensions: ce22bf6fc5c6e7c883fec413300b006e123735d0
-  FSCalendar: 09369a2bf554ba71cd8e8cfb627e2df22a2c2af4
-  GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
+  EZSwiftExtensions: f73648a591e529a1dbd83c22b19fd3e57df6fb7d
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  HaishinKit: 691e929f02389b40b879d3d1579dd6c496632995
   iOSSharedViewTransition: d4bdb3662b51d780b7a0646da8ff2158dbb2e43c
-  IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
-  lf: 400a6495242d9df0dbcd6e063151ac8f09084b55
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  Logboard: 9e3dce26a4be2dbff7edf02d54b17ed5bd49217e
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
-  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
-  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
-  PocketSVG: 51c4d5cb9ae7623d4494f439f69747394bad5d67
-  RxAlamofire: bc53604b29fd2d220cfaa490c736cc4500819f34
-  RxBlocking: 471315e18b87c5ed4b9d0c69a57dfdbca5c01af1
-  RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
-  RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
-  SimplifiedNotificationCenter: be1b02ed13cc16793e800ac4e72c0255cc6e6598
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  PocketSVG: c30139829206a43df2ec203880e3970531facba7
+  RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxBlocking: 138ad53217434444d6eeeb4fb406a45431d92e31
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+  SimplifiedNotificationCenter: b27c0078385292abf4b09c52ddc1707ecc692756
   SMCalloutView: 5c0ee363dc8e7204b2fda17dfad38c93e9e23481
-  UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
-  UIScrollView-InfiniteScroll: a90df4ba4a7ca1926128ade34a850ddbdf74c564
-  Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
-  XCGLogger: 0b43697155d41e4a1b15fc776f319c2141646b09
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
+  UIColor_Hex_Swift: bc07fc197421ee896b9ed6dcfa2054b7fbf75145
+  UIScrollView-InfiniteScroll: 3ef456bcbe759c19f510a383cff96e6647c98c98
 
-PODFILE CHECKSUM: 1fe505a0176abc5b5c00773087a78c8fab319233
+PODFILE CHECKSUM: 4c4dddc7716ba3873e6e8f40e37c36d5e7e8c953
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.0.beta.1

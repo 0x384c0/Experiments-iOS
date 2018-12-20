@@ -47,13 +47,14 @@
 		4996C74021CB66940030252D /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C73B21CB66940030252D /* MainTab.swift */; };
 		4996C74121CB66940030252D /* ImagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C73D21CB66940030252D /* ImagesResponse.swift */; };
 		4996C74421CB66AD0030252D /* GoogleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C74321CB66AD0030252D /* GoogleService.swift */; };
+		4996C74F21CB8FB90030252D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C74E21CB8FB90030252D /* BaseViewController.swift */; };
 		49A263071DAE290B00070A20 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 49A263061DAE290B00070A20 /* .gitignore */; };
 		49A7CE801E94B14000BFFF90 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE5C1E94B14000BFFF90 /* Array.swift */; };
-		49A7CE811E94B14000BFFF90 /* BaseSectioningTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE5E1E94B14000BFFF90 /* BaseSectioningTableDelegate.swift */; };
+		49A7CE811E94B14000BFFF90 /* BaseSectionTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE5E1E94B14000BFFF90 /* BaseSectionTableDelegate.swift */; };
 		49A7CE821E94B14000BFFF90 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE5F1E94B14000BFFF90 /* BaseService.swift */; };
-		49A7CE831E94B14000BFFF90 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE601E94B14000BFFF90 /* BaseTableViewController.swift */; };
+		49A7CE831E94B14000BFFF90 /* BaseMVVMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE601E94B14000BFFF90 /* BaseMVVMTableViewController.swift */; };
 		49A7CE841E94B14000BFFF90 /* BaseTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE611E94B14000BFFF90 /* BaseTableViewDelegate.swift */; };
-		49A7CE851E94B14000BFFF90 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE621E94B14000BFFF90 /* BaseViewController.swift */; };
+		49A7CE851E94B14000BFFF90 /* BaseMVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE621E94B14000BFFF90 /* BaseMVVMViewController.swift */; };
 		49A7CE861E94B14000BFFF90 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE631E94B14000BFFF90 /* BaseViewModel.swift */; };
 		49A7CE871E94B14000BFFF90 /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE641E94B14000BFFF90 /* BaseWebViewController.swift */; };
 		49A7CE881E94B14000BFFF90 /* BaseWebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE651E94B14000BFFF90 /* BaseWebViewModel.swift */; };
@@ -70,7 +71,6 @@
 		49A7CE941E94B14000BFFF90 /* RxAlamofireExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE741E94B14000BFFF90 /* RxAlamofireExtentions.swift */; };
 		49A7CE951E94B14000BFFF90 /* RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE751E94B14000BFFF90 /* RxSwift.swift */; };
 		49A7CE961E94B14000BFFF90 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE761E94B14000BFFF90 /* String.swift */; };
-		49A7CE971E94B14000BFFF90 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE791E94B14000BFFF90 /* SWRevealViewController.m */; };
 		49A7CE991E94B14000BFFF90 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE7B1E94B14000BFFF90 /* UINavigationController.swift */; };
 		49A7CE9A1E94B14000BFFF90 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE7C1E94B14000BFFF90 /* UISearchBar.swift */; };
 		49A7CE9B1E94B14000BFFF90 /* UITextFieldDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE7D1E94B14000BFFF90 /* UITextFieldDelegates.swift */; };
@@ -104,7 +104,6 @@
 		49EDD8AF21CB5E0900326FDD /* CalendarPickerCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EDD88721CB5E0900326FDD /* CalendarPickerCVC.m */; };
 		49EDD8B021CB5E0900326FDD /* GMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDD88A21CB5E0900326FDD /* GMapsViewController.swift */; };
 		49EDD8B121CB5E0900326FDD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDD88B21CB5E0900326FDD /* MainViewController.swift */; };
-		49EDD8B221CB5E0900326FDD /* StaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDD88C21CB5E0900326FDD /* StaticTableViewController.swift */; };
 		49EDD8B321CB5E0900326FDD /* Transition1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDD88E21CB5E0900326FDD /* Transition1VC.swift */; };
 		49EDD8B421CB5E0900326FDD /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDD88F21CB5E0900326FDD /* AnimationsViewController.swift */; };
 		49EDD8B521CB5E0900326FDD /* Transition2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EDD89021CB5E0900326FDD /* Transition2VC.swift */; };
@@ -214,13 +213,14 @@
 		4996C73B21CB66940030252D /* MainTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
 		4996C73D21CB66940030252D /* ImagesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesResponse.swift; sourceTree = "<group>"; };
 		4996C74321CB66AD0030252D /* GoogleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleService.swift; sourceTree = "<group>"; };
+		4996C74E21CB8FB90030252D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		49A263061DAE290B00070A20 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
 		49A7CE5C1E94B14000BFFF90 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		49A7CE5E1E94B14000BFFF90 /* BaseSectioningTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSectioningTableDelegate.swift; sourceTree = "<group>"; };
+		49A7CE5E1E94B14000BFFF90 /* BaseSectionTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSectionTableDelegate.swift; sourceTree = "<group>"; };
 		49A7CE5F1E94B14000BFFF90 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
-		49A7CE601E94B14000BFFF90 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		49A7CE601E94B14000BFFF90 /* BaseMVVMTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMVVMTableViewController.swift; sourceTree = "<group>"; };
 		49A7CE611E94B14000BFFF90 /* BaseTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewDelegate.swift; sourceTree = "<group>"; };
-		49A7CE621E94B14000BFFF90 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		49A7CE621E94B14000BFFF90 /* BaseMVVMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMVVMViewController.swift; sourceTree = "<group>"; };
 		49A7CE631E94B14000BFFF90 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		49A7CE641E94B14000BFFF90 /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
 		49A7CE651E94B14000BFFF90 /* BaseWebViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewModel.swift; sourceTree = "<group>"; };
@@ -237,9 +237,6 @@
 		49A7CE741E94B14000BFFF90 /* RxAlamofireExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxAlamofireExtentions.swift; sourceTree = "<group>"; };
 		49A7CE751E94B14000BFFF90 /* RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxSwift.swift; sourceTree = "<group>"; };
 		49A7CE761E94B14000BFFF90 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		49A7CE781E94B14000BFFF90 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		49A7CE791E94B14000BFFF90 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		49A7CE7A1E94B14000BFFF90 /* VCWithSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCWithSideMenu.swift; sourceTree = "<group>"; };
 		49A7CE7B1E94B14000BFFF90 /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		49A7CE7C1E94B14000BFFF90 /* UISearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISearchBar.swift; sourceTree = "<group>"; };
 		49A7CE7D1E94B14000BFFF90 /* UITextFieldDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldDelegates.swift; sourceTree = "<group>"; };
@@ -281,7 +278,6 @@
 		49EDD88921CB5E0900326FDD /* UICollectionView+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Extensions.h"; sourceTree = "<group>"; };
 		49EDD88A21CB5E0900326FDD /* GMapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMapsViewController.swift; sourceTree = "<group>"; };
 		49EDD88B21CB5E0900326FDD /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		49EDD88C21CB5E0900326FDD /* StaticTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticTableViewController.swift; sourceTree = "<group>"; };
 		49EDD88E21CB5E0900326FDD /* Transition1VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition1VC.swift; sourceTree = "<group>"; };
 		49EDD88F21CB5E0900326FDD /* AnimationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
 		49EDD89021CB5E0900326FDD /* Transition2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition2VC.swift; sourceTree = "<group>"; };
@@ -483,7 +479,7 @@
 		4996C73021CB666F0030252D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				4996C73121CB666F0030252D /* MainViewModel.swift */,
+				4996C74C21CB8E5B0030252D /* UI */,
 				4996C73221CB666F0030252D /* RX */,
 			);
 			path = Screens;
@@ -540,13 +536,88 @@
 			path = ApiService;
 			sourceTree = "<group>";
 		};
+		4996C74721CB89640030252D /* mvvm */ = {
+			isa = PBXGroup;
+			children = (
+				4996C74A21CB8DDA0030252D /* ViewController */,
+				4996C72F21CB666F0030252D /* ViewModel */,
+				4996C73721CB66940030252D /* Model */,
+				49A7CE6A1E94B14000BFFF90 /* extensions */,
+				4996C74821CB8CEC0030252D /* baseClasses */,
+				4996C74921CB8D310030252D /* protocols */,
+			);
+			path = mvvm;
+			sourceTree = "<group>";
+		};
+		4996C74821CB8CEC0030252D /* baseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				49A7CE621E94B14000BFFF90 /* BaseMVVMViewController.swift */,
+				49A7CE631E94B14000BFFF90 /* BaseViewModel.swift */,
+				49A7CE601E94B14000BFFF90 /* BaseMVVMTableViewController.swift */,
+				49A7CE641E94B14000BFFF90 /* BaseWebViewController.swift */,
+				49A7CE651E94B14000BFFF90 /* BaseWebViewModel.swift */,
+			);
+			path = baseClasses;
+			sourceTree = "<group>";
+		};
+		4996C74921CB8D310030252D /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				49A7CE711E94B14000BFFF90 /* VCWithAlertPlaceholder.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		4996C74A21CB8DDA0030252D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4996C74B21CB8E540030252D /* UI */,
+				49EDD89B21CB5E0900326FDD /* RX */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4996C74B21CB8E540030252D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				49EDD88B21CB5E0900326FDD /* MainViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4996C74C21CB8E5B0030252D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4996C73121CB666F0030252D /* MainViewModel.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4996C74D21CB8FA30030252D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				4996C74E21CB8FB90030252D /* BaseViewController.swift */,
+				49A7CE5E1E94B14000BFFF90 /* BaseSectionTableDelegate.swift */,
+				49A7CE611E94B14000BFFF90 /* BaseTableViewDelegate.swift */,
+				49A7CE661E94B14000BFFF90 /* BaseXibView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		4996C75021CB8FCF0030252D /* ApiService */ = {
+			isa = PBXGroup;
+			children = (
+				49A7CE5F1E94B14000BFFF90 /* BaseService.swift */,
+				49A7CF021E94F78800BFFF90 /* BaseServiceStub.swift */,
+			);
+			path = ApiService;
+			sourceTree = "<group>";
+		};
 		49A7CE5B1E94B14000BFFF90 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				49A7CE5D1E94B14000BFFF90 /* baseClasses */,
-				49A7CE6A1E94B14000BFFF90 /* InfiniteScroll */,
 				49A7CE6F1E94B14000BFFF90 /* protocols */,
-				49A7CE771E94B14000BFFF90 /* SWRevealViewController */,
 				49A7CE5C1E94B14000BFFF90 /* Array.swift */,
 				49A7CE671E94B14000BFFF90 /* CGSize.swift */,
 				49A7CE681E94B14000BFFF90 /* Date.swift */,
@@ -569,47 +640,28 @@
 		49A7CE5D1E94B14000BFFF90 /* baseClasses */ = {
 			isa = PBXGroup;
 			children = (
-				49A7CE5E1E94B14000BFFF90 /* BaseSectioningTableDelegate.swift */,
-				49A7CE5F1E94B14000BFFF90 /* BaseService.swift */,
-				49A7CF021E94F78800BFFF90 /* BaseServiceStub.swift */,
-				49A7CE601E94B14000BFFF90 /* BaseTableViewController.swift */,
-				49A7CE611E94B14000BFFF90 /* BaseTableViewDelegate.swift */,
-				49A7CE621E94B14000BFFF90 /* BaseViewController.swift */,
-				49A7CE631E94B14000BFFF90 /* BaseViewModel.swift */,
-				49A7CE641E94B14000BFFF90 /* BaseWebViewController.swift */,
-				49A7CE651E94B14000BFFF90 /* BaseWebViewModel.swift */,
-				49A7CE661E94B14000BFFF90 /* BaseXibView.swift */,
+				4996C74D21CB8FA30030252D /* UIKit */,
+				4996C75021CB8FCF0030252D /* ApiService */,
 			);
 			path = baseClasses;
 			sourceTree = "<group>";
 		};
-		49A7CE6A1E94B14000BFFF90 /* InfiniteScroll */ = {
+		49A7CE6A1E94B14000BFFF90 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
 				49A7CE6D1E94B14000BFFF90 /* VCWithInfinityScroll.swift */,
 			);
-			path = InfiniteScroll;
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		49A7CE6F1E94B14000BFFF90 /* protocols */ = {
 			isa = PBXGroup;
 			children = (
 				49A7CE701E94B14000BFFF90 /* ExplabdableTableDelegate.swift */,
-				49A7CE711E94B14000BFFF90 /* VCWithAlertPlaceholder.swift */,
 				49A7CE721E94B14000BFFF90 /* VCWithKeyboardProtocol.swift */,
 				49A7CE731E94B14000BFFF90 /* VCWithRefreshControl.swift */,
 			);
 			path = protocols;
-			sourceTree = "<group>";
-		};
-		49A7CE771E94B14000BFFF90 /* SWRevealViewController */ = {
-			isa = PBXGroup;
-			children = (
-				49A7CE781E94B14000BFFF90 /* SWRevealViewController.h */,
-				49A7CE791E94B14000BFFF90 /* SWRevealViewController.m */,
-				49A7CE7A1E94B14000BFFF90 /* VCWithSideMenu.swift */,
-			);
-			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 		49A7CE9E1E94B2B500BFFF90 /* utils */ = {
@@ -617,6 +669,7 @@
 			children = (
 				490088DB2150E9CC0019DE80 /* objc */,
 				4961F38B1EA778D300991A65 /* UIAlertControllerWithTextField.swift */,
+				49FC83CD1EF9319000BE8181 /* AppUserDefaults.swift */,
 				49D37E782165D44500195F08 /* SocialSignInVCProtocol.swift */,
 				49A7CE9F1E94B2B500BFFF90 /* AbstractFactoryExperiment.swift */,
 				49A7CEA01E94B2B500BFFF90 /* AppInfo.swift */,
@@ -655,8 +708,6 @@
 				49EDD87821CB5E0900326FDD /* VisulalEffectsController.swift */,
 				49EDD87921CB5E0900326FDD /* WebViewScreenController.swift */,
 				49EDD88A21CB5E0900326FDD /* GMapsViewController.swift */,
-				49EDD88B21CB5E0900326FDD /* MainViewController.swift */,
-				49EDD88C21CB5E0900326FDD /* StaticTableViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -706,10 +757,9 @@
 		49EDD89421CB5E0900326FDD /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				49EDD89721CB5E0900326FDD /* BackgroundExecution */,
 				49EDD89521CB5E0900326FDD /* AVPlayerController.swift */,
 				49EDD89621CB5E0900326FDD /* FactoryViewController.swift */,
-				49EDD89721CB5E0900326FDD /* BackgroundExecution */,
-				49EDD89B21CB5E0900326FDD /* RX */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -821,12 +871,11 @@
 			children = (
 				49EDD87621CB5E0900326FDD /* ViewController */,
 				4996C6E821CB660E0030252D /* View */,
-				4996C72F21CB666F0030252D /* ViewModel */,
-				4996C73721CB66940030252D /* Model */,
 				4996C74221CB66AD0030252D /* ApiService */,
 				49A7CE9E1E94B2B500BFFF90 /* utils */,
+				49A7CE5D1E94B14000BFFF90 /* baseClasses */,
 				49A7CE5B1E94B14000BFFF90 /* extensions */,
-				49FC83CD1EF9319000BE8181 /* AppUserDefaults.swift */,
+				4996C74721CB89640030252D /* mvvm */,
 				A6C63F111BF597E30037CF9A /* AppDelegate.swift */,
 				A6C098FA1C2962FC00F3E2AA /* Constants.swift */,
 				A6C63F151BF597E30037CF9A /* Main.storyboard */,
@@ -903,8 +952,6 @@
 				A6C63F1E1BF597E30037CF9A /* Sources */,
 				A6C63F1F1BF597E30037CF9A /* Frameworks */,
 				A6C63F201BF597E30037CF9A /* Resources */,
-				98350E7804263AD7441A373E /* [CP] Embed Pods Frameworks */,
-				ABE7D00F29AB607BDBE7E8B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -924,8 +971,6 @@
 				A6C63F291BF597E30037CF9A /* Sources */,
 				A6C63F2A1BF597E30037CF9A /* Frameworks */,
 				A6C63F2B1BF597E30037CF9A /* Resources */,
-				5B03F51DC5422DD8C24E3847 /* [CP] Embed Pods Frameworks */,
-				AA576A2FAFC02B1070E70E60 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -950,7 +995,7 @@
 					A6C63F0D1BF597E30037CF9A = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = AW8RFH6CD4;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -960,12 +1005,12 @@
 					};
 					A6C63F211BF597E30037CF9A = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1010;
 						TestTargetID = A6C63F0D1BF597E30037CF9A;
 					};
 					A6C63F2C1BF597E30037CF9A = {
 						CreatedOnToolsVersion = 7.1;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 1010;
 						TestTargetID = A6C63F0D1BF597E30037CF9A;
 					};
 				};
@@ -1057,30 +1102,31 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperiments/Pods-IOSExperiments-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-IOSExperiments/Pods-IOSExperiments-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/BABFrameObservingInputAccessoryView/BABFrameObservingInputAccessoryView.framework",
 				"${BUILT_PRODUCTS_DIR}/EZSwiftExtensions/EZSwiftExtensions.framework",
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/HaishinKit/HaishinKit.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Logboard/Logboard.framework",
 				"${BUILT_PRODUCTS_DIR}/MMDrawerController/MMDrawerController.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/PocketSVG/PocketSVG.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SMCalloutView/SMCalloutView.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SWRevealViewController/SWRevealViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/SimplifiedNotificationCenter/SimplifiedNotificationCenter.framework",
 				"${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/UIScrollView-InfiniteScroll/UIScrollView_InfiniteScroll.framework",
-				"${BUILT_PRODUCTS_DIR}/Validator/Validator.framework",
-				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
 				"${BUILT_PRODUCTS_DIR}/iOSSharedViewTransition/iOSSharedViewTransition.framework",
-				"${BUILT_PRODUCTS_DIR}/lf/lf.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1090,46 +1136,28 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BABFrameObservingInputAccessoryView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZSwiftExtensions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HaishinKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Logboard.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDrawerController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PocketSVG.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SMCalloutView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWRevealViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimplifiedNotificationCenter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIScrollView_InfiniteScroll.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Validator.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSSharedViewTransition.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/lf.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperiments/Pods-IOSExperiments-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5B03F51DC5422DD8C24E3847 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperimentsUITests/Pods-IOSExperimentsUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOSExperiments/Pods-IOSExperiments-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		95E53CF4A5F15FED8D4147D5 /* [CP] Check Pods Manifest.lock */ = {
@@ -1148,63 +1176,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		98350E7804263AD7441A373E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperimentsTests/Pods-IOSExperimentsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AA576A2FAFC02B1070E70E60 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperimentsUITests/Pods-IOSExperimentsUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ABE7D00F29AB607BDBE7E8B8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperimentsTests/Pods-IOSExperimentsTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BC67D2F5A2552C2A9985B849 /* [CP] Check Pods Manifest.lock */ = {
@@ -1231,8 +1202,8 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperiments/Pods-IOSExperiments-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-IOSExperiments/Pods-IOSExperiments-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -1240,7 +1211,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IOSExperiments/Pods-IOSExperiments-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOSExperiments/Pods-IOSExperiments-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1258,11 +1229,12 @@
 				A6C63F121BF597E30037CF9A /* AppDelegate.swift in Sources */,
 				49EDD8C021CB5E0900326FDD /* GameViewController.swift in Sources */,
 				49EDD8BF21CB5E0900326FDD /* GoogleImagesViewController.swift in Sources */,
-				49A7CE851E94B14000BFFF90 /* BaseViewController.swift in Sources */,
+				49A7CE851E94B14000BFFF90 /* BaseMVVMViewController.swift in Sources */,
 				4996C71221CB660F0030252D /* FlickrPhotoCell.swift in Sources */,
 				4996C71D21CB660F0030252D /* UITableViewWithDynamicHeaderView.swift in Sources */,
 				49A7CE881E94B14000BFFF90 /* BaseWebViewModel.swift in Sources */,
 				49EDD8AF21CB5E0900326FDD /* CalendarPickerCVC.m in Sources */,
+				4996C74F21CB8FB90030252D /* BaseViewController.swift in Sources */,
 				49EDD8B121CB5E0900326FDD /* MainViewController.swift in Sources */,
 				49A7CE8E1E94B14000BFFF90 /* VCWithInfinityScroll.swift in Sources */,
 				49A7CE901E94B14000BFFF90 /* ExplabdableTableDelegate.swift in Sources */,
@@ -1287,7 +1259,7 @@
 				49A7CEC51E94B2B500BFFF90 /* StringUtils.swift in Sources */,
 				49EDD8B021CB5E0900326FDD /* GMapsViewController.swift in Sources */,
 				490088EA2150EB510019DE80 /* MKPointAnnotation.swift in Sources */,
-				49A7CE831E94B14000BFFF90 /* BaseTableViewController.swift in Sources */,
+				49A7CE831E94B14000BFFF90 /* BaseMVVMTableViewController.swift in Sources */,
 				49EDD8BD21CB5E0900326FDD /* RemoteFetchVC.swift in Sources */,
 				49A7CE921E94B14000BFFF90 /* VCWithKeyboardProtocol.swift in Sources */,
 				49A7CE8B1E94B14000BFFF90 /* Date.swift in Sources */,
@@ -1299,7 +1271,6 @@
 				4996C71B21CB660F0030252D /* CardView.swift in Sources */,
 				4996C70F21CB660F0030252D /* MainTableCell.swift in Sources */,
 				4996C71F21CB660F0030252D /* FABButton.swift in Sources */,
-				49A7CE971E94B14000BFFF90 /* SWRevealViewController.m in Sources */,
 				49EDD8BC21CB5E0900326FDD /* LocationUpdatesLogsVC.swift in Sources */,
 				49A7CE9B1E94B14000BFFF90 /* UITextFieldDelegates.swift in Sources */,
 				4996C74421CB66AD0030252D /* GoogleService.swift in Sources */,
@@ -1307,7 +1278,6 @@
 				49EDD8A821CB5E0900326FDD /* CLCalendarViewController.swift in Sources */,
 				4996C71A21CB660F0030252D /* AlertDialogPlaceholder.swift in Sources */,
 				4996C72821CB660F0030252D /* TriangleView.swift in Sources */,
-				49EDD8B221CB5E0900326FDD /* StaticTableViewController.swift in Sources */,
 				49EDD8B821CB5E0900326FDD /* SecondViewController.swift in Sources */,
 				49A7CEB91E94B2B500BFFF90 /* Delegates.swift in Sources */,
 				4996C72921CB660F0030252D /* CircleImageView.swift in Sources */,
@@ -1317,7 +1287,7 @@
 				49A7CEB61E94B2B500BFFF90 /* AppInfo.swift in Sources */,
 				49A7CE911E94B14000BFFF90 /* VCWithAlertPlaceholder.swift in Sources */,
 				4996C71621CB660F0030252D /* LineView.swift in Sources */,
-				49A7CE811E94B14000BFFF90 /* BaseSectioningTableDelegate.swift in Sources */,
+				49A7CE811E94B14000BFFF90 /* BaseSectionTableDelegate.swift in Sources */,
 				49EDD8BA21CB5E0900326FDD /* FactoryViewController.swift in Sources */,
 				49A7CEB81E94B2B500BFFF90 /* DateRangeGenerator.swift in Sources */,
 				4996C73521CB66700030252D /* MainViewModel.swift in Sources */,
@@ -1583,67 +1553,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-l\"c++\"",
-					"-l\"z\"",
-					"-framework",
-					"\"Accelerate\"",
-					"-framework",
-					"\"Alamofire\"",
-					"-framework",
-					"\"AlamofireImage\"",
-					"-framework",
-					"\"AlamofireNetworkActivityIndicator\"",
-					"-framework",
-					"\"CoreData\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreLocation\"",
-					"-framework",
-					"\"CoreText\"",
-					"-framework",
-					"\"GLKit\"",
-					"-framework",
-					"\"GoogleMaps\"",
-					"-framework",
-					"\"GoogleMapsBase\"",
-					"-framework",
-					"\"GoogleMapsCore\"",
-					"-framework",
-					"\"IQKeyboardManagerSwift\"",
-					"-framework",
-					"\"ImageIO\"",
-					"-framework",
-					"\"MMDrawerController\"",
-					"-framework",
-					"\"ObjectMapper\"",
-					"-framework",
-					"\"OpenGLES\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"RxBlocking\"",
-					"-framework",
-					"\"RxCocoa\"",
-					"-framework",
-					"\"RxSwift\"",
-					"-framework",
-					"\"SMCalloutView\"",
-					"-framework",
-					"\"SimplifiedNotificationCenter\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIColor_Hex_Swift\"",
-					"-framework",
-					"\"UIKit\"",
-					"-framework",
-					"\"UIScrollView_InfiniteScroll\"",
-					"-framework",
-					"\"Validator\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				"OTHER_SWIFT_FLAGS[arch=*]" = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.0x384c0.IOSExperiments;
@@ -1652,7 +1562,8 @@
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = VERBOSE_FRAME_LOGGING;
 				"SWIFT_INCLUDE_PATHS[arch=*]" = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "IOSExperiments-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1676,74 +1587,15 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-l\"c++\"",
-					"-l\"z\"",
-					"-framework",
-					"\"Accelerate\"",
-					"-framework",
-					"\"Alamofire\"",
-					"-framework",
-					"\"AlamofireImage\"",
-					"-framework",
-					"\"AlamofireNetworkActivityIndicator\"",
-					"-framework",
-					"\"CoreData\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreLocation\"",
-					"-framework",
-					"\"CoreText\"",
-					"-framework",
-					"\"GLKit\"",
-					"-framework",
-					"\"GoogleMaps\"",
-					"-framework",
-					"\"GoogleMapsBase\"",
-					"-framework",
-					"\"GoogleMapsCore\"",
-					"-framework",
-					"\"IQKeyboardManagerSwift\"",
-					"-framework",
-					"\"ImageIO\"",
-					"-framework",
-					"\"MMDrawerController\"",
-					"-framework",
-					"\"ObjectMapper\"",
-					"-framework",
-					"\"OpenGLES\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"RxBlocking\"",
-					"-framework",
-					"\"RxCocoa\"",
-					"-framework",
-					"\"RxSwift\"",
-					"-framework",
-					"\"SMCalloutView\"",
-					"-framework",
-					"\"SimplifiedNotificationCenter\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIColor_Hex_Swift\"",
-					"-framework",
-					"\"UIKit\"",
-					"-framework",
-					"\"UIScrollView_InfiniteScroll\"",
-					"-framework",
-					"\"Validator\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.0x384c0.IOSExperiments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = VERBOSE_FRAME_LOGGING;
 				SWIFT_OBJC_BRIDGING_HEADER = "IOSExperiments-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -1756,7 +1608,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.desu.IOSExperimentsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOSExperiments.app/IOSExperiments";
 			};
 			name = Debug;
@@ -1770,7 +1623,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.desu.IOSExperimentsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IOSExperiments.app/IOSExperiments";
 			};
 			name = Release;
@@ -1783,7 +1637,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.desu.IOSExperimentsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = IOSExperiments;
 				USES_XCTRUNNER = YES;
 			};
@@ -1797,7 +1652,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.desu.IOSExperimentsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = IOSExperiments;
 				USES_XCTRUNNER = YES;
 			};

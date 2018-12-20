@@ -13,7 +13,7 @@ import ObjectMapper
 
 
 class BaseService {
-    func createRequest<T:Mappable>(
+    func createRequest<T:Mappable>(//json with object as root
         url:String,
         parameters: [String: Any]? = nil,
         headers: HTTPHeaders? = nil,
@@ -21,7 +21,7 @@ class BaseService {
         encoding: ParameterEncoding = URLEncoding.default) -> Observable<T>{
         Logger.logRequest(url: url, parameters: parameters, headers: headers, method: method)
         
-        return Alamofire.SessionManager.default.requestWithoutCashe(
+        return Alamofire.SessionManager.default.request(
             url.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? "",
             method: method,
             parameters: parameters,
@@ -30,21 +30,39 @@ class BaseService {
             .rx
             .mappable()
     }
-    enum Result{
-        case
-        success,
-        fail,
-        none
+    func createRequest<T:Mappable>(//json with array as root
+        url:String,
+        parameters: [String: Any]? = nil,
+        headers: HTTPHeaders? = nil,
+        method: HTTPMethod = .get,
+        encoding: ParameterEncoding = URLEncoding.default) -> Observable<[T]>{
+        Logger.logRequest(url: url, parameters: parameters, headers: headers, method: method)
+        
+        return Alamofire.SessionManager.default.request(
+            url.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? "",
+            method: method,
+            parameters: parameters,
+            encoding: encoding,
+            headers: headers)
+            .rx
+            .mappableArray()
     }
     
-    fileprivate var cachePolicy:URLRequest.CachePolicy {
-        return isNetworkReachable ?
-            .reloadIgnoringCacheData:
-            .returnCacheDataElseLoad
-        
+    func createRequest<T:Mappable>(data:Data,url:String) -> Observable<T>{//upload Data
+        Logger.logRequest(url: url, parameters: ["data" : String(describing: data)], headers: nil)
+        return Alamofire.upload(
+            data,
+            to: url)
+            .rx
+            .mappable()
     }
-    private var isNetworkReachable:Bool{
-        return NetworkReachabilityManager()?.isReachable ?? false
+    func createRequest<T:Mappable>(fileUrl:URL,url:String) -> Observable<T>{//upload file from path
+        Logger.logRequest(url: url, parameters: ["fileUrl" : fileUrl.absoluteString], headers: nil)
+        return Alamofire.upload(
+            fileUrl,
+            to: url)
+            .rx
+            .mappable()
     }
 }
 
@@ -91,33 +109,3 @@ extension Alamofire.SessionManager{
         }
     }
 }
-
-
-//        return Alamofire
-//            .request(
-//                url.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? "",
-//                method: method,
-//                parameters: parameters,
-//                encoding: encoding,
-//                headers:headers
-//            )
-//            .rx
-//            .mappable()
-
-//            return HTTPManager.shared
-//                .request(
-//                    method,
-//                    url.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? "",
-//                    parameters: parameters
-//                )
-//            .debugLog()
-//            .rx
-//            .stringWithBodyInError()
-
-//class HTTPManager: Alamofire.Manager {
-//    static let shared: HTTPManager = {
-//        let configuration = Timberjack.defaultSessionConfiguration()
-//        let manager = HTTPManager(configuration: configuration)
-//        return manager
-//    }()
-//}

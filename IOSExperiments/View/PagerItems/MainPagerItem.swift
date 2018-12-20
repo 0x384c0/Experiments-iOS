@@ -29,7 +29,7 @@ class MainPagerItem: UIViewController {
         _ = tableController.setItems(mainTab.screens)
         ScreensTableView.delegate = tableController
         ScreensTableView.dataSource = tableController
-        ScreensTableView.rowHeight = UITableViewAutomaticDimension;
+        ScreensTableView.rowHeight = UITableView.automaticDimension;
         ScreensTableView.estimatedRowHeight = 67; // set to whatever your "average" cell height is
         ScreensTableView.tableFooterView = UIView(frame: CGRect.zero)
         ScreensTableView
@@ -43,6 +43,6 @@ class MainPagerItem: UIViewController {
                 }
             }
         })
-        .addDisposableTo(disposeBag)
+        .disposed(by: disposeBag)
     }
 }

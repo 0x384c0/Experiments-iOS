@@ -11,14 +11,14 @@ protocol VCWithInfinityScroll:class {
     var tableView: UITableView!{get set}
     func getViewModel() -> VMWithInfinityScroll
 }
-extension VCWithInfinityScroll where Self:BaseViewController{
+extension VCWithInfinityScroll where Self:BaseMVVMViewController{
     func VCWithInfinityScrollBind(){
         getViewModel()
             .infinityScrollDisabledBinding
             .subscribeMain(onNext: { [weak self] data in
                 self?.disableInfinityScroll()
             })
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
     }
     func viewControllerWasRefreshed(){
         if getViewModel().PAGINATION_ENABLED {

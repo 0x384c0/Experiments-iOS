@@ -65,7 +65,7 @@ extension SecondViewController {
         drawAnimation.repeatCount = 1.0
         drawAnimation.fromValue = Int(0.0)
         drawAnimation.toValue = Int(1.0)
-        drawAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        drawAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         circle.add(drawAnimation, forKey: "drawUserpicOutlineAnimation")
     }
     func revealUserpic() {
@@ -98,7 +98,7 @@ extension SecondViewController {
         let revealAnimationPath = CABasicAnimation(keyPath: "path")
         revealAnimationPath.fromValue = ((startPath.cgPath) as AnyObject)
         revealAnimationPath.toValue = ((endPath.cgPath) as AnyObject)
-        revealAnimationPath.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        revealAnimationPath.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         revealAnimationPath.duration = kAnimationDuration / 2.0
         revealAnimationPath.repeatCount = 1.0
         //Set the begin time, so that the image starts appearing when the outline animation is already halfway through
@@ -160,7 +160,7 @@ extension SecondViewController {
         drawAnimation.repeatCount = 1.0
         drawAnimation.fromValue = Int(0.0)
         drawAnimation.toValue = Int(1.0)
-        drawAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        drawAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         figure.add(drawAnimation, forKey: "drawUserpicOutlineAnimation")
         
     }

@@ -11,33 +11,33 @@
 protocol VCWithAlertPlaceholder:class {
     var alertDialogPlaceholder : AlertDialogPlaceholder? { get set }
     func vcWithAlertPlaceholderGetView() -> UIView?
-    func vcWithAlertPlaceholderGetStyle() -> UIScrollViewIndicatorStyle?
+    func vcWithAlertPlaceholderGetStyle() -> UIScrollView.IndicatorStyle?
 }
-extension VCWithAlertPlaceholder where Self:BaseViewController{
+extension VCWithAlertPlaceholder where Self:BaseMVVMViewController{
     func bindAlerts(from viewModel:BaseViewModelProtocol,popVCAfterDismiss:Bool = false){
         viewModel
             .textAlertBinding
             .subscribeMain(onNext: { [weak self]  text in
                 self?.showTextAlert(text,popVCAfterDismiss: popVCAfterDismiss)
             })
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         viewModel
             .errorAlertController
             .subscribeMain(onNext: { [weak self]  alertController in
                 self?.showPlaceholderDialog(alertController)
             })
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
     }
     
     func showPlaceholderDialog(_ alertBindingData:VMAlertBindingData){
         ((self as Any) as? VCWithRefreshControlInTable)?.hideLoading()
-        ((self as Any) as? BaseViewController)?.hideLoading()
+        ((self as Any) as? BaseMVVMViewController)?.hideLoading()
         alertDialogPlaceholder = AlertDialogPlaceholder(
             title: alertBindingData.vc.message,
             message: nil,
             buttonText: "TRY_AGAIN".localized,
             handler: {[weak self]  button in
-                self?.RefreshViewController()
+                self?.refreshViewController()
                 self?.alertDialogPlaceholder?.hide()
             }
         )
@@ -47,7 +47,7 @@ extension VCWithAlertPlaceholder where Self:BaseViewController{
         alertDialogPlaceholder?.show(for: vcWithAlertPlaceholderGetView() ?? view)
     }
     func vcWithAlertPlaceholderGetView() -> UIView?{return nil}
-    func vcWithAlertPlaceholderGetStyle() -> UIScrollViewIndicatorStyle?{return nil}
+    func vcWithAlertPlaceholderGetStyle() -> UIScrollView.IndicatorStyle?{return nil}
     
 }
 

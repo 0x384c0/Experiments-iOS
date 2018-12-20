@@ -111,7 +111,7 @@ extension GMapsViewController:GMSMapViewDelegate {
                 attribute: .notAnAttribute,
                 multiplier: 1.0,
                 constant: infoWindowWidth))
-            stackView.h = stackView.systemLayoutSizeFitting(UILayoutFittingCompressedSize).height
+            stackView.h = stackView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
             return stackView
         }
     }

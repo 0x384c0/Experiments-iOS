@@ -28,9 +28,9 @@ class MainViewController: UIViewController {
         pageViewController.dataSource = pageViewDataSource
         pageViewController.delegate = pageViewDataSource
         //Add page view on screen
-        addChildViewController(pageViewController)
+        addChild(pageViewController)
         self.view.addSubview(pageViewController.view)
-        pageViewController.didMove(toParentViewController: self)
+        pageViewController.didMove(toParent: self)
     }
     
     // MARK: Binding
@@ -40,7 +40,7 @@ class MainViewController: UIViewController {
             .subscribe(onNext: { tabs in
                 self.loadDataInTabController(tabs)
             })
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
     }
     
     // MARK: Func
@@ -52,7 +52,7 @@ class MainViewController: UIViewController {
             let startingViewControllers: NSArray = [firstController]
             pageViewController.setViewControllers (
                 startingViewControllers as? [UIViewController],
-                direction: UIPageViewControllerNavigationDirection.forward,
+                direction: UIPageViewController.NavigationDirection.forward,
                 animated: false,
                 completion: nil
             )

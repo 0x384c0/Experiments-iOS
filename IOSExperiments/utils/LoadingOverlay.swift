@@ -14,7 +14,7 @@ open class LoadingOverlay{
     
     private let
     overlayView = UIViewWithLoadingOverlay(),
-    activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.white)
+    activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.white)
     var
     overlayIsShown = false,
     backgroundColor = Constants.COLOR_PRIMARY
@@ -69,7 +69,7 @@ open class LoadingOverlay{
             UIView.animate(
                 withDuration: 0.5,
                 delay: 0,
-                options: UIViewAnimationOptions.curveEaseOut,
+                options: UIView.AnimationOptions.curveEaseOut,
                 animations: {[weak self] in
                     self?.overlayView.alpha = 0.0
                 },
@@ -84,7 +84,7 @@ open class LoadingOverlay{
     
     func setup(_ settings:LoadingOverlaySettings){
         backgroundColor = settings.color
-        activityIndicator.activityIndicatorViewStyle = settings.style
+        activityIndicator.style = settings.style
     }
     
     
@@ -102,7 +102,7 @@ open class LoadingOverlay{
 struct LoadingOverlaySettings{
     let
     color:UIColor,
-    style:UIActivityIndicatorViewStyle
+    style:UIActivityIndicatorView.Style
 }
 
 

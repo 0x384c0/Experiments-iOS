@@ -14,9 +14,8 @@ def shared_pods
     pod 'AlamofireImage' 
     pod 'AlamofireNetworkActivityIndicator'
     pod 'RxAlamofire'
-    #    pod 'Timberjack'                        , :git => 'https://github.com/dodgecm/Timberjack.git', :branch => 'swift-3'
     pod 'ObjectMapper'
-    pod 'lf'
+    pod 'HaishinKit'
     
     #UI
     pod 'iOSSharedViewTransition'
@@ -28,12 +27,13 @@ def shared_pods
     pod 'GoogleMaps'
     pod "FSCalendar"
     pod 'BABFrameObservingInputAccessoryView'
+    pod 'SWRevealViewController'
+    pod 'SVProgressHUD'
 
     #others
     pod 'PocketSVG'
-    pod 'Validator'
-    pod "SimplifiedNotificationCenter"
-    pod 'EZSwiftExtensions'
+    pod 'SimplifiedNotificationCenter'
+    pod 'EZSwiftExtensions' , :git => 'https:///github.com/goktugyil/EZSwiftExtensions.git', :branch => 'swift4.2official'
 end
 
 target 'IOSExperiments' do

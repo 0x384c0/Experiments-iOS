@@ -50,7 +50,7 @@ class GoogleImagesViewModel : BaseViewModel,VMWithInfinityScroll  {
                 },
                 onError: getOnErrorObserver()
             )
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         dataWasStartedLoad()
     }
     func setData(_ data:[Item]){

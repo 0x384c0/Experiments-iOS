@@ -79,11 +79,11 @@ class AVPlayerController: UIViewController {
     func setStreamStatusToView(){
         streamButton.isEnabled = true
         if ScreenStreamer.shared.connected {
-            streamButton.setTitle("Stop stream screen and Disconnect", for: UIControlState())
+            streamButton.setTitle("Stop stream screen and Disconnect", for: UIControl.State())
             infoText.text = "Connected to \(ScreenStreamer.shared.URL)/\(ScreenStreamer.shared.STREAM)"
             activityIndicator.startAnimating()
         } else {
-            streamButton.setTitle("Connect and stream screen", for: UIControlState())
+            streamButton.setTitle("Connect and stream screen", for: UIControl.State())
             infoText.text = "Not Connected to \(ScreenStreamer.shared.URL)/\(ScreenStreamer.shared.STREAM)"
             activityIndicator.stopAnimating()
         }

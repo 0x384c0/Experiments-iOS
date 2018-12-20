@@ -11,7 +11,7 @@ import UIKit
 
 class UIAlertControllerWithTextField : UIAlertController {
     deinit {
-        Logger.logDeInit(self)
+        Logger.logDeinit(self)
         if let observer = observer{
             NotificationCenter
                 .default
@@ -35,7 +35,7 @@ class UIAlertControllerWithTextField : UIAlertController {
             
             self?.observer = NotificationCenter
                 .default
-                .addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: textField, queue: OperationQueue.main) { (notification) in
+                .addObserver(forName: UITextField.textDidChangeNotification, object: textField, queue: OperationQueue.main) { (notification) in
                     spellChecker(textField.text)
             }
         }

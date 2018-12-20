@@ -26,7 +26,7 @@ class CLCalendarViewController: UIViewController {
         calendarView.collectionView
             .register(
                 CustomHeader.self,
-                forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
+                forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                 withReuseIdentifier: "header"
         )
         

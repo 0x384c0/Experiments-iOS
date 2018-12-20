@@ -42,7 +42,7 @@ extension MKPointAnnotation {
             }
         }
         
-        var span = MKCoordinateSpanMake(maxLatitude - minLatitude, maxLongitude - minLongitude)
+        var span = MKCoordinateSpan(latitudeDelta: maxLatitude - minLatitude, longitudeDelta: maxLongitude - minLongitude)
         let center = CLLocationCoordinate2DMake((maxLatitude - span.latitudeDelta / 2), (maxLongitude - span.longitudeDelta / 2))
         
         if span.latitudeDelta < MIN_DELTA{

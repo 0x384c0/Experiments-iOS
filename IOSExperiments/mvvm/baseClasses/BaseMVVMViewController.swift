@@ -1,5 +1,5 @@
 //
-//  BaseViewController.swift
+//  BaseMVVMViewController.swift
 //  iosExperiments
 //
 //  Created by 0x384c0 on 1/19/16.
@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class BaseViewController: UIViewController, BaseViewControllerProtocol {
+class BaseMVVMViewController: UIViewController, BaseMVVMViewControllerProtocol {
     var tabBarSettings:TabBarSettings{return TabBarSettings(barStyle: .black, tintColor: Constants.COLOR_PRIMARY, barTintColor: Constants.COLOR_TINT, isTransparent: false)}
     var loadingOverlaySettings:LoadingOverlaySettings{return LoadingOverlaySettings(color:Constants.COLOR_PRIMARY,style:.gray)}
     //MARK: lifecycle
@@ -21,13 +21,13 @@ class BaseViewController: UIViewController, BaseViewControllerProtocol {
         return .lightContent
     }
     
-    func SetupViewController(){
+    func setupViewController(){
     }
-    func BindData(){
+    func bindData(){
     }
     func BindDataVersion() {
     }
-    func RefreshViewController(){
+    func refreshViewController(){
     }
     func loadDataVersion(){
     }
@@ -44,7 +44,7 @@ class BaseViewController: UIViewController, BaseViewControllerProtocol {
     viewForLoadingOverlay: UIView?,
     errorAlertReplyAction: (() -> Void)?
     deinit {
-        Logger.logDeInit(self)
+        Logger.logDeinit(self)
     }
 }
 
@@ -68,7 +68,7 @@ class BaseViewController: UIViewController, BaseViewControllerProtocol {
 //        }
 //    }
 
-protocol BaseViewControllerProtocol: class {
+protocol BaseMVVMViewControllerProtocol: class {
     var tabBarSettings:TabBarSettings{get}
     var loadingOverlaySettings:LoadingOverlaySettings{get}
     //MARK: RX
@@ -81,13 +81,13 @@ protocol BaseViewControllerProtocol: class {
     var alertController: UIAlertController? {get set}
     var viewForLoadingOverlay: UIView? {get set}
     
-    func SetupViewController()
-    func BindData()
-    func RefreshViewController()
+    func setupViewController()
+    func bindData()
+    func refreshViewController()
     //    func BindDataVersion()
 }
 
-extension BaseViewControllerProtocol where Self: UIViewController{
+extension BaseMVVMViewControllerProtocol where Self: UIViewController{
     
     //MARK: lifecycle
     func handleViewDidLoad(){
@@ -98,9 +98,9 @@ extension BaseViewControllerProtocol where Self: UIViewController{
         
         setEmptyBackButton()
         setupTabBarColors()
-        BindData()
-        SetupViewController()
-        RefreshViewController()
+        bindData()
+        setupViewController()
+        refreshViewController()
         //        BindDataVersion()
     }
     
@@ -158,7 +158,7 @@ extension BaseViewControllerProtocol where Self: UIViewController{
             .subscribeMain(onNext: { [weak self]  text in
                 self?.showTextAlert(text, popVCAfterDismiss: popVCAfterDismiss)
             })
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         viewModel
             .errorAlertController
             .subscribeMain(onNext: { [weak self]  data in
@@ -167,7 +167,7 @@ extension BaseViewControllerProtocol where Self: UIViewController{
                     data.popVCAfterDismiss!
                 self?.showAlert(data.vc, popVCAfterDismiss: popVCAfterDismissResult)
             })
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
     }
     func showAlert(_ alertController:UIAlertController, popVCAfterDismiss:Bool = false){
         self.alertController?.dismiss(animated: false, completion: nil)
@@ -179,7 +179,7 @@ extension BaseViewControllerProtocol where Self: UIViewController{
                 alertController.addAction(
                     UIAlertAction(
                         title: "REFRESH".localized,
-                        style: UIAlertActionStyle.default,
+                        style: UIAlertAction.Style.default,
                         handler: {[weak self]  action in
                             self?.hideLoading(false)
                             self?.errorAlertReplyAction?()
@@ -193,7 +193,7 @@ extension BaseViewControllerProtocol where Self: UIViewController{
             }
             alertController.addAction(
                 UIAlertAction(title: cancelText,
-                              style: UIAlertActionStyle.default,
+                              style: UIAlertAction.Style.default,
                               handler: {[weak self]  action in
                                 self?.hideLoading()
                                 if popVCAfterDismiss{
@@ -213,7 +213,7 @@ extension BaseViewControllerProtocol where Self: UIViewController{
             alertController.addAction(
                 UIAlertAction(
                     title: "CLOSE".localized,
-                    style: UIAlertActionStyle.default,
+                    style: UIAlertAction.Style.default,
                     handler: {[weak self] _ in
                         if popVCAfterDismiss {
                             _ = self?.navigationController?.popViewController(animated: true)
@@ -235,7 +235,7 @@ extension BaseViewControllerProtocol where Self: UIViewController{
     }
     func showReplyActionInAlerts(){
         errorAlertReplyAction = {[weak self] in
-            self?.RefreshViewController()
+            self?.refreshViewController()
         }
     }
 }
@@ -250,7 +250,7 @@ struct TabBarSettings{
 
 //import RxSwift
 //
-//class SampleViewController: BaseViewController {
+//class SampleViewController: BaseMVVMViewController {
 //    //MARK: UI
 //
 //    //MARK: UI Actions
@@ -288,7 +288,7 @@ struct TabBarSettings{
 //                self?.load(data: data)
 //                self?.hideLoading()
 //            })
-//            .addDisposableTo(disposeBag)
+//            .disposed(by: disposeBag)
 //    }
 //
 //    //MARK: other

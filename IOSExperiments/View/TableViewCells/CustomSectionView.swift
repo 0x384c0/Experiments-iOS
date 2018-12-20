@@ -22,16 +22,16 @@ class CustomSectionView: UITableViewHeaderFooterView {
             customBackgroundView.backgroundColor = backgroundColor
         }
         if text == CustomSectionView.empty{
-            textBottomConstraint.priority = 1
+            textBottomConstraint.priority = UILayoutPriority(rawValue: 1)
             titleLabelText.text = ""
         } else {
-            textBottomConstraint.priority = 999
+            textBottomConstraint.priority = UILayoutPriority(rawValue: 999)
             titleLabelText.text = text?.uppercased()
         }
     }
     static func addSelf(to tableView:UITableView){
         tableView.estimatedSectionHeaderHeight = CustomSectionView.estimatedHeigh
-        tableView.sectionHeaderHeight = UITableViewAutomaticDimension
+        tableView.sectionHeaderHeight = UITableView.automaticDimension
         tableView.sectionFooterHeight = 0
         tableView.register(
             UINib(nibName: CustomSectionView.customReuseIdentifier, bundle: nil),

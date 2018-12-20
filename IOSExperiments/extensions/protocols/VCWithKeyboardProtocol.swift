@@ -22,21 +22,21 @@ extension VCWithKeyboardProtocol where Self: UIViewController{
                 setupInteractiveDismissModeKeyboard(textFiled: textFiled)
             }
         } else {
-            NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardWillShow, object: nil, queue: nil){[weak self] notif in
+            NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: nil){[weak self] notif in
                 self?.keyboardWillShow(notif)
             }
         }
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardWillHide, object: nil, queue: nil){[weak self] notif in
+        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: nil){[weak self] notif in
             self?.keyboardWillHide(notif)
         }
         
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationWillResignActive, object: nil, queue: nil){[weak self] notif in
+        NotificationCenter.default.addObserver(forName: UIApplication.willResignActiveNotification, object: nil, queue: nil){[weak self] notif in
             self?.dismissKeyboard()
         }
     }
     func keyboardWillShow(_ notification: Notification) {
         if isVCNotVisible{ return }
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             self.bottomConstraint.constant = keyboardSize.height
             keyboardWillShow(keyboardSize.height)
         }
@@ -64,8 +64,8 @@ extension VCWithKeyboardProtocol where Self: UIViewController{
         let inputView = BABFrameObservingInputAccessoryView(frame: .zero)
         inputView.isUserInteractionEnabled = false
         textFiled.inputAccessoryView = inputView
-        inputView.keyboardFrameChangedBlock = {[weak self] data in
-            let viewHeigh = data.1.y,
+        inputView.keyboardFrameChangedBlock = {[weak self] bool,rect in
+            let viewHeigh = rect.y,
             constaintValue = UIScreen.main.bounds.height - viewHeigh
             self?.bottomConstraint?.constant = constaintValue
         }

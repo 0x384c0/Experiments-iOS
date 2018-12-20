@@ -52,8 +52,8 @@ extension UISearchBar{
         let clearImage = clearButton?.imageView?.image
         setImage(
             clearImage?.getTintedImage(color),
-            for: UISearchBarIcon.clear,
-            state: UIControlState()
+            for: UISearchBar.Icon.clear,
+            state: UIControl.State()
         )
         fieldTintColor = color
         
@@ -70,7 +70,7 @@ extension UISearchBar{
     
     func setFieldPlaceHolderTintedText(_ text:String) -> UISearchBar{
         //Tinting placeholder
-        let attributeDict = [NSForegroundColorAttributeName: fieldTintColor]
+        let attributeDict = [NSAttributedString.Key.foregroundColor: fieldTintColor]
         textField?.attributedPlaceholder = NSAttributedString(string: text, attributes: attributeDict)
         
         return self
@@ -95,11 +95,11 @@ extension UISearchBar{
     func setCancelImage(){
         setCancelImage(imageName: "ic_close_search",clearButtonMode: .never)
     }
-    func setCancelImage(clearButtonMode: UITextFieldViewMode){
+    func setCancelImage(clearButtonMode: UITextField.ViewMode){
         setCancelImage(imageName: "ic_close_search",clearButtonMode: clearButtonMode)
     }
     
-    func setCancelImage(imageName:String,clearButtonMode: UITextFieldViewMode){
+    func setCancelImage(imageName:String,clearButtonMode: UITextField.ViewMode){
         if
             let cancelButton = self.value(forKey: "cancelButton") as? UIButton,
             let textField = self.value(forKey: "_searchField") as? UITextField,

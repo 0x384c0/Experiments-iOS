@@ -11,7 +11,7 @@ import RxBlocking
 import RxCocoa
 
 //TODO: unwind segue
-class GoogleImagesViewController: BaseViewController ,VCWithRefreshControlInTable,VCWithInfinityScroll,VCWithKeyboardProtocol{
+class GoogleImagesViewController: BaseMVVMViewController ,VCWithRefreshControlInTable,VCWithInfinityScroll,VCWithKeyboardProtocol{
 
     // MARK: UI
     @IBOutlet weak var searchBar: UISearchBar!
@@ -33,15 +33,15 @@ class GoogleImagesViewController: BaseViewController ,VCWithRefreshControlInTabl
     
     // MARK: UI Actions
     func refreshControlDidSwipe(){
-        RefreshViewController()
+        refreshViewController()
     }
     @IBAction func stubSwitched(_ sender: UISwitch) {
         viewModel.useStubApi = sender.isOn
     }
     //MARK: LifeCycle
-    override func SetupViewController(){
+    override func setupViewController(){
         tableView.estimatedRowHeight = ImageTableCell.estimatedHeigh
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         //CustomSectionView.addSelf(to: tableView)
         
         tableView.delegate = tableDelegate
@@ -53,7 +53,7 @@ class GoogleImagesViewController: BaseViewController ,VCWithRefreshControlInTabl
         
         bottomTextField.delegate = textFieldDelegate
     }
-    override func RefreshViewController() {
+    override func refreshViewController() {
         if searchBar.text?.isBlank ?? true { return }
         showLoading()
         viewModel.loadData(searchText:searchBar.text)
@@ -77,36 +77,36 @@ class GoogleImagesViewController: BaseViewController ,VCWithRefreshControlInTabl
     // MARK: Binding
     let viewModel = GoogleImagesViewModel()
     internal func getViewModel() -> VMWithInfinityScroll { return viewModel }
-    override func BindData() {
+    override func bindData() {
         bindAlerts(from: viewModel)
         searchBar
             .rx.text
             .skip(1)
             .debounce(1, scheduler: MainScheduler.instance)
             .subscribe(onNext:  { [weak self] _ in
-                self?.RefreshViewController()
+                self?.refreshViewController()
             })
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         searchBar
             .rx.searchButtonClicked
             .subscribe(onNext:  { [weak self] _ in
             self?.searchBar.resignFirstResponder()
         })
-        .addDisposableTo(disposeBag)
+        .disposed(by: disposeBag)
         resetButton
             .rx.tap
             .debounce(1, scheduler: MainScheduler.instance)
             .subscribe(onNext:  {[weak self] in
-                self?.RefreshViewController()
+                self?.refreshViewController()
             })
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         viewModel
             .dataBinding
             .subscribeMain {[weak self] data in
                 self?.load(data: data)
                 self?.hideLoading()
             }
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         VCWithInfinityScrollBind()
     }
     

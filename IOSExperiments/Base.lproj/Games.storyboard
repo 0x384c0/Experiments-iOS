@@ -54,7 +54,7 @@
         <!--Shader View Controller-->
         <scene sceneID="dYx-6Y-2MT">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="uQq-Oi-9e1" customClass="ShaderViewController" customModule="IOSExperiments" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShaderViewController" hidesBottomBarWhenPushed="YES" id="uQq-Oi-9e1" customClass="ShaderViewController" customModule="IOSExperiments" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UYp-Mk-qZ2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

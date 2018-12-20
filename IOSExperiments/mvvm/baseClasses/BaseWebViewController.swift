@@ -8,10 +8,10 @@
 
 import RxSwift
 
-class BaseWebViewController : BaseViewController {
+class BaseWebViewController : BaseMVVMViewController {
     
     deinit {
-        Logger.logDeInit(self)
+        Logger.logDeinit(self)
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
     //MARK: UI
@@ -23,20 +23,20 @@ class BaseWebViewController : BaseViewController {
     refreshControl = UIRefreshControl()
     
     //MARK: UI Actions
-    func handleRefresh(_ refreshControl: UIRefreshControl){
+    @objc func handleRefresh(_ refreshControl: UIRefreshControl){
         getWebView().reload()
     }
     
     //MARK: LifeCycle
-    override func SetupViewController(){
+    override func setupViewController(){
         errorAlertReplyAction = nil
         getWebView().delegate = self
         refreshControl.attributedTitle = NSAttributedString(string: "REFRESHING".localized)
-        refreshControl.addTarget(self, action: #selector(BaseWebViewController.handleRefresh(_:)), for: UIControlEvents.valueChanged)
+        refreshControl.addTarget(self, action: #selector(BaseWebViewController.handleRefresh(_:)), for: UIControl.Event.valueChanged)
         getWebView().scrollView.addSubview(refreshControl)
         showLoading()
     }
-    override func RefreshViewController() {
+    override func refreshViewController() {
         getViewModel().loadUrl()
     }
     
@@ -44,7 +44,7 @@ class BaseWebViewController : BaseViewController {
     func getViewModel() -> WebViewModelProtocol {
         preconditionFailure("This method must be overridden")
     }
-    override func BindData() {
+    override func bindData() {
         bindAlerts(from: getViewModel() as BaseViewModelProtocol,popVCAfterDismiss:true)
         getViewModel()
             .requestBinding
@@ -52,14 +52,14 @@ class BaseWebViewController : BaseViewController {
                 self?.getWebView().loadRequest(request)
                 self?.refreshControl.beginRefreshing()
             }
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         
         getViewModel()
             .urlResultBinding
             .subscribeMain{[weak self] result in
                 self?.webViewResult(result: result)
             }
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
     }
     
     func webViewResult(result:WebViewResult){
@@ -84,7 +84,7 @@ enum WebViewResult{
     NONE
 }
 extension BaseWebViewController : UIWebViewDelegate {
-    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+    private func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebView.NavigationType) -> Bool {
         let url = request.url?.absoluteString
         return getViewModel().shouldStartLoadWithRequest(url: url)
     }

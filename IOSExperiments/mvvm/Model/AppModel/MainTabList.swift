@@ -33,12 +33,6 @@ class MainTabList {
         screen.subTitle = "Live Streaming Audio Player"
         screen.screenId = "AVPlayerController"
         mainTab.screens.append(screen)
-        
-        screen = Screen()
-        screen.title = "StaticTableView"
-        screen.subTitle = "View from BJ"
-        screen.screenId = "StaticTableViewController"
-        mainTab.screens.append(screen)
 
         tabs.append(mainTab)
         //-----------------------------------------------------------------------------

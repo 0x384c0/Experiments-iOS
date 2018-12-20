@@ -13,10 +13,9 @@ import RxAlamofire
 
 extension Reactive where Base: DataRequest {
     public func mappable<T:Mappable>() -> Observable<T>{
-        
-        return stringWithBodyInError()
+        return string()
             .flatMap{ response -> Observable<T> in
-            let response = response.isBlank ? "{}" : response
+                let response = response.isBlank ? "{}" : response
                 return Observable.create{ observer in
                     print(response)
                     if let result = Mapper<T>().map(JSONString: response){
@@ -25,7 +24,28 @@ extension Reactive where Base: DataRequest {
                     } else {
                         let
                         userInfo = [NSLocalizedFailureReasonErrorKey: "JSON_PARSE_ERROR".localized],
-                        error = NSError(domain: "com.0x384c0", code: 1, userInfo: userInfo)
+                        error = NSError(domain: "com.tmaamv", code: 1, userInfo: userInfo)
+                        observer.onError(error)
+                    }
+                    return Disposables.create()
+                }
+        }
+    }
+    
+    
+    public func mappableArray<T:Mappable>() -> Observable<[T]>{
+        return string()
+            .flatMap{ response -> Observable<[T]> in
+                let response = response.isBlank ? "{}" : response
+                return Observable.create{ observer in
+                    print(response)
+                    if let result = Mapper<T>().mapArray(JSONString: response){
+                        print(result)
+                        observer.onNext(result)
+                    } else {
+                        let
+                        userInfo = [NSLocalizedFailureReasonErrorKey: "JSON_PARSE_ERROR".localized],
+                        error = NSError(domain: "com.com.tmaamv", code: 1, userInfo: userInfo)
                         observer.onError(error)
                     }
                     return Disposables.create()
@@ -34,12 +54,7 @@ extension Reactive where Base: DataRequest {
     }
 }
 
-extension Request {
-    public func debugLog() -> Self {
-        print(self)
-        return self
-    }
-}
+
 
 extension Reactive where Base: DataRequest {
     func stringWithBodyInError(encoding: String.Encoding? = nil) -> Observable<String> {
@@ -103,7 +118,3 @@ extension Error{
         return ((self as Any) as? NSError)?.userInfo[FailureStatusCodeErrorKey] as? NSInteger
     }
 }
-
-
-
-
