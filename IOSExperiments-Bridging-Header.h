@@ -14,7 +14,7 @@
 #import "SWRevealViewController.h"
 #import "iOSSharedViewTransition/ASFSharedViewTransition.h"
 #import "PocketSVG/PocketSVG.h"
-#import "IOSExperiments/View/Screens/UI/Calendar/CalendarPicker/CalendarPickerCVC.h"
+#import "IOSExperiments/ViewController/UI/Calendar/CalendarPicker/CalendarPickerCVC.h"
 
 #endif /* IOSExperiments_Bridging_Header_h */
 
