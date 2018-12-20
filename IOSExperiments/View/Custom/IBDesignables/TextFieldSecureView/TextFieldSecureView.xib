@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldSecureView" customModule="Movers" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="jQ9-4l-HPd" id="Hva-Cb-psq"/>
+                <outlet property="textFieldView" destination="fwe-03-3ci" id="by7-or-Io2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="104"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwe-03-3ci" customClass="TextFieldView" customModule="Movers" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="104"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQ9-4l-HPd">
+                    <rect key="frame" x="430" y="0.0" width="50" height="104"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="JjT-dS-0Xt"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="6" maxY="0.0"/>
+                    <state key="normal" image="visiblePass"/>
+                    <connections>
+                        <action selector="buttonTap:" destination="-1" eventType="touchUpInside" id="enA-ck-nrc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jQ9-4l-HPd" secondAttribute="trailing" id="A1E-H3-XVV"/>
+                <constraint firstItem="jQ9-4l-HPd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="AVb-Tr-moD"/>
+                <constraint firstItem="fwe-03-3ci" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ew8-t8-o92"/>
+                <constraint firstItem="fwe-03-3ci" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="L8i-cE-U1X"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jQ9-4l-HPd" secondAttribute="bottom" id="m45-bo-hJ7"/>
+                <constraint firstItem="fwe-03-3ci" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="o03-0A-YYv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fwe-03-3ci" secondAttribute="trailing" id="qfn-wT-9sN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-83.200000000000003" y="-96.251874062968525"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="visiblePass" width="22" height="16"/>
+    </resources>
+</document>

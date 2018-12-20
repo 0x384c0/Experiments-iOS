@@ -306,6 +306,17 @@ extension UITextView{
     }
 }
 
+extension UITextField{
+    func shakeIfEmpty() -> Bool{
+        if text == nil || text == ""{
+            shake4Times()
+            becomeFirstResponder()
+            return true
+        }
+        return false
+    }
+}
+
 extension UIImage {
     func getTintedImage(_ color:UIColor) -> UIImage {
         

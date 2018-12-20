@@ -20,7 +20,6 @@
 		4996C71321CB660F0030252D /* MainTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C6F021CB660E0030252D /* MainTableController.swift */; };
 		4996C71421CB660F0030252D /* GoogleImagesTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C6F121CB660E0030252D /* GoogleImagesTableDelegate.swift */; };
 		4996C71521CB660F0030252D /* NavigationDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C6F321CB660E0030252D /* NavigationDrawerController.swift */; };
-		4996C71621CB660F0030252D /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C6F521CB660E0030252D /* LineView.swift */; };
 		4996C71721CB660F0030252D /* UIButtonWithDashedBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C6F621CB660E0030252D /* UIButtonWithDashedBorder.swift */; };
 		4996C71821CB660F0030252D /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C6F721CB660E0030252D /* ColorPickerView.swift */; };
 		4996C71921CB660F0030252D /* CustomAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4996C6F821CB660E0030252D /* CustomAlertController.xib */; };
@@ -48,6 +47,14 @@
 		4996C74121CB66940030252D /* ImagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C73D21CB66940030252D /* ImagesResponse.swift */; };
 		4996C74421CB66AD0030252D /* GoogleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C74321CB66AD0030252D /* GoogleService.swift */; };
 		4996C74F21CB8FB90030252D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C74E21CB8FB90030252D /* BaseViewController.swift */; };
+		4996C75221CB947F0030252D /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C75121CB947F0030252D /* BorderedView.swift */; };
+		4996C75E21CB94B80030252D /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C75521CB94B80030252D /* TextFieldView.swift */; };
+		4996C75F21CB94B80030252D /* TextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4996C75621CB94B80030252D /* TextFieldView.xib */; };
+		4996C76021CB94B80030252D /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C75721CB94B80030252D /* ActionButton.swift */; };
+		4996C76121CB94B80030252D /* TextFieldWithDisclosureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4996C75921CB94B80030252D /* TextFieldWithDisclosureView.xib */; };
+		4996C76221CB94B90030252D /* TextFieldWithDisclosureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C75A21CB94B80030252D /* TextFieldWithDisclosureView.swift */; };
+		4996C76321CB94B90030252D /* TextFieldSecureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C75C21CB94B80030252D /* TextFieldSecureView.swift */; };
+		4996C76421CB94B90030252D /* TextFieldSecureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4996C75D21CB94B80030252D /* TextFieldSecureView.xib */; };
 		49A263071DAE290B00070A20 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 49A263061DAE290B00070A20 /* .gitignore */; };
 		49A7CE801E94B14000BFFF90 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE5C1E94B14000BFFF90 /* Array.swift */; };
 		49A7CE811E94B14000BFFF90 /* BaseSectionTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE5E1E94B14000BFFF90 /* BaseSectionTableDelegate.swift */; };
@@ -74,7 +81,7 @@
 		49A7CE991E94B14000BFFF90 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE7B1E94B14000BFFF90 /* UINavigationController.swift */; };
 		49A7CE9A1E94B14000BFFF90 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE7C1E94B14000BFFF90 /* UISearchBar.swift */; };
 		49A7CE9B1E94B14000BFFF90 /* UITextFieldDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE7D1E94B14000BFFF90 /* UITextFieldDelegates.swift */; };
-		49A7CE9C1E94B14000BFFF90 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE7E1E94B14000BFFF90 /* View.swift */; };
+		49A7CE9C1E94B14000BFFF90 /* UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE7E1E94B14000BFFF90 /* UIKit.swift */; };
 		49A7CEB51E94B2B500BFFF90 /* AbstractFactoryExperiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE9F1E94B2B500BFFF90 /* AbstractFactoryExperiment.swift */; };
 		49A7CEB61E94B2B500BFFF90 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CEA01E94B2B500BFFF90 /* AppInfo.swift */; };
 		49A7CEB71E94B2B500BFFF90 /* ArrayVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CEA11E94B2B500BFFF90 /* ArrayVCPresenter.swift */; };
@@ -182,7 +189,6 @@
 		4996C6F021CB660E0030252D /* MainTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableController.swift; sourceTree = "<group>"; };
 		4996C6F121CB660E0030252D /* GoogleImagesTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleImagesTableDelegate.swift; sourceTree = "<group>"; };
 		4996C6F321CB660E0030252D /* NavigationDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationDrawerController.swift; sourceTree = "<group>"; };
-		4996C6F521CB660E0030252D /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		4996C6F621CB660E0030252D /* UIButtonWithDashedBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonWithDashedBorder.swift; sourceTree = "<group>"; };
 		4996C6F721CB660E0030252D /* ColorPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		4996C6F821CB660E0030252D /* CustomAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAlertController.xib; sourceTree = "<group>"; };
@@ -214,6 +220,14 @@
 		4996C73D21CB66940030252D /* ImagesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesResponse.swift; sourceTree = "<group>"; };
 		4996C74321CB66AD0030252D /* GoogleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleService.swift; sourceTree = "<group>"; };
 		4996C74E21CB8FB90030252D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4996C75121CB947F0030252D /* BorderedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
+		4996C75521CB94B80030252D /* TextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		4996C75621CB94B80030252D /* TextFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldView.xib; sourceTree = "<group>"; };
+		4996C75721CB94B80030252D /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		4996C75921CB94B80030252D /* TextFieldWithDisclosureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldWithDisclosureView.xib; sourceTree = "<group>"; };
+		4996C75A21CB94B80030252D /* TextFieldWithDisclosureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldWithDisclosureView.swift; sourceTree = "<group>"; };
+		4996C75C21CB94B80030252D /* TextFieldSecureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldSecureView.swift; sourceTree = "<group>"; };
+		4996C75D21CB94B80030252D /* TextFieldSecureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldSecureView.xib; sourceTree = "<group>"; };
 		49A263061DAE290B00070A20 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
 		49A7CE5C1E94B14000BFFF90 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		49A7CE5E1E94B14000BFFF90 /* BaseSectionTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSectionTableDelegate.swift; sourceTree = "<group>"; };
@@ -240,7 +254,7 @@
 		49A7CE7B1E94B14000BFFF90 /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		49A7CE7C1E94B14000BFFF90 /* UISearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISearchBar.swift; sourceTree = "<group>"; };
 		49A7CE7D1E94B14000BFFF90 /* UITextFieldDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldDelegates.swift; sourceTree = "<group>"; };
-		49A7CE7E1E94B14000BFFF90 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		49A7CE7E1E94B14000BFFF90 /* UIKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKit.swift; sourceTree = "<group>"; };
 		49A7CE7F1E94B14000BFFF90 /* YMKMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YMKMapView.swift; sourceTree = "<group>"; };
 		49A7CE9F1E94B2B500BFFF90 /* AbstractFactoryExperiment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractFactoryExperiment.swift; sourceTree = "<group>"; };
 		49A7CEA01E94B2B500BFFF90 /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
@@ -368,10 +382,10 @@
 		4996C6E821CB660E0030252D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4996C6F421CB660E0030252D /* Custom */,
 				4996C6E921CB660E0030252D /* TableViewCells */,
 				4996C6EF21CB660E0030252D /* TableViews */,
 				4996C6F221CB660E0030252D /* Drawers */,
-				4996C6F421CB660E0030252D /* Custom */,
 				4996C70A21CB660E0030252D /* PagerItems */,
 				4996C70C21CB660E0030252D /* PageViews */,
 			);
@@ -410,37 +424,23 @@
 		4996C6F421CB660E0030252D /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				4996C75321CB94B80030252D /* IBDesignables */,
+				4996C76521CBA1880030252D /* UIView */,
+				4996C76621CBA1CB0030252D /* UIViewController */,
+				4996C70121CB660E0030252D /* MKMapView */,
 				4996C72C21CB66370030252D /* objc */,
-				4996C70121CB660E0030252D /* mapView */,
-				4996C6F521CB660E0030252D /* LineView.swift */,
-				4996C6F621CB660E0030252D /* UIButtonWithDashedBorder.swift */,
-				4996C6F721CB660E0030252D /* ColorPickerView.swift */,
-				4996C6F821CB660E0030252D /* CustomAlertController.xib */,
-				4996C6F921CB660E0030252D /* AlertDialogPlaceholder.swift */,
-				4996C6FA21CB660E0030252D /* CardView.swift */,
-				4996C6FB21CB660E0030252D /* UITabBarControllerWithoutTabBar.swift */,
-				4996C6FC21CB660E0030252D /* UITableViewWithDynamicHeaderView.swift */,
-				4996C6FD21CB660E0030252D /* UITextFieldWithColoredPlaceholder.swift */,
-				4996C6FE21CB660E0030252D /* FABButton.swift */,
-				4996C6FF21CB660E0030252D /* RotatingImageView.swift */,
-				4996C70021CB660E0030252D /* AlertDialogPlaceholder.xib */,
-				4996C70521CB660E0030252D /* CircleView.swift */,
-				4996C70621CB660E0030252D /* RatingControl.swift */,
-				4996C70721CB660E0030252D /* CustomAlertController.swift */,
-				4996C70821CB660E0030252D /* TriangleView.swift */,
-				4996C70921CB660E0030252D /* CircleImageView.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
 		};
-		4996C70121CB660E0030252D /* mapView */ = {
+		4996C70121CB660E0030252D /* MKMapView */ = {
 			isa = PBXGroup;
 			children = (
 				4996C70221CB660E0030252D /* YandexMapViewDelegate.swift */,
 				4996C70321CB660E0030252D /* CustomInfoWindow.swift */,
 				4996C70421CB660E0030252D /* CustomInfoWindow.xib */,
 			);
-			path = mapView;
+			path = MKMapView;
 			sourceTree = "<group>";
 		};
 		4996C70A21CB660E0030252D /* PagerItems */ = {
@@ -614,6 +614,75 @@
 			path = ApiService;
 			sourceTree = "<group>";
 		};
+		4996C75321CB94B80030252D /* IBDesignables */ = {
+			isa = PBXGroup;
+			children = (
+				4996C75421CB94B80030252D /* TextFieldView */,
+				4996C75821CB94B80030252D /* TextFieldWithDisclosureView */,
+				4996C75B21CB94B80030252D /* TextFieldSecureView */,
+				4996C75721CB94B80030252D /* ActionButton.swift */,
+			);
+			path = IBDesignables;
+			sourceTree = "<group>";
+		};
+		4996C75421CB94B80030252D /* TextFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				4996C75521CB94B80030252D /* TextFieldView.swift */,
+				4996C75621CB94B80030252D /* TextFieldView.xib */,
+			);
+			path = TextFieldView;
+			sourceTree = "<group>";
+		};
+		4996C75821CB94B80030252D /* TextFieldWithDisclosureView */ = {
+			isa = PBXGroup;
+			children = (
+				4996C75921CB94B80030252D /* TextFieldWithDisclosureView.xib */,
+				4996C75A21CB94B80030252D /* TextFieldWithDisclosureView.swift */,
+			);
+			path = TextFieldWithDisclosureView;
+			sourceTree = "<group>";
+		};
+		4996C75B21CB94B80030252D /* TextFieldSecureView */ = {
+			isa = PBXGroup;
+			children = (
+				4996C75C21CB94B80030252D /* TextFieldSecureView.swift */,
+				4996C75D21CB94B80030252D /* TextFieldSecureView.xib */,
+			);
+			path = TextFieldSecureView;
+			sourceTree = "<group>";
+		};
+		4996C76521CBA1880030252D /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				4996C6F621CB660E0030252D /* UIButtonWithDashedBorder.swift */,
+				4996C70521CB660E0030252D /* CircleView.swift */,
+				4996C70821CB660E0030252D /* TriangleView.swift */,
+				4996C70921CB660E0030252D /* CircleImageView.swift */,
+				4996C75121CB947F0030252D /* BorderedView.swift */,
+				4996C6FA21CB660E0030252D /* CardView.swift */,
+				4996C6FE21CB660E0030252D /* FABButton.swift */,
+				4996C6FD21CB660E0030252D /* UITextFieldWithColoredPlaceholder.swift */,
+				4996C6F721CB660E0030252D /* ColorPickerView.swift */,
+				4996C6FF21CB660E0030252D /* RotatingImageView.swift */,
+				4996C6FC21CB660E0030252D /* UITableViewWithDynamicHeaderView.swift */,
+				4996C70621CB660E0030252D /* RatingControl.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		4996C76621CBA1CB0030252D /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4996C6F821CB660E0030252D /* CustomAlertController.xib */,
+				4996C70721CB660E0030252D /* CustomAlertController.swift */,
+				4996C6F921CB660E0030252D /* AlertDialogPlaceholder.swift */,
+				4996C70021CB660E0030252D /* AlertDialogPlaceholder.xib */,
+				4996C6FB21CB660E0030252D /* UITabBarControllerWithoutTabBar.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 		49A7CE5B1E94B14000BFFF90 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -630,7 +699,7 @@
 				49A7CE7C1E94B14000BFFF90 /* UISearchBar.swift */,
 				49A7CE7D1E94B14000BFFF90 /* UITextFieldDelegates.swift */,
 				490088E72150EB110019DE80 /* UIImage.swift */,
-				49A7CE7E1E94B14000BFFF90 /* View.swift */,
+				49A7CE7E1E94B14000BFFF90 /* UIKit.swift */,
 				49A7CE7F1E94B14000BFFF90 /* YMKMapView.swift */,
 				490088E92150EB510019DE80 /* MKPointAnnotation.swift */,
 			);
@@ -878,11 +947,11 @@
 				4996C74721CB89640030252D /* mvvm */,
 				A6C63F111BF597E30037CF9A /* AppDelegate.swift */,
 				A6C098FA1C2962FC00F3E2AA /* Constants.swift */,
+				A6C63F1A1BF597E30037CF9A /* LaunchScreen.storyboard */,
 				A6C63F151BF597E30037CF9A /* Main.storyboard */,
 				49A7CEF91E94EA9C00BFFF90 /* GoogleImages.storyboard */,
 				49A7CEFF1E94EACD00BFFF90 /* Calendar.storyboard */,
 				49A7CEFC1E94EAC300BFFF90 /* Animations.storyboard */,
-				A6C63F1A1BF597E30037CF9A /* LaunchScreen.storyboard */,
 				49F6DAE21EF92DAC00B9FC37 /* BackgroundExecution.storyboard */,
 				492558F6215C911700D59C91 /* Games.storyboard */,
 				A60F27601C3BD041003919A8 /* Supporting Files */,
@@ -1043,6 +1112,7 @@
 				A60F275B1C3BD026003919A8 /* Localizable.strings in Resources */,
 				4996C71921CB660F0030252D /* CustomAlertController.xib in Resources */,
 				49EDD8C121CB5E0900326FDD /* art.scnassets in Resources */,
+				4996C76421CB94B90030252D /* TextFieldSecureView.xib in Resources */,
 				49A7CEFB1E94EA9D00BFFF90 /* GoogleImages.storyboard in Resources */,
 				49A7CEFE1E94EAC300BFFF90 /* Animations.storyboard in Resources */,
 				49A7CF011E94EACD00BFFF90 /* Calendar.storyboard in Resources */,
@@ -1051,7 +1121,9 @@
 				4996C72421CB660F0030252D /* CustomInfoWindow.xib in Resources */,
 				4996C71121CB660F0030252D /* CustomSectionView.xib in Resources */,
 				49F6DAE41EF92DAC00B9FC37 /* BackgroundExecution.storyboard in Resources */,
+				4996C75F21CB94B80030252D /* TextFieldView.xib in Resources */,
 				49A263071DAE290B00070A20 /* .gitignore in Resources */,
+				4996C76121CB94B80030252D /* TextFieldWithDisclosureView.xib in Resources */,
 				49114FB91D8BBC2600ABA6A5 /* BezierCurve1.svg in Resources */,
 				492558F8215C911700D59C91 /* Games.storyboard in Resources */,
 				49EDD8AA21CB5E0900326FDD /* CalendarCell.xib in Resources */,
@@ -1221,7 +1293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49A7CE9C1E94B14000BFFF90 /* View.swift in Sources */,
+				49A7CE9C1E94B14000BFFF90 /* UIKit.swift in Sources */,
+				4996C75221CB947F0030252D /* BorderedView.swift in Sources */,
 				4996C71321CB660F0030252D /* MainTableController.swift in Sources */,
 				4996C72A21CB660F0030252D /* MainPagerItem.swift in Sources */,
 				4996C72721CB660F0030252D /* CustomAlertController.swift in Sources */,
@@ -1259,9 +1332,11 @@
 				49A7CEC51E94B2B500BFFF90 /* StringUtils.swift in Sources */,
 				49EDD8B021CB5E0900326FDD /* GMapsViewController.swift in Sources */,
 				490088EA2150EB510019DE80 /* MKPointAnnotation.swift in Sources */,
+				4996C76021CB94B80030252D /* ActionButton.swift in Sources */,
 				49A7CE831E94B14000BFFF90 /* BaseMVVMTableViewController.swift in Sources */,
 				49EDD8BD21CB5E0900326FDD /* RemoteFetchVC.swift in Sources */,
 				49A7CE921E94B14000BFFF90 /* VCWithKeyboardProtocol.swift in Sources */,
+				4996C75E21CB94B80030252D /* TextFieldView.swift in Sources */,
 				49A7CE8B1E94B14000BFFF90 /* Date.swift in Sources */,
 				49EDD8B621CB5E0900326FDD /* NavigationControllerDelegate.swift in Sources */,
 				4996C73621CB66700030252D /* GoogleImagesViewModel.swift in Sources */,
@@ -1286,13 +1361,13 @@
 				49A7CEB71E94B2B500BFFF90 /* ArrayVCPresenter.swift in Sources */,
 				49A7CEB61E94B2B500BFFF90 /* AppInfo.swift in Sources */,
 				49A7CE911E94B14000BFFF90 /* VCWithAlertPlaceholder.swift in Sources */,
-				4996C71621CB660F0030252D /* LineView.swift in Sources */,
 				49A7CE811E94B14000BFFF90 /* BaseSectionTableDelegate.swift in Sources */,
 				49EDD8BA21CB5E0900326FDD /* FactoryViewController.swift in Sources */,
 				49A7CEB81E94B2B500BFFF90 /* DateRangeGenerator.swift in Sources */,
 				4996C73521CB66700030252D /* MainViewModel.swift in Sources */,
 				49EDD8A721CB5E0900326FDD /* ViewController.swift in Sources */,
 				49EDD8AB21CB5E0900326FDD /* CalendarCell.m in Sources */,
+				4996C76221CB94B90030252D /* TextFieldWithDisclosureView.swift in Sources */,
 				49A7CE841E94B14000BFFF90 /* BaseTableViewDelegate.swift in Sources */,
 				49A7CE871E94B14000BFFF90 /* BaseWebViewController.swift in Sources */,
 				4996C72321CB660F0030252D /* CustomInfoWindow.swift in Sources */,
@@ -1315,6 +1390,7 @@
 				49A7CE951E94B14000BFFF90 /* RxSwift.swift in Sources */,
 				49A7CE861E94B14000BFFF90 /* BaseViewModel.swift in Sources */,
 				49A7CE8F1E94B14000BFFF90 /* InfixOperators.swift in Sources */,
+				4996C76321CB94B90030252D /* TextFieldSecureView.swift in Sources */,
 				4996C71721CB660F0030252D /* UIButtonWithDashedBorder.swift in Sources */,
 				49A7CE891E94B14000BFFF90 /* BaseXibView.swift in Sources */,
 				A6C098FB1C2962FC00F3E2AA /* Constants.swift in Sources */,

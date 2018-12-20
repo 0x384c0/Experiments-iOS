@@ -9,6 +9,7 @@
 import UIKit
 import GoogleMaps
 import SVProgressHUD
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         SVProgressHUD.setDefaultMaskType(.clear)
+        IQKeyboardManager.shared.enable = true
         GMSServices.provideAPIKey(Constants.GOOGLE_API_KEY)
         return true
     }

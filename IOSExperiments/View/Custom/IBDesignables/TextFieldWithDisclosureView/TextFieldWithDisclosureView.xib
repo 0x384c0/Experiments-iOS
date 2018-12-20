@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldWithDisclosureView" customModule="Movers" customModuleProvider="target">
+            <connections>
+                <outlet property="iconView" destination="3Ji-DR-K6u" id="3uD-kO-4nJ"/>
+                <outlet property="textFieldView" destination="fwe-03-3ci" id="uWX-6g-d8o"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="104"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="3Ji-DR-K6u">
+                    <rect key="frame" x="462" y="0.0" width="12" height="104"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwe-03-3ci" customClass="TextFieldView" customModule="Movers" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="104"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3Ji-DR-K6u" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Ecf-gH-ny6"/>
+                <constraint firstItem="fwe-03-3ci" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ew8-t8-o92"/>
+                <constraint firstItem="fwe-03-3ci" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="L8i-cE-U1X"/>
+                <constraint firstItem="3Ji-DR-K6u" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="NJI-o5-Ghk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3Ji-DR-K6u" secondAttribute="trailing" constant="6" id="cmY-c0-odD"/>
+                <constraint firstItem="fwe-03-3ci" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="o03-0A-YYv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fwe-03-3ci" secondAttribute="trailing" id="qfn-wT-9sN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-83.200000000000003" y="-96.251874062968525"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_Arrow" width="12" height="6"/>
+    </resources>
+</document>

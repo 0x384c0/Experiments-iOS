@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextFieldView" customModule="Movers" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="WHK-01-S5Z" id="59W-mM-saH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="526" height="62"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="gAz-fX-bPj">
+                    <rect key="frame" x="0.0" y="19" width="526" height="43"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PLACEHOLDER" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WHK-01-S5Z">
+                            <rect key="frame" x="0.0" y="0.0" width="526" height="31.5"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Hv-hF-gTz">
+                            <rect key="frame" x="0.0" y="42.5" width="526" height="0.5"/>
+                            <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="oKj-6r-iE3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <gestureRecognizers/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="gAz-fX-bPj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="95m-9s-OGV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gAz-fX-bPj" secondAttribute="trailing" id="GNI-gR-ubj"/>
+                <constraint firstItem="gAz-fX-bPj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="19" id="keJ-Uk-sx6"/>
+                <constraint firstAttribute="bottom" secondItem="gAz-fX-bPj" secondAttribute="bottom" id="sKn-3e-LYW"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="llh-Z5-F3R" appends="YES" id="pBY-u3-URW"/>
+            </connections>
+            <point key="canvasLocation" x="251.19999999999999" y="-64.767616191904054"/>
+        </view>
+        <tapGestureRecognizer id="llh-Z5-F3R">
+            <connections>
+                <action selector="viewTap:" destination="-1" id="8jO-aN-Wlm"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>
