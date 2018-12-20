@@ -11,7 +11,6 @@
 		490088EA2150EB510019DE80 /* MKPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490088E92150EB510019DE80 /* MKPointAnnotation.swift */; };
 		49114FB91D8BBC2600ABA6A5 /* BezierCurve1.svg in Resources */ = {isa = PBXBuildFile; fileRef = 49114FB81D8BBC2600ABA6A5 /* BezierCurve1.svg */; };
 		492558F8215C911700D59C91 /* Games.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492558F6215C911700D59C91 /* Games.storyboard */; };
-		4961F38C1EA778D300991A65 /* UIAlertControllerWithTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961F38B1EA778D300991A65 /* UIAlertControllerWithTextField.swift */; };
 		4996C70E21CB660F0030252D /* ImageTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C6EA21CB660E0030252D /* ImageTableCell.swift */; };
 		4996C70F21CB660F0030252D /* MainTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C6EB21CB660E0030252D /* MainTableCell.swift */; };
 		4996C71021CB660F0030252D /* CustomSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C6EC21CB660E0030252D /* CustomSectionView.swift */; };
@@ -55,6 +54,10 @@
 		4996C76221CB94B90030252D /* TextFieldWithDisclosureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C75A21CB94B80030252D /* TextFieldWithDisclosureView.swift */; };
 		4996C76321CB94B90030252D /* TextFieldSecureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C75C21CB94B80030252D /* TextFieldSecureView.swift */; };
 		4996C76421CB94B90030252D /* TextFieldSecureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4996C75D21CB94B80030252D /* TextFieldSecureView.xib */; };
+		4996C76821CBA29A0030252D /* UIComponentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C76721CBA29A0030252D /* UIComponentsViewController.swift */; };
+		4996C76A21CBA6CB0030252D /* UIAlertControllerWithTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C76921CBA6CB0030252D /* UIAlertControllerWithTextField.swift */; };
+		4996C76C21CBA9940030252D /* PickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C76B21CBA9940030252D /* PickerHelper.swift */; };
+		4996C76E21CBA9AE0030252D /* PickerHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C76D21CBA9AD0030252D /* PickerHelperTests.swift */; };
 		49A263071DAE290B00070A20 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 49A263061DAE290B00070A20 /* .gitignore */; };
 		49A7CE801E94B14000BFFF90 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE5C1E94B14000BFFF90 /* Array.swift */; };
 		49A7CE811E94B14000BFFF90 /* BaseSectionTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7CE5E1E94B14000BFFF90 /* BaseSectionTableDelegate.swift */; };
@@ -179,7 +182,6 @@
 		4952DB8F1E977BC700924C12 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = SOURCE_ROOT; };
 		4952DB901E977BE800924C12 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = SOURCE_ROOT; };
 		4952DB911E977C2C00924C12 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = SOURCE_ROOT; };
-		4961F38B1EA778D300991A65 /* UIAlertControllerWithTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerWithTextField.swift; sourceTree = "<group>"; };
 		498F8585218B1C610026DFBC /* SocialSignInVCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialSignInVCProtocol.swift; sourceTree = "<group>"; };
 		4996C6EA21CB660E0030252D /* ImageTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableCell.swift; sourceTree = "<group>"; };
 		4996C6EB21CB660E0030252D /* MainTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableCell.swift; sourceTree = "<group>"; };
@@ -228,6 +230,10 @@
 		4996C75A21CB94B80030252D /* TextFieldWithDisclosureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldWithDisclosureView.swift; sourceTree = "<group>"; };
 		4996C75C21CB94B80030252D /* TextFieldSecureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldSecureView.swift; sourceTree = "<group>"; };
 		4996C75D21CB94B80030252D /* TextFieldSecureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextFieldSecureView.xib; sourceTree = "<group>"; };
+		4996C76721CBA29A0030252D /* UIComponentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIComponentsViewController.swift; sourceTree = "<group>"; };
+		4996C76921CBA6CB0030252D /* UIAlertControllerWithTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerWithTextField.swift; sourceTree = "<group>"; };
+		4996C76B21CBA9940030252D /* PickerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerHelper.swift; sourceTree = "<group>"; };
+		4996C76D21CBA9AD0030252D /* PickerHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerHelperTests.swift; sourceTree = "<group>"; };
 		49A263061DAE290B00070A20 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
 		49A7CE5C1E94B14000BFFF90 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		49A7CE5E1E94B14000BFFF90 /* BaseSectionTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseSectionTableDelegate.swift; sourceTree = "<group>"; };
@@ -663,10 +669,10 @@
 				4996C6FA21CB660E0030252D /* CardView.swift */,
 				4996C6FE21CB660E0030252D /* FABButton.swift */,
 				4996C6FD21CB660E0030252D /* UITextFieldWithColoredPlaceholder.swift */,
-				4996C6F721CB660E0030252D /* ColorPickerView.swift */,
 				4996C6FF21CB660E0030252D /* RotatingImageView.swift */,
 				4996C6FC21CB660E0030252D /* UITableViewWithDynamicHeaderView.swift */,
 				4996C70621CB660E0030252D /* RatingControl.swift */,
+				4996C6F721CB660E0030252D /* ColorPickerView.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -679,6 +685,7 @@
 				4996C6F921CB660E0030252D /* AlertDialogPlaceholder.swift */,
 				4996C70021CB660E0030252D /* AlertDialogPlaceholder.xib */,
 				4996C6FB21CB660E0030252D /* UITabBarControllerWithoutTabBar.swift */,
+				4996C76921CBA6CB0030252D /* UIAlertControllerWithTextField.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -737,7 +744,6 @@
 			isa = PBXGroup;
 			children = (
 				490088DB2150E9CC0019DE80 /* objc */,
-				4961F38B1EA778D300991A65 /* UIAlertControllerWithTextField.swift */,
 				49FC83CD1EF9319000BE8181 /* AppUserDefaults.swift */,
 				49D37E782165D44500195F08 /* SocialSignInVCProtocol.swift */,
 				49A7CE9F1E94B2B500BFFF90 /* AbstractFactoryExperiment.swift */,
@@ -755,6 +761,7 @@
 				49A7CEB41E94B2B500BFFF90 /* TouchIdHelper.swift */,
 				498F8585218B1C610026DFBC /* SocialSignInVCProtocol.swift */,
 				49FC83CF1EF9331A00BE8181 /* RemoteFetchWrapper.swift */,
+				4996C76B21CBA9940030252D /* PickerHelper.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -777,6 +784,7 @@
 				49EDD87821CB5E0900326FDD /* VisulalEffectsController.swift */,
 				49EDD87921CB5E0900326FDD /* WebViewScreenController.swift */,
 				49EDD88A21CB5E0900326FDD /* GMapsViewController.swift */,
+				4996C76721CBA29A0030252D /* UIComponentsViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -962,6 +970,7 @@
 		A6C63F251BF597E30037CF9A /* IOSExperimentsTests */ = {
 			isa = PBXGroup;
 			children = (
+				4996C76D21CBA9AD0030252D /* PickerHelperTests.swift */,
 				A6C63F261BF597E30037CF9A /* IOSExperimentsTests.swift */,
 				A6C63F281BF597E30037CF9A /* Info.plist */,
 			);
@@ -1324,6 +1333,7 @@
 				49A7CE8A1E94B14000BFFF90 /* CGSize.swift in Sources */,
 				4996C72521CB660F0030252D /* CircleView.swift in Sources */,
 				4996C71821CB660F0030252D /* ColorPickerView.swift in Sources */,
+				4996C76C21CBA9940030252D /* PickerHelper.swift in Sources */,
 				4996C71521CB660F0030252D /* NavigationDrawerController.swift in Sources */,
 				4996C74021CB66940030252D /* MainTab.swift in Sources */,
 				4996C70E21CB660F0030252D /* ImageTableCell.swift in Sources */,
@@ -1343,6 +1353,7 @@
 				4996C71021CB660F0030252D /* CustomSectionView.swift in Sources */,
 				49A7CE9A1E94B14000BFFF90 /* UISearchBar.swift in Sources */,
 				49EDD8A921CB5E0900326FDD /* NSDate+Extensions.m in Sources */,
+				4996C76A21CBA6CB0030252D /* UIAlertControllerWithTextField.swift in Sources */,
 				4996C71B21CB660F0030252D /* CardView.swift in Sources */,
 				4996C70F21CB660F0030252D /* MainTableCell.swift in Sources */,
 				4996C71F21CB660F0030252D /* FABButton.swift in Sources */,
@@ -1384,7 +1395,6 @@
 				49A7CEB51E94B2B500BFFF90 /* AbstractFactoryExperiment.swift in Sources */,
 				49A7CEC41E94B2B500BFFF90 /* ScreenStreamer.swift in Sources */,
 				4996C71E21CB660F0030252D /* UITextFieldWithColoredPlaceholder.swift in Sources */,
-				4961F38C1EA778D300991A65 /* UIAlertControllerWithTextField.swift in Sources */,
 				49EDD8A521CB5E0900326FDD /* VisulalEffectsController.swift in Sources */,
 				4996C72B21CB660F0030252D /* MainPageViewDataSource.swift in Sources */,
 				49A7CE951E94B14000BFFF90 /* RxSwift.swift in Sources */,
@@ -1400,6 +1410,7 @@
 				49A7CE991E94B14000BFFF90 /* UINavigationController.swift in Sources */,
 				49A7CF031E94F78800BFFF90 /* BaseServiceStub.swift in Sources */,
 				49EDD8BB21CB5E0900326FDD /* LocationUpdatesVC.swift in Sources */,
+				4996C76821CBA29A0030252D /* UIComponentsViewController.swift in Sources */,
 				4996C73E21CB66940030252D /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1409,6 +1420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6C63F271BF597E30037CF9A /* IOSExperimentsTests.swift in Sources */,
+				4996C76E21CBA9AE0030252D /* PickerHelperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

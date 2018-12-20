@@ -29,8 +29,6 @@ class ColorPickerView: UIPickerView{//TODO:remove
     private func setupView(){
         dataSource = self
         delegate = self
-        rowHeigh = h
-        isUserInteractionEnabled = false
     }
     
     var selectedColor:UIColor?{
@@ -58,31 +56,31 @@ class ColorPickerView: UIPickerView{//TODO:remove
     
     var colorPickHandler:((UIColor)->())?
     
-    func toggleHeigh(){
-        if expanded {
-            collapse()
-        } else {
-            expand()
-        }
-    }
+//    func toggleHeigh(){
+//        if expanded {
+//            collapse()
+//        } else {
+//            expand()
+//        }
+//    }
     
-    private var expanded = false
-    private func expand(){
-        expanded = true
-        isUserInteractionEnabled = true
-        animate(duration: 0.3, animations: { [unowned self] in
-            self.bounds.h = self.rowHeigh * 3
-            self.layoutIfNeeded()
-        })
-    }
-    func collapse(){
-        expanded = false
-        isUserInteractionEnabled = false
-        animate(duration: 0.3, animations: { [unowned self] in
-            self.bounds.h = self.rowHeigh
-            self.layoutIfNeeded()
-        })
-    }
+//    private var expanded = false
+//    private func expand(){
+//        expanded = true
+//        isUserInteractionEnabled = true
+//        animate(duration: 0.3, animations: { [unowned self] in
+//            self.bounds.h = self.rowHeigh * 3
+//            self.layoutIfNeeded()
+//        })
+//    }
+//    func collapse(){
+//        expanded = false
+//        isUserInteractionEnabled = false
+//        animate(duration: 0.3, animations: { [unowned self] in
+//            self.bounds.h = self.rowHeigh
+//            self.layoutIfNeeded()
+//        })
+//    }
 }
 
 extension ColorPickerView:UIPickerViewDelegate, UIPickerViewDataSource{
@@ -97,6 +95,8 @@ extension ColorPickerView:UIPickerViewDelegate, UIPickerViewDataSource{
         return view
     }
     
+    
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -104,11 +104,10 @@ extension ColorPickerView:UIPickerViewDelegate, UIPickerViewDataSource{
         return colors.count
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        selectedColor = pickerView.view(forRow: row, forComponent: component)?.backgroundColor
+        selectedColor = colors[row]
         if let selectedColor = selectedColor {
             colorPickHandler?(selectedColor)
         }
-        collapse()
     }
 }
 

@@ -51,7 +51,7 @@ class CustomAlertController : UIViewController {
     func addAction(_ action: CustomAlertAction){
         actions.append(action)
     }
-    func addButtonFor(action:CustomAlertAction){
+    private func addButtonFor(action:CustomAlertAction){
         let button = UIButton()
         button.setTitle(action.title, for: .normal)
         button.setTitleColor(TITLE_COLOR, for: .normal)

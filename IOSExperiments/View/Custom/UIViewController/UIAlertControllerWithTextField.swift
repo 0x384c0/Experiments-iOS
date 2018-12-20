@@ -1,13 +1,12 @@
 //
-//  UIAlertControllerWithTextField
-//  
+//  UIAlertControllerWithTextField.swift
+//  Movers
 //
-//  Created by 0x384c0 on 3/28/16.
-//  Copyright © 2016 0x384c0. All rights reserved.
+//  Created by Andrew Ashurov on 12/10/18.
+//  Copyright © 2018 0x384c0. All rights reserved.
 //
 
 import UIKit
-
 
 class UIAlertControllerWithTextField : UIAlertController {
     deinit {
@@ -20,11 +19,14 @@ class UIAlertControllerWithTextField : UIAlertController {
         
     }
     var observer:NSObjectProtocol?
-    func addTextField(text:String?, placeholder:String?, keyboardType:UIKeyboardType = UIKeyboardType.default, spellChecker: @escaping (String?) -> Void){
+    func addTextField(text:String?, placeholder:String?, keyboardType:UIKeyboardType = UIKeyboardType.default, textContentType:UITextContentType? = nil,spellChecker: @escaping (String?) -> Void){
         
         addTextField {[weak self] textField in
             
             textField.keyboardType = keyboardType
+            if #available(iOS 10.0, *) {
+                textField.textContentType = textContentType
+            }
             
             textField.placeholder = placeholder
             textField.text = text
@@ -40,13 +42,13 @@ class UIAlertControllerWithTextField : UIAlertController {
             }
         }
     }
-    func present(vc: UIViewController){
+    func present(from vc: UIViewController){
         vc.present(
             self,
             animated: true,
             completion: { [weak self] in
                 self?.fixTextFields()
-                self?.textFields?[safe:0]?.becomeFirstResponder()
+                self?.textFields?.first?.becomeFirstResponder()
             }
         )
     }
@@ -70,30 +72,3 @@ extension UIAlertController {
         }
     }
 }
-
-
-//usage
-//func showForgetPassDialog(){
-//    alertControllerWithField = TextFieldAlertController(
-//        title               : "PASS_RESTORE_TITLE".localized,
-//        message             : "PASS_RESTORE_MESSAGE".localized,
-//        preferredStyle      : .alert
-//    )
-//    let loginAction = UIAlertAction(title: "SEND".localized, style: .default) {[weak self] _ in
-//        let textField = self?.alertControllerWithField?.textFields?[safe:0]
-//        self?.restorePassword(mail: textField?.text)
-//    }
-//    let cancelAction = UIAlertAction(title: "CANCEL".localized, style: .cancel)
-//    
-//    alertControllerWithField?.addAction(loginAction)
-//    alertControllerWithField?.addAction(cancelAction)
-//    
-//    alertControllerWithField?.addTextField(
-//        text: "",
-//        placeholder: "example@gmail.com" ,
-//        keyboardType:.emailAddress
-//    ){ [weak loginAction] text in
-//        loginAction?.isEnabled = text?.isEmail ?? false
-//    }
-//    alertControllerWithField?.present(vc: self)
-//}

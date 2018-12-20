@@ -11,8 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlertController" customModule="IOSExperiments" customModuleProvider="target">
             <connections>
-                <outlet property="stackView" destination="qfV-3Y-e1g" id="x3W-DE-LDb"/>
-                <outlet property="titleLabel" destination="7ub-Wf-ZcU" id="E9i-L5-mse"/>
+                <outlet property="stackView" destination="qfV-3Y-e1g" id="Y7a-BI-P3y"/>
+                <outlet property="titleLabel" destination="7ub-Wf-ZcU" id="Hzj-lE-7vH"/>
                 <outlet property="view" destination="iN0-l3-epB" id="T1e-yk-d5v"/>
             </connections>
         </placeholder>
@@ -27,7 +27,7 @@
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEB-ff-GlL">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="646"/>
-                    <state key="normal" image="close"/>
+                    <state key="normal" image="clear"/>
                     <connections>
                         <action selector="cancelTap:" destination="-1" eventType="touchUpInside" id="xtC-bY-JBu"/>
                     </connections>
@@ -82,6 +82,6 @@
         </view>
     </objects>
     <resources>
-        <image name="close" width="16" height="16"/>
+        <image name="clear" width="14" height="14"/>
     </resources>
 </document>
