@@ -1544,6 +1544,7 @@
                     <connections>
                         <outlet property="rootView" destination="oZT-L9-gT5" id="6B3-BK-7fe"/>
                         <outlet property="sceneView" destination="Rh7-6J-ajo" id="4Vk-gK-A4I"/>
+                        <outlet property="textView" destination="ysI-K6-T1G" id="28R-5E-coJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kep-i3-1az" userLabel="First Responder" sceneMemberID="firstResponder"/>
