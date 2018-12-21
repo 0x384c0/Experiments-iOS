@@ -13,6 +13,20 @@ class ShaderViewController: UIViewController {
     @IBOutlet weak var rootView: UIView!
     @IBOutlet weak var sceneView: SKView!
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var segment: UISegmentedControl!
+    
+    @IBAction func segmentChanged(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 1:
+            scene.setShader(shader: .Triangulation)
+        case 2:
+            scene.setShader(shader: .SHKWater)
+        case 3:
+            scene.setShader(shader: .NoShader)
+        default:
+            scene.setShader(shader: .PsychedelicGlass)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +34,15 @@ class ShaderViewController: UIViewController {
         sceneView.layer.borderWidth = 1
         textView.delegate = self
     }
-    
     override func viewDidAppear(_ animated: Bool) {
         updateSpriteOfUnderlyingView()
     }
     
+    
+    
+    //MARK: shader
     private var busy = false
+    private var scene:ShaderScene{return sceneView.scene as! ShaderScene}
     private func updateSpriteOfUnderlyingView(){
         if busy {return}
         DispatchQueue.global(qos: .background).async {
@@ -53,7 +70,7 @@ class ShaderViewController: UIViewController {
             w: rect.w * UIScreen.main.scale,
             h: rect.h * UIScreen.main.scale)
         let cgImage = image.cgImage!.cropping(to: rectRetina)!
-        (sceneView.scene as! ShaderScene).setTextureImage(cgImage: cgImage)
+        scene.setTextureImage(cgImage: cgImage)
     }
 }
 

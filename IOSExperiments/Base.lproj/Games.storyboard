@@ -1524,26 +1524,42 @@
                                     <constraint firstItem="ysI-K6-T1G" firstAttribute="top" secondItem="oZT-L9-gT5" secondAttribute="top" id="zxN-AU-Ocb"/>
                                 </constraints>
                             </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tF9-Fk-siD">
+                                <rect key="frame" x="16" y="28" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Psycho Glass"/>
+                                    <segment title="Broken glass"/>
+                                    <segment title="Water"/>
+                                    <segment title="No Shader"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="uQq-Oi-9e1" eventType="valueChanged" id="Lqa-lR-Fce"/>
+                                </connections>
+                            </segmentedControl>
                             <skView contentMode="scaleToFill" sceneName="ShaderScene.sks" translatesAutoresizingMaskIntoConstraints="NO" id="Rh7-6J-ajo">
-                                <rect key="frame" x="16" y="36" width="334" height="333.5"/>
+                                <rect key="frame" x="16" y="64" width="343" height="333.5"/>
                             </skView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Rh7-6J-ajo" firstAttribute="height" secondItem="ysI-K6-T1G" secondAttribute="height" multiplier="0.5" id="21h-bc-g0J"/>
                             <constraint firstAttribute="bottom" secondItem="oZT-L9-gT5" secondAttribute="bottom" id="2Dl-uL-939"/>
-                            <constraint firstItem="Rh7-6J-ajo" firstAttribute="leading" secondItem="Qjb-fC-1D2" secondAttribute="leading" constant="16" id="5cC-s3-pPu"/>
+                            <constraint firstItem="Rh7-6J-ajo" firstAttribute="leading" secondItem="Qjb-fC-1D2" secondAttribute="leading" constant="16" id="5NJ-fr-GHb"/>
+                            <constraint firstItem="Qjb-fC-1D2" firstAttribute="trailing" secondItem="Rh7-6J-ajo" secondAttribute="trailing" constant="16" id="6ay-6z-88G"/>
                             <constraint firstItem="oZT-L9-gT5" firstAttribute="leading" secondItem="UYp-Mk-qZ2" secondAttribute="leading" id="E5R-9a-Mwl"/>
-                            <constraint firstItem="Qjb-fC-1D2" firstAttribute="trailing" secondItem="Rh7-6J-ajo" secondAttribute="trailing" constant="25" id="KIQ-91-Bbh"/>
-                            <constraint firstItem="Rh7-6J-ajo" firstAttribute="top" secondItem="Qjb-fC-1D2" secondAttribute="top" constant="16" id="LdS-f1-b6A"/>
+                            <constraint firstItem="Rh7-6J-ajo" firstAttribute="height" secondItem="oZT-L9-gT5" secondAttribute="height" multiplier="0.5" id="MGp-Fc-NOh"/>
+                            <constraint firstItem="Rh7-6J-ajo" firstAttribute="top" secondItem="tF9-Fk-siD" secondAttribute="bottom" constant="8" id="NOg-vu-Lpe"/>
+                            <constraint firstItem="tF9-Fk-siD" firstAttribute="top" secondItem="Qjb-fC-1D2" secondAttribute="top" constant="8" id="NuQ-TZ-Ia6"/>
                             <constraint firstItem="oZT-L9-gT5" firstAttribute="top" secondItem="UYp-Mk-qZ2" secondAttribute="top" id="cHN-C0-ea6"/>
                             <constraint firstAttribute="trailing" secondItem="oZT-L9-gT5" secondAttribute="trailing" id="d78-Wp-x5V"/>
+                            <constraint firstItem="tF9-Fk-siD" firstAttribute="leading" secondItem="Qjb-fC-1D2" secondAttribute="leading" constant="16" id="mav-Ie-W4z"/>
+                            <constraint firstItem="Qjb-fC-1D2" firstAttribute="trailing" secondItem="tF9-Fk-siD" secondAttribute="trailing" constant="16" id="wM2-Ej-c22"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qjb-fC-1D2"/>
                     </view>
                     <connections>
                         <outlet property="rootView" destination="oZT-L9-gT5" id="6B3-BK-7fe"/>
                         <outlet property="sceneView" destination="Rh7-6J-ajo" id="4Vk-gK-A4I"/>
+                        <outlet property="segment" destination="tF9-Fk-siD" id="Vo4-UA-tkq"/>
                         <outlet property="textView" destination="ysI-K6-T1G" id="28R-5E-coJ"/>
                     </connections>
                 </viewController>

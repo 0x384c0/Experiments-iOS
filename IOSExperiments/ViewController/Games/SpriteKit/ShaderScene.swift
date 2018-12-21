@@ -8,26 +8,35 @@
 
 import SpriteKit
 
+enum ShaderSceneShader{
+    case
+    PsychedelicGlass,
+    Triangulation,
+    SHKWater,
+    NoShader
+}
+
 class ShaderScene: SKScene {
     var imageNode:SKSpriteNode!
     var effectNode:SKEffectNode!
     override func didMove(to view: SKView) {
         imageNode = childNode(withName: "imageNode") as? SKSpriteNode
-        
-//        let uniforms: [SKUniform] = [
-//            SKUniform(name: "u_speed", float: 3),
-//            SKUniform(name: "u_strength", float: 2.5),
-//            SKUniform(name: "u_frequency", float: 10)
-//        ]
-//        let waterShader = SKShader(fromFile: "SHKWater", uniforms: uniforms)
-//        imageNode.shader = waterShader
-//        imageNode.shader = SKShader(fromFile: "Triangulation")
-        imageNode.shader = SKShader(fromFile: "PsychedelicGlass")
-        
-        
         imageNode.size = frame.size
+        setShader(shader: .PsychedelicGlass)
     }
     
+    func setShader(shader:ShaderSceneShader){
+        switch shader {
+        case .PsychedelicGlass:
+            imageNode.shader = SKShader(fromFile: "PsychedelicGlass")
+        case .Triangulation:
+            imageNode.shader = SKShader(fromFile: "Triangulation")
+        case .SHKWater:
+            imageNode.shader = SKShader(fromFile: "SHKWater")
+        case .NoShader:
+            imageNode.shader = nil
+        }
+    }
     
     
     func setTextureImage(cgImage:CGImage){

@@ -35,6 +35,10 @@
 //
 
 void main() {
+    float u_speed = 3.0;
+    float u_strength = 2.5;
+    float u_frequency = 10.0;
+    
     // bring both speed and strength into the kinds of ranges we need for this effect
     float speed = u_time * u_speed * 0.05;
     float strength = u_strength / 100.0;
