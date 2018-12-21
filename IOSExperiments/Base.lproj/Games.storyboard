@@ -1524,7 +1524,7 @@
                                     <constraint firstItem="ysI-K6-T1G" firstAttribute="top" secondItem="oZT-L9-gT5" secondAttribute="top" id="zxN-AU-Ocb"/>
                                 </constraints>
                             </view>
-                            <skView contentMode="scaleToFill" allowsTransparency="YES" sceneName="ShaderScene.sks" translatesAutoresizingMaskIntoConstraints="NO" id="Rh7-6J-ajo">
+                            <skView contentMode="scaleToFill" sceneName="ShaderScene.sks" translatesAutoresizingMaskIntoConstraints="NO" id="Rh7-6J-ajo">
                                 <rect key="frame" x="16" y="36" width="334" height="333.5"/>
                             </skView>
                         </subviews>

@@ -22,17 +22,29 @@ class ShaderViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        updateImage()
+        updateSpriteOfUnderlyingView()
     }
     
-    
-    
-    func updateImage(){
+    private var busy = false
+    private func updateSpriteOfUnderlyingView(){
+        if busy {return}
+        DispatchQueue.global(qos: .background).async {
+            self.busy = true
+            let image = self.getImageFromRootView()
+            DispatchQueue.main.async {
+                self.setImageToSceneView(image:image)
+            }
+            self.busy = false
+        }
+    }
+    private func getImageFromRootView() -> UIImage{
         UIGraphicsBeginImageContextWithOptions(rootView.bounds.size, false, 0)
-        rootView.drawHierarchy(in: rootView.bounds, afterScreenUpdates:false)
+        rootView.drawHierarchy(in: rootView.bounds, afterScreenUpdates:false)//TODO: find faster way to render view
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
+        return image!
+    }
+    private func setImageToSceneView(image:UIImage){
         //        var rect = rootView.convert(rootView.frame, to: sceneView)
         let rect = sceneView.frame
         let rectRetina = CGRect(
@@ -40,13 +52,13 @@ class ShaderViewController: UIViewController {
             y: rect.y * UIScreen.main.scale,
             w: rect.w * UIScreen.main.scale,
             h: rect.h * UIScreen.main.scale)
-        let cgImage = image!.cgImage!.cropping(to: rectRetina)!
+        let cgImage = image.cgImage!.cropping(to: rectRetina)!
         (sceneView.scene as! ShaderScene).setTextureImage(cgImage: cgImage)
     }
 }
 
 extension ShaderViewController: UITextViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        updateImage()
+        updateSpriteOfUnderlyingView()
     }
 }

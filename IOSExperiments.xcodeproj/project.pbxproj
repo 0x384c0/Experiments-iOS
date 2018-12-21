@@ -11,6 +11,7 @@
 		490088EA2150EB510019DE80 /* MKPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490088E92150EB510019DE80 /* MKPointAnnotation.swift */; };
 		49114FB91D8BBC2600ABA6A5 /* BezierCurve1.svg in Resources */ = {isa = PBXBuildFile; fileRef = 49114FB81D8BBC2600ABA6A5 /* BezierCurve1.svg */; };
 		491505B921CCD7A40058152C /* Triangulation.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 491505B821CCD7A40058152C /* Triangulation.fsh */; };
+		491505BB21CCF9C50058152C /* PsychedelicGlass.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 491505BA21CCF9C50058152C /* PsychedelicGlass.fsh */; };
 		492558F8215C911700D59C91 /* Games.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492558F6215C911700D59C91 /* Games.storyboard */; };
 		49494C4A21CC9F1200BC8F2E /* ShaderScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 49494C4921CC9F1200BC8F2E /* ShaderScene.sks */; };
 		49494C4C21CCA07800BC8F2E /* SHKWater.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 49494C4B21CCA07700BC8F2E /* SHKWater.fsh */; };
@@ -182,6 +183,7 @@
 		490088E92150EB510019DE80 /* MKPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPointAnnotation.swift; sourceTree = "<group>"; };
 		49114FB81D8BBC2600ABA6A5 /* BezierCurve1.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BezierCurve1.svg; sourceTree = "<group>"; };
 		491505B821CCD7A40058152C /* Triangulation.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = Triangulation.fsh; sourceTree = "<group>"; };
+		491505BA21CCF9C50058152C /* PsychedelicGlass.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = PsychedelicGlass.fsh; sourceTree = "<group>"; };
 		492558F7215C911700D59C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Games.storyboard; sourceTree = "<group>"; };
 		49494C4921CC9F1200BC8F2E /* ShaderScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShaderScene.sks; sourceTree = "<group>"; };
 		49494C4B21CCA07700BC8F2E /* SHKWater.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SHKWater.fsh; sourceTree = "<group>"; };
@@ -398,6 +400,7 @@
 			children = (
 				49494C4B21CCA07700BC8F2E /* SHKWater.fsh */,
 				491505B821CCD7A40058152C /* Triangulation.fsh */,
+				491505BA21CCF9C50058152C /* PsychedelicGlass.fsh */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -1149,6 +1152,7 @@
 				49A7CF011E94EACD00BFFF90 /* Calendar.storyboard in Resources */,
 				491505B921CCD7A40058152C /* Triangulation.fsh in Resources */,
 				A6C63F1C1BF597E30037CF9A /* LaunchScreen.storyboard in Resources */,
+				491505BB21CCF9C50058152C /* PsychedelicGlass.fsh in Resources */,
 				A6C63F191BF597E30037CF9A /* Assets.xcassets in Resources */,
 				4996C72421CB660F0030252D /* CustomInfoWindow.xib in Resources */,
 				4996C71121CB660F0030252D /* CustomSectionView.xib in Resources */,

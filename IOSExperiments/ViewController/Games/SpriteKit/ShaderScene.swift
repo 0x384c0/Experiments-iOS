@@ -21,7 +21,8 @@ class ShaderScene: SKScene {
 //        ]
 //        let waterShader = SKShader(fromFile: "SHKWater", uniforms: uniforms)
 //        imageNode.shader = waterShader
-        imageNode.shader = SKShader(fromFile: "Triangulation")
+//        imageNode.shader = SKShader(fromFile: "Triangulation")
+        imageNode.shader = SKShader(fromFile: "PsychedelicGlass")
         
         
         imageNode.size = frame.size
