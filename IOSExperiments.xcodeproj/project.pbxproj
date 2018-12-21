@@ -11,6 +11,9 @@
 		490088EA2150EB510019DE80 /* MKPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490088E92150EB510019DE80 /* MKPointAnnotation.swift */; };
 		49114FB91D8BBC2600ABA6A5 /* BezierCurve1.svg in Resources */ = {isa = PBXBuildFile; fileRef = 49114FB81D8BBC2600ABA6A5 /* BezierCurve1.svg */; };
 		492558F8215C911700D59C91 /* Games.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492558F6215C911700D59C91 /* Games.storyboard */; };
+		49494C4A21CC9F1200BC8F2E /* ShaderScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 49494C4921CC9F1200BC8F2E /* ShaderScene.sks */; };
+		49494C4C21CCA07800BC8F2E /* SHKWater.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 49494C4B21CCA07700BC8F2E /* SHKWater.fsh */; };
+		49494C4E21CCA38500BC8F2E /* ShaderScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49494C4D21CCA38500BC8F2E /* ShaderScene.swift */; };
 		4996C70E21CB660F0030252D /* ImageTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C6EA21CB660E0030252D /* ImageTableCell.swift */; };
 		4996C70F21CB660F0030252D /* MainTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C6EB21CB660E0030252D /* MainTableCell.swift */; };
 		4996C71021CB660F0030252D /* CustomSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4996C6EC21CB660E0030252D /* CustomSectionView.swift */; };
@@ -178,6 +181,9 @@
 		490088E92150EB510019DE80 /* MKPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPointAnnotation.swift; sourceTree = "<group>"; };
 		49114FB81D8BBC2600ABA6A5 /* BezierCurve1.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BezierCurve1.svg; sourceTree = "<group>"; };
 		492558F7215C911700D59C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Games.storyboard; sourceTree = "<group>"; };
+		49494C4921CC9F1200BC8F2E /* ShaderScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShaderScene.sks; sourceTree = "<group>"; };
+		49494C4B21CCA07700BC8F2E /* SHKWater.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SHKWater.fsh; sourceTree = "<group>"; };
+		49494C4D21CCA38500BC8F2E /* ShaderScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderScene.swift; sourceTree = "<group>"; };
 		4952DB8E1E977BBF00924C12 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = SOURCE_ROOT; };
 		4952DB8F1E977BC700924C12 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = SOURCE_ROOT; };
 		4952DB901E977BE800924C12 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = SOURCE_ROOT; };
@@ -890,6 +896,9 @@
 			isa = PBXGroup;
 			children = (
 				49EDD8A421CB5E0900326FDD /* ShaderViewController.swift */,
+				49494C4921CC9F1200BC8F2E /* ShaderScene.sks */,
+				49494C4D21CCA38500BC8F2E /* ShaderScene.swift */,
+				49494C4B21CCA07700BC8F2E /* SHKWater.fsh */,
 			);
 			path = SpriteKit;
 			sourceTree = "<group>";
@@ -1118,7 +1127,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49494C4C21CCA07800BC8F2E /* SHKWater.fsh in Resources */,
 				A60F275B1C3BD026003919A8 /* Localizable.strings in Resources */,
+				49494C4A21CC9F1200BC8F2E /* ShaderScene.sks in Resources */,
 				4996C71921CB660F0030252D /* CustomAlertController.xib in Resources */,
 				49EDD8C121CB5E0900326FDD /* art.scnassets in Resources */,
 				4996C76421CB94B90030252D /* TextFieldSecureView.xib in Resources */,
@@ -1361,6 +1372,7 @@
 				49A7CE9B1E94B14000BFFF90 /* UITextFieldDelegates.swift in Sources */,
 				4996C74421CB66AD0030252D /* GoogleService.swift in Sources */,
 				49EDD8AD21CB5E0900326FDD /* UICollectionView+Extensions.m in Sources */,
+				49494C4E21CCA38500BC8F2E /* ShaderScene.swift in Sources */,
 				49EDD8A821CB5E0900326FDD /* CLCalendarViewController.swift in Sources */,
 				4996C71A21CB660F0030252D /* AlertDialogPlaceholder.swift in Sources */,
 				4996C72821CB660F0030252D /* TriangleView.swift in Sources */,
