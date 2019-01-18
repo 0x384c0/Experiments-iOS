@@ -16,6 +16,8 @@ class AVPlayerController: UIViewController {
     //MARK: lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        url.text = ScreenStreamer.shared.URL 
+        stream.text = ScreenStreamer.shared.STREAM 
         setupAVPlayer()
         setStreamStatusToView()
     }
@@ -25,35 +27,9 @@ class AVPlayerController: UIViewController {
         toggleAVPlayer()
     }
     @IBAction func streamTap(_ sender: UIButton) {
-        urlDidChanged(url)
-        streamNameDidChanged(stream)
+        ScreenStreamer.shared.URL = url.text!
+        ScreenStreamer.shared.STREAM = stream.text!
         toggleScreenStreaming()
-    }
-    func urlDidChanged(_ sender: UITextField) {
-        if let
-            placeholder = sender.placeholder
-            ,
-            sender.text?.isBlank ?? true {
-            ScreenStreamer.shared.URL = placeholder
-        } else {
-            if let _ = URL(string: sender.text!){
-                ScreenStreamer.shared.STREAM = sender.text!
-            }
-        }
-    }
-    func streamNameDidChanged(_ sender: UITextField) {
-        if let
-            placeholder = sender.placeholder
-            ,
-            sender.text?.isBlank ?? true {
-            ScreenStreamer.shared.STREAM = placeholder
-        } else {
-            ScreenStreamer.shared.STREAM = sender.text!
-        }
-        print(#function)
-        print(sender.text ?? "nil")
-        print(sender.placeholder ?? "nil")
-        print(ScreenStreamer.shared.STREAM)
     }
     
     //MARK: avplayer

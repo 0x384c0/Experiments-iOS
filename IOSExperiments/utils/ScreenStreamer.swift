@@ -13,8 +13,8 @@ import AVFoundation
 class ScreenStreamer {
     
     var
-    URL = "rtmp://localhost/live",
-    STREAM = "test"
+    URL = "rtmp://localhost:1935/live",
+    STREAM = "stream"
     
     static let
     shared = ScreenStreamer()
