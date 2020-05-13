@@ -32,17 +32,17 @@ class ScreenStreamer {
         //XCGLogger.defaultInstance().outputLogLevel = .Error
         
         
-        rtmpConnection.addEventListener(Event.RTMP_STATUS,  selector:#selector(ScreenStreamer.rtmpStatusHandler(_:)), observer: self)
-        rtmpConnection.addEventListener(Event.EVENT,        selector:#selector(ScreenStreamer.eventHandler(_:)), observer: self)
-        rtmpConnection.addEventListener(Event.IO_ERROR,     selector:#selector(ScreenStreamer.eventHandler(_:)), observer: self)
-        rtmpConnection.addEventListener(Event.SYNC,         selector:#selector(ScreenStreamer.eventHandler(_:)), observer: self)
+        rtmpConnection.addEventListener(Event.Name.rtmpStatus,  selector:#selector(ScreenStreamer.rtmpStatusHandler(_:)), observer: self)
+        rtmpConnection.addEventListener(Event.Name.event,        selector:#selector(ScreenStreamer.eventHandler(_:)), observer: self)
+        rtmpConnection.addEventListener(Event.Name.ioError,     selector:#selector(ScreenStreamer.eventHandler(_:)), observer: self)
+        rtmpConnection.addEventListener(Event.Name.sync,         selector:#selector(ScreenStreamer.eventHandler(_:)), observer: self)
     }
     
     deinit {
-        rtmpConnection.removeEventListener(Event.RTMP_STATUS,   selector:#selector(ScreenStreamer.rtmpStatusHandler(_:)), observer: self)
-        rtmpConnection.removeEventListener(Event.EVENT,         selector:#selector(ScreenStreamer.eventHandler(_:)), observer: self)
-        rtmpConnection.removeEventListener(Event.IO_ERROR,      selector:#selector(ScreenStreamer.eventHandler(_:)), observer: self)
-        rtmpConnection.removeEventListener(Event.SYNC,          selector:#selector(ScreenStreamer.eventHandler(_:)), observer: self)
+        rtmpConnection.removeEventListener(Event.Name.rtmpStatus,   selector:#selector(ScreenStreamer.rtmpStatusHandler(_:)), observer: self)
+        rtmpConnection.removeEventListener(Event.Name.event,         selector:#selector(ScreenStreamer.eventHandler(_:)), observer: self)
+        rtmpConnection.removeEventListener(Event.Name.ioError,      selector:#selector(ScreenStreamer.eventHandler(_:)), observer: self)
+        rtmpConnection.removeEventListener(Event.Name.sync,          selector:#selector(ScreenStreamer.eventHandler(_:)), observer: self)
     }
     var connected:Bool {
         return rtmpConnection.connected

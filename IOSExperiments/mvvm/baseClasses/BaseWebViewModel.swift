@@ -13,8 +13,8 @@ protocol WebViewModelProtocol:BaseViewModelProtocol {
     //MARK: UI Binding
     var requestBinding          : PublishSubject<URLRequest>  { get }
     var urlResultBinding        : PublishSubject<WebViewResult>  { get }
-    var errorAlertController    : PublishSubject<VMAlertBindingData> { get }
-    var textAlertBinding        : PublishSubject<String?> { get }
+    var errorAlertController    : PublishSubject<VMAlertBindingData> { get set }
+    var textAlertBinding        : PublishSubject<String?> { get set }
     //MARK: other
     var request                 : URLRequest?{ get }
     func shouldStartLoadWithRequest(url: String?) -> Bool

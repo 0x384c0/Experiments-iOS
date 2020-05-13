@@ -12,11 +12,11 @@ PODS:
   - GoogleMaps/Base (2.7.0)
   - GoogleMaps/Maps (2.7.0):
     - GoogleMaps/Base
-  - HaishinKit (0.10.4):
-    - Logboard (~> 2.0.0)
+  - HaishinKit (1.0.8):
+    - Logboard (~> 2.1.2)
   - iOSSharedViewTransition (1.0.2)
   - IQKeyboardManagerSwift (6.2.0)
-  - Logboard (2.0.0)
+  - Logboard (2.1.2)
   - MMDrawerController (0.6.0):
     - MMDrawerController/Core (= 0.6.0)
     - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
@@ -77,17 +77,15 @@ DEPENDENCIES:
   - UIScrollView-InfiniteScroll
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - AlamofireImage
     - AlamofireNetworkActivityIndicator
     - BABFrameObservingInputAccessoryView
     - FSCalendar
     - GoogleMaps
-    - HaishinKit
     - iOSSharedViewTransition
     - IQKeyboardManagerSwift
-    - Logboard
     - MMDrawerController
     - ObjectMapper
     - PocketSVG
@@ -102,6 +100,9 @@ SPEC REPOS:
     - SWRevealViewController
     - UIColor_Hex_Swift
     - UIScrollView-InfiniteScroll
+  trunk:
+    - HaishinKit
+    - Logboard
 
 EXTERNAL SOURCES:
   EZSwiftExtensions:
@@ -121,10 +122,10 @@ SPEC CHECKSUMS:
   EZSwiftExtensions: f73648a591e529a1dbd83c22b19fd3e57df6fb7d
   FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
-  HaishinKit: 691e929f02389b40b879d3d1579dd6c496632995
+  HaishinKit: c620b58d2b5e4d7032b6447cd57f127f25c074df
   iOSSharedViewTransition: d4bdb3662b51d780b7a0646da8ff2158dbb2e43c
   IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
-  Logboard: 9e3dce26a4be2dbff7edf02d54b17ed5bd49217e
+  Logboard: e3342fa111e26268bb89577e6a40a0660a423ddd
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   PocketSVG: c30139829206a43df2ec203880e3970531facba7
@@ -142,4 +143,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 4c4dddc7716ba3873e6e8f40e37c36d5e7e8c953
 
-COCOAPODS: 1.6.0.beta.1
+COCOAPODS: 1.8.4
