@@ -56,8 +56,9 @@ platform :ios do
   end
 
   private_lane :upload_build do
-    changeLog = `git log $(git describe --tags --abbrev=0 $(git rev-list --tags --skip=1  --max-count=1))..HEAD --pretty=format:"%s"`
-    changeLog = changeLog.gsub!(/[^0-9A-Za-z\n ]/, '')
+    changeLog = `git log --pretty=format:%s $(git describe --tags --abbrev=0 $(git rev-list --tags --skip=1  --max-count=1))..HEAD`
+    changeLog = changeLog.gsub!(/[^0-9A-Za-zА-Яа-я\n ]/, ' ')
+    changeLog = changeLog.split("\n").uniq.join("\n")
     version = `git describe --tags --abbrev=0`
 
     testflight(
