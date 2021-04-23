@@ -55,7 +55,11 @@ cocoapods:
 increment_version:
 	VERSION=$$(sh scripts/others/get_version_from_tag.sh) &&\
 	NEW_VERSION=$$(sh scripts/others/increment_version.sh $$VERSION) &&\
-	sh scripts/others/set_version.sh $$NEW_VERSION
+	sh scripts/others/set_version.sh $$NEW_VERSION &&\
+	git add --all  &&\
+	git commit -m "Version $$NEW_VERSION" &&\
+	git tag $$NEW_VERSION &&\
+	echo "Run: \n git push --all && git push --tags"
 
 create_release:
 	export GIT_MERGE_AUTOEDIT=no &&\
