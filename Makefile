@@ -52,13 +52,22 @@ clean:
 cocoapods:
 	bundle exec pod install
 
-set_version:
-	sh scripts/others/get_version_from_tag.sh
-	sh scripts/others/set_version.sh
+increment_version:
+	VERSION=$$(sh scripts/others/get_version_from_tag.sh) &&\
+	NEW_VERSION=$$(sh scripts/others/increment_version.sh $$VERSION) &&\
+	sh scripts/others/set_version.sh $$NEW_VERSION
 
-incr_version:
-	sh scripts/others/get_version_from_tag.sh
-	sh scripts/others/incr_version.sh
-	sh scripts/others/set_version.sh
+create_release:
+	export GIT_MERGE_AUTOEDIT=no &&\
+	VERSION=$$(sh scripts/others/get_version_from_tag.sh) &&\
+	NEW_VERSION=$$(sh scripts/others/increment_version.sh $$VERSION) &&\
+	git flow release start $$NEW_VERSION  &&\
+	sh scripts/others/set_version.sh $$NEW_VERSION  &&\
+	git add --all  &&\
+	git commit -m "Version $$NEW_VERSION" &&\
+	git flow release finish -m "Version_$$NEW_VERSION" "$$NEW_VERSION" &&\
+	unset GIT_MERGE_AUTOEDIT &&\
+	git push --all &&\
+	git push --tags
 
 
