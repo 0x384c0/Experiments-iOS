@@ -25,7 +25,7 @@ if [[ $OLD_VERSION_STR == "" ]]; then
 fi
 
 if ! [[ "$OLD_VERSION_STR" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-    error "Illegal version. Should match ^[0-9]+\.[0-9]+\.[0-9]+\$"
+    error "Illegal version: $OLD_VERSION_STR. Should match ^[0-9]+\.[0-9]+\.[0-9]+\$"
     exit 1
 fi
 
