@@ -10,5 +10,8 @@
       <FileRef
          location = "group:/Users/andrew/Documents/mproj/Experiments-iOS/features/FeaturesHost">
       </FileRef>
+      <FileRef
+         location = "group:RedditPosts">
+      </FileRef>
    </Group>
 </Workspace>
