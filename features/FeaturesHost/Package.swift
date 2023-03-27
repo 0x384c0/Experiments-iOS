@@ -18,6 +18,8 @@ let package = Package(
             name: "FeaturesHostPresentation",
             dependencies: [
                 .product(name: "RedditPostsPresentation", package: "RedditPosts"),
+                .product(name: "RedditPostsDomain", package: "RedditPosts"),
+                .product(name: "RedditPostsData", package: "RedditPosts"),
             ],
             path: "Sources/Presentation"
         ),

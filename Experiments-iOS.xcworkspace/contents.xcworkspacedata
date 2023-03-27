@@ -14,4 +14,7 @@
          location = "group:RedditPosts">
       </FileRef>
    </Group>
+   <FileRef
+      location = "group:Common">
+   </FileRef>
 </Workspace>

@@ -19,22 +19,31 @@ let package = Package(
             targets: ["RedditPostsData"]
         ),
     ],
+    dependencies: [
+        .package(path: "../../Common"),
+    ],
     targets: [
         .target(
             name: "RedditPostsPresentation",
             dependencies: [
                 .target(name: "RedditPostsDomain"),
+                "Common",
             ],
             path: "Sources/Presentation"
         ),
         .target(
             name: "RedditPostsDomain",
-            dependencies: [],
+            dependencies: [
+                "Common",
+            ],
             path: "Sources/Domain"
         ),
         .target(
             name: "RedditPostsData",
-            dependencies: [],
+            dependencies: [
+                .target(name: "RedditPostsDomain"),
+                "Common",
+            ],
             path: "Sources/Data"
         ),
     ]

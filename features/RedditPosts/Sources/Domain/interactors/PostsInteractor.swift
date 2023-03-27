@@ -3,7 +3,18 @@
 
 import Foundation
 
-public class PostsInteractor {
-    public init(){}
-    public let text = "Test text"
+public protocol PostsInteractor {
+    var text:String {get}
+}
+
+class PostsInteractorImpl: PostsInteractor {
+
+    private let remoteDataSource:RemoteDataSource
+    init(remoteDataSource: RemoteDataSource) {
+        self.remoteDataSource = remoteDataSource
+    }
+
+    var text: String {
+        remoteDataSource.text
+    }
 }
