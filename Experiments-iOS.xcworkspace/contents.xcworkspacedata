@@ -4,4 +4,11 @@
    <FileRef
       location = "group:Experiments-iOS/Experiments-iOS.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:Experiments-iOS/../features"
+      name = "features">
+      <FileRef
+         location = "group:/Users/andrew/Documents/mproj/Experiments-iOS/features/FeaturesHost">
+      </FileRef>
+   </Group>
 </Workspace>

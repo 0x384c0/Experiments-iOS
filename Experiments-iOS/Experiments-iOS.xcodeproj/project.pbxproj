@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		499DAFA929D15CAF00D4F8EA /* Experiments_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499DAFA829D15CAF00D4F8EA /* Experiments_iOSApp.swift */; };
-		499DAFAB29D15CAF00D4F8EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499DAFAA29D15CAF00D4F8EA /* ContentView.swift */; };
 		499DAFAD29D15CB000D4F8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499DAFAC29D15CB000D4F8EA /* Assets.xcassets */; };
+		49C6BD1329D169F5000CC4FE /* FeaturesHostPresentation in Frameworks */ = {isa = PBXBuildFile; productRef = 49C6BD1229D169F5000CC4FE /* FeaturesHostPresentation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		499DAFA529D15CAF00D4F8EA /* Experiments-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Experiments-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		499DAFA829D15CAF00D4F8EA /* Experiments_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experiments_iOSApp.swift; sourceTree = "<group>"; };
-		499DAFAA29D15CAF00D4F8EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		499DAFAC29D15CB000D4F8EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -24,17 +23,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C6BD1329D169F5000CC4FE /* FeaturesHostPresentation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4958C78629D163EC00A5FA40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		499DAF9C29D15CAF00D4F8EA = {
 			isa = PBXGroup;
 			children = (
 				499DAFA729D15CAF00D4F8EA /* Experiments-iOS */,
 				499DAFA629D15CAF00D4F8EA /* Products */,
+				4958C78629D163EC00A5FA40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,7 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				499DAFA829D15CAF00D4F8EA /* Experiments_iOSApp.swift */,
-				499DAFAA29D15CAF00D4F8EA /* ContentView.swift */,
 				499DAFAC29D15CB000D4F8EA /* Assets.xcassets */,
 			);
 			path = "Experiments-iOS";
@@ -72,6 +79,9 @@
 			dependencies = (
 			);
 			name = "Experiments-iOS";
+			packageProductDependencies = (
+				49C6BD1229D169F5000CC4FE /* FeaturesHostPresentation */,
+			);
 			productName = "Experiments-iOS";
 			productReference = 499DAFA529D15CAF00D4F8EA /* Experiments-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -125,7 +135,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				499DAFAB29D15CAF00D4F8EA /* ContentView.swift in Sources */,
 				499DAFA929D15CAF00D4F8EA /* Experiments_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +336,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		49C6BD1229D169F5000CC4FE /* FeaturesHostPresentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeaturesHostPresentation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 499DAF9D29D15CAF00D4F8EA /* Project object */;
 }

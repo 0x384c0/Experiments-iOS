@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FeaturesHostPresentation
 
 @main
 struct Experiments_iOSApp: App {
