@@ -14,6 +14,10 @@ let package = Package(
             name: "RedditPostsDomain",
             targets: ["RedditPostsDomain"]
         ),
+        .library(
+            name: "RedditPostsData",
+            targets: ["RedditPostsData"]
+        ),
     ],
     targets: [
         .target(
@@ -27,6 +31,11 @@ let package = Package(
             name: "RedditPostsDomain",
             dependencies: [],
             path: "Sources/Domain"
+        ),
+        .target(
+            name: "RedditPostsData",
+            dependencies: [],
+            path: "Sources/Data"
         ),
     ]
 )
