@@ -1,4 +1,5 @@
 import SwiftUI
+import RedditPostsDomain
 
 public struct PostsView: View {
     public init() {}
@@ -7,7 +8,7 @@ public struct PostsView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text(PostsInteractor().text)
         }
         .padding()
     }
