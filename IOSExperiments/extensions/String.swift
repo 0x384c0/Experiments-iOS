@@ -122,7 +122,7 @@ extension String{
         comma = ",?",
         regex = "^\(spaces)\(float)\(spaces)\(comma)\(spaces)\(float)\(spaces)$"
         if self.range(of: regex, options: .regularExpression) != nil{
-            var arrayStringFloats = matches(for: float, in: self)
+            var arrayStringFloats = IOSExperiments.matches(for: float, in: self)
             if  arrayStringFloats.count >= 2,
                 let latitude = Float(arrayStringFloats[0]),
                 let longitude = Float(arrayStringFloats[1]),
