@@ -21,6 +21,7 @@ let package = Package(
     ],
     dependencies: [
         .package(path: "../../Common"),
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.8.0"))
     ],
     targets: [
         .target(
@@ -43,6 +44,7 @@ let package = Package(
             dependencies: [
                 .target(name: "RedditPostsDomain"),
                 "Common",
+                "Alamofire",
             ],
             path: "Sources/Data"
         ),

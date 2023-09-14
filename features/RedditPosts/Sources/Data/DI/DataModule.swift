@@ -10,7 +10,11 @@ public class DataModule: BaseModule {
 
     public func register() -> BaseModule {
         DIContainer.shared.register(RemoteDataSource.self) { r in
-            RemoteDataSourceImpl()
+            RemoteDataSourceImpl(
+                api: RedditAPI(),
+                redditPostsResponseDTOMapper: RedditPostsResponseDTOMapper(),
+                redditPostListingDTOMapper: RedditPostListingDTOMapper()
+            )
         }
         return self
     }

@@ -16,6 +16,7 @@
 		499DAFA529D15CAF00D4F8EA /* Experiments-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Experiments-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		499DAFA829D15CAF00D4F8EA /* Experiments_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experiments_iOSApp.swift; sourceTree = "<group>"; };
 		499DAFAC29D15CB000D4F8EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49F23F7D2AB30C1600435428 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = Readme.md; path = ../Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		499DAF9C29D15CAF00D4F8EA = {
 			isa = PBXGroup;
 			children = (
+				49F23F7D2AB30C1600435428 /* Readme.md */,
 				499DAFA729D15CAF00D4F8EA /* Experiments-iOS */,
 				499DAFA629D15CAF00D4F8EA /* Products */,
 				4958C78629D163EC00A5FA40 /* Frameworks */,
