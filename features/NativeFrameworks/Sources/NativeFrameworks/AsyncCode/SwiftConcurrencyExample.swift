@@ -61,6 +61,64 @@ class SwiftConcurrencyExample {
         print("Task group result \(result)")
     }
 
+    //MARK: actors
+    /**
+     like classes that are safe to use in concurrent environments
+     @MainActor - forces all operation in main thread
+     @Sendable - data that can safely be transferred to another thread
+     */
+    actor ActorModel {
+        private(set) var value = 0
+
+        func increment() async { // all methods are atomic
+            value += 1
+            sleep(1)
+            value += 1
+        }
+    }
+    class NonActorModel {
+        private(set) var value = 0
+
+        func increment() {  // methods are non atomic
+            value += 1
+            sleep(1)
+            value += 1
+        }
+    }
+
+    func exampleActor() async {
+        let actorModel = ActorModel()
+        DispatchQueue.global().async {
+            Task {
+                await actorModel.increment()
+                await print("actorModel \(actorModel.value)")
+            }
+        }
+        DispatchQueue.global().asyncAfter(deadline: .now() + .milliseconds(500)){
+            Task {
+                await actorModel.increment()
+                await print("actorModel \(actorModel.value)")
+            }
+        }
+
+        sleep(1)
+
+        let nonActorModel = NonActorModel()
+        DispatchQueue.global().async {
+            Task {
+                nonActorModel.increment()
+                print("nonActorModel \(nonActorModel.value)")
+            }
+        }
+        DispatchQueue.global().asyncAfter(deadline: .now() + .milliseconds(500)){
+            Task {
+                nonActorModel.increment()
+                print("nonActorModel \(nonActorModel.value)")
+            }
+        }
+    }
+
+
     //MARK: private
     private let LONG_TIME: UInt32 = 1
 
@@ -74,6 +132,4 @@ class SwiftConcurrencyExample {
             print("Long task cancelled isMain: \(Thread.isMainThread) id: \(id)")
         }
     }
-
-
 }

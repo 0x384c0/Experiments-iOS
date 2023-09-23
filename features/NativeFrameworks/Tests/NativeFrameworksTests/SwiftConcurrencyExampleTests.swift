@@ -5,7 +5,7 @@ import XCTest
 @testable import NativeFrameworks
 
 class SwiftConcurrencyExampleTests : XCTestCase {
-    private let sleepTime:UInt32 = 4
+    private let sleepTime:UInt32 = 5
     let sut = SwiftConcurrencyExample()
 
     func testExampleTask() async{
@@ -18,6 +18,13 @@ class SwiftConcurrencyExampleTests : XCTestCase {
     func testExampleTaskGroup() async{
         print("\nexampleTaskGroup")
         await sut.exampleTaskGroup()
+        sleep(sleepTime)
+        print("\n")
+    }
+
+    func testExampleActor() async{
+        print("\nexampleActor")
+        await sut.exampleActor()
         sleep(sleepTime)
         print("\n")
     }
