@@ -8,6 +8,9 @@
       location = "group:Experiments-iOS/../features"
       name = "features">
       <FileRef
+         location = "group:NativeFrameworks">
+      </FileRef>
+      <FileRef
          location = "group:/Users/andrew/Documents/mproj/Experiments-iOS/features/FeaturesHost">
       </FileRef>
       <FileRef
