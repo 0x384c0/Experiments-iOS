@@ -9,9 +9,12 @@ import Foundation
  comprehensive improvements to the support for concurrent code execution on multicore hardware in macOS, iOS, watchOS, and tvOS.
 
  Opinion:
+ execute tasks concurrently in C-based code
+ should not be used for writing business logic
 
  Pros:
- faster (maybe?)
+ faster
+ no objects and classes
  allows precise tuning
  no dependencies
 
@@ -19,8 +22,6 @@ import Foundation
  harder to read
  allow to mix async code with logic
  more room for mistakes
-
- Overall this is example how to not create a library for writing async code
  */
 public class GcdExample {
     //MARK: Queues and Tasks

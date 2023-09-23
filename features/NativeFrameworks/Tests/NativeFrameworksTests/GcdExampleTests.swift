@@ -1,7 +1,7 @@
 import XCTest
 @testable import NativeFrameworks
 
-final class NativeFrameworksTests: XCTestCase {
+final class GcdExampleTests: XCTestCase {
     private let sleepTime:UInt32 = 4
     private let sut = GcdExample()
     func testExampleDispatchQueue() throws {
