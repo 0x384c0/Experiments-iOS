@@ -24,6 +24,7 @@ class OperationExample {
         op.addExecutionBlock {
             self.longTask("block 2")
             op.cancel()
+            _ = op.isCancelled
         }
         op.addExecutionBlock {
             self.longTask("block 3")
